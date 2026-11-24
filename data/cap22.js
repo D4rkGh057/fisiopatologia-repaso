@@ -5,6 +5,59 @@ window.CHAPTERS.push(
   id: 22,
   weight: 5,
   title: "22. Insuficiencia renal aguda",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>La insuficiencia renal aguda (IRA) es la caída brusca de la función del riñón. Antes de tratarla hay que decidir una sola cosa: el problema está <b>antes</b> del riñón, <b>dentro</b> del riñón o <b>después</b>, en la salida de la orina.</p>
+  <p>El <b>filtrado glomerular</b> (FG) es la cantidad de líquido que el riñón limpia por minuto: unos 125 mL por minuto en una persona sana.</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <p>Toda la fisiopatología se reduce a tres puertas: la sangre que entra, el tejido que filtra y la orina que sale. Si falla una, el FG cae.</p>
+  <ol>
+    <li><b>Prerrenal (70% de los casos):</b> llega poca sangre por hemorragia, diarrea, quemaduras o shock. El tejido está sano, solo le falta flujo, así que el FG baja.</li>
+    <li>Un riñón sano reacciona conservando sodio y agua. Por eso la orina queda con muy poco sodio (menos de 10 mEq/L) y muy concentrada (más de 500 mOsm/kg).</li>
+    <li>Los <b>AINES</b> son antiinflamatorios como el ibuprofeno. Bloquean las <b>prostaglandinas</b>, sustancias que mantienen abierta la arteriola de entrada del glomérulo.</li>
+    <li>Sin prostaglandinas, la arteriola de entrada (aferente) se cierra y la de salida (eferente) se dilata. Cae el flujo plasmático renal y con él el filtrado.</li>
+    <li><b>Intrínseca (13%):</b> el daño está en el propio tejido. La forma más frecuente es la <b>necrosis tubular aguda</b> (NTA), que es la muerte de las células del túbulo por isquemia prolongada o toxinas.</li>
+    <li>En la NTA las células muertas se desprenden, se pegan a la proteína de <b>Tamm-Horsfall</b> y tapan el túbulo. La orina no pasa aunque la presión ya se haya corregido.</li>
+    <li><b>Postrenal (17%):</b> algo obstruye la salida, como una próstata grande, un cálculo o un tumor. Si dura semanas, el parénquima se daña y el cuadro se vuelve intrínseco.</li>
+    <li>Sin filtrado se acumulan urea y creatinina, sube el potasio, no se elimina H<sup>+</sup> (acidosis) y falta <b>eritropoyetina</b>, la hormona que ordena fabricar glóbulos rojos.</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <ul>
+    <li><b>Oliguria</b> (menos de 500 mL al día) o anuria: el filtro produce poca orina. Es el primer signo de la IRA, no de la enfermedad crónica.</li>
+    <li><b>Retención nitrogenada:</b> la urea sube de 0,5 a 1,5 mg/dL por día. La urea alta irrita la pleura y el pericardio y afecta al cerebro (encefalopatía urémica).</li>
+    <li><b>Acidosis metabólica:</b> el riñón no fabrica amoniaco ni secreta H<sup>+</sup>, así que el ácido se queda en la sangre.</li>
+    <li><b>Hiperpotasemia</b> (más de 5,5 mEq/L): debilidad muscular y arritmias, con ondas T picudas en el electrocardiograma.</li>
+    <li><b>Anemia</b> normocítica: aparece después de una semana de IRA, por falta de eritropoyetina.</li>
+    <li><b>Signos de hipovolemia</b> en la forma prerrenal: mucosas secas y caída de la presión al ponerse de pie.</li>
+  </ul>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Un caso con un fármaco o una caída de volumen, y la pregunta: ¿qué mecanismo bajó el filtrado?</li>
+    <li>Dos datos de orina (sodio y osmolaridad) y la pregunta: ¿qué tipo de IRA es?</li>
+    <li>Un paciente que sigue orinando poco aunque la presión ya se corrigió: ¿por qué la oliguria persiste?</li>
+    <li>Edad, peso y creatinina para calcular el aclaramiento: ¿qué estadio le corresponde?</li>
+    <li>Una complicación (potasio, pH, hemoglobina) y el mecanismo que la produce.</li>
+  </ul>
+  <p>Ejemplo en su voz: "Mujer de 66 años con IRA oligúrica de diez días, hemoglobina 9 g/dL, pH 7,25 y potasio 5,9: ¿por qué está acidótica y anémica?"</p>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> creer que los AINES "dan más prostaglandinas" cuando las inhiben; confundir prerrenal (revierte en menos de 24 horas al reponer volumen) con NTA (la reparación tarda semanas); y olvidar el factor 0,85 en las mujeres al calcular el aclaramiento.</div>
+
+  <h2>Números y cálculos</h2>
+  <ul>
+    <li>Prerrenal: sodio urinario &lt; 10 mEq/L y osmolaridad urinaria &gt; 500 mOsm/kg.</li>
+    <li>Oliguria: &lt; 500 mL/día. Diuresis mínima: 0,5 mL/kg/h.</li>
+    <li>Hiperpotasemia: &gt; 5,5 mEq/L.</li>
+    <li><b>Cockcroft-Gault:</b> Cl<sub>Cr</sub> = (140 − edad) × peso / (72 × creatinina); en la mujer se multiplica por 0,85.</li>
+    <li>Ejemplo: hombre de 58 años, 80 kg, creatinina 2,0 → (82 × 80) / 144 = <b>45,6 mL/min</b>, estadio 3.</li>
+    <li>Estadios por FG: 1 &gt; 90; 2 60-89; 3 30-59; 4 15-29; 5 &lt; 15.</li>
+    <li>KDIGO: creatinina &gt; 0,3 mg/dL en 48 h o &gt; 1,5 veces el basal.</li>
+  </ul>
+  <div class="note"><b>Alerta del libro:</b> el caso clínico de 35 años y 70 kg da 37,80 mL/min y el texto lo llama "estadio II", pero por su propia tabla (30-59) corresponde al estadio 3. Las cifras de creatinina de la "Tabla 70" tampoco concuerdan con AKIN ni con RIFLE.</div>
+  `,
   summary: `
   <h2>1. Qué falla</h2>
   <p>La insuficiencia renal aguda (IRA) es la caída <b>brusca</b> de la función renal: baja el filtrado glomerular (FG), se retienen productos nitrogenados (urea, creatinina), hay oliguria o anuria y se desordenan el agua, los electrolitos y el equilibrio ácido-base. El riñón recibe cerca del <b>20% del gasto cardiaco</b> (unos 1000 mL/min de 5000 mL/min) y filtra 125 mL/min (180 L/día); casi todo se reabsorbe y se excretan unos 1440 mL de orina al día. Por eso depende tanto de la perfusión.</p>
@@ -82,268 +135,292 @@ window.CHAPTERS.push(
   `,
   questions: [
     {
-      "stem": "Un hombre de 68 años con insuficiencia cardiaca y cuadro de diarrea de 4 días toma ibuprofeno 600 mg cada 8 horas por dolor lumbar. Acude con mucosas secas, presión arterial 92/58 mmHg, diuresis de 300 mL en 24 h y creatinina de 2,4 mg/dL (basal 1,0). ¿Qué efecto del fármaco sobre la hemodinamia glomerular contribuye de forma directa a la caída del filtrado?",
-      "options": [
+      id: "22-0",
+      stem: "Un hombre de 68 años con insuficiencia cardiaca y diarrea de cuatro días toma ibuprofeno 600 mg cada 8 horas. Ingresa con presión arterial de 92/58 mmHg, diuresis de 300 mL en 24 horas y creatinina de 2,4 mg/dL (basal 1,0). ¿Qué mecanismo hemodinámico explica la caída del filtrado glomerular?",
+      options: [
         {
-          "t": "Vasodilatación de la arteriola aferente por exceso de prostaglandinas, con hiperfiltración y mayor presión hidráulica glomerular",
-          "why": "Incorrecto. Los AINES inhiben la síntesis de prostaglandinas, por lo que no hay exceso de ellas ni vasodilatación aferente."
+          t: "Vasodilatación de la arteriola aferente por exceso de prostaglandinas renales.",
+          why: "Asumes que el AINE aporta prostaglandinas, y hace lo contrario: inhibe su síntesis. Sin esa vasodilatación, la arteriola de entrada se cierra en un riñón que ya recibe poco flujo por la diarrea y la falla cardiaca."
         },
         {
-          "t": "Vasoconstricción de la arteriola eferente por activación directa de la angiotensina II, que eleva la presión del capilar y el filtrado",
-          "why": "Incorrecto. El efecto de los AINES no pasa por activar la angiotensina II, y la constricción eferente tiende a sostener el filtrado, no a reducirlo."
+          t: "Vasoconstricción de la arteriola eferente por activación directa de angiotensina II plasmática.",
+          why: "Confundes la compensación con la causa. La angiotensina II contrae la eferente y así sostiene la presión del capilar glomerular; si ese fuera el mecanismo, el filtrado no caería tanto en un riñón hipoperfundido. Aquí el fármaco actuó sobre la aferente."
         },
         {
-          "t": "Vasoconstricción de la arteriola aferente con vasodilatación de la eferente, por inhibición de prostaglandinas y menor flujo plasmático renal",
-          "why": "Correcta. Es el mecanismo descrito por el libro: sin prostaglandinas cae el flujo plasmático renal y el filtrado, sobre un riñón ya hipoperfundido por la deshidratación."
+          t: "Vasoconstricción aferente y vasodilatación eferente por inhibición de la síntesis de prostaglandinas.",
+          why: "El AINE bloquea la COX y desaparece la prostaglandina que mantenía abierta la aferente; la entrada se cierra y la salida se dilata. Cae el flujo plasmático renal y el filtrado sobre un riñón ya hipoperfundido."
         },
         {
-          "t": "Lesión tubular directa del segmento S3 por el fármaco, con obstrucción por células desprendidas y proteína de Tamm-Horsfall",
-          "why": "Incorrecto. El libro atribuye el efecto de los AINES a la hemodinamia renal (forma prerrenal), no a necrosis tubular directa."
+          t: "Necrosis del túbulo proximal en el segmento S3 con obstrucción por Tamm-Horsfall.",
+          why: "Saltas a la lesión estructural sin datos que la sostengan: el túbulo S3 se necrosa cuando la hipoperfusión se mantiene horas o días. Con un efecto puramente hemodinámico la creatinina revierte al suspender el fármaco y reponer volumen."
         }
       ],
-      "correct": 2
+      correct: 2,
+      rule: "Si la historia trae un AINE y un riñón hipoperfundido, el mecanismo es aferente: inhibición de prostaglandinas, no lesión tubular."
     },
     {
-      "stem": "Una mujer de 40 años tiene vómitos incoercibles durante 3 días. Ingresa con taquicardia, hipotensión ortostática y creatinina de 2,1 mg/dL. La orina muestra sodio de 6 mEq/L y osmolaridad de 640 mOsm/kg de H2O. ¿Cuál es la interpretación más adecuada?",
-      "options": [
+      id: "22-1",
+      stem: "Una mujer de 40 años presenta vómitos incoercibles durante tres días, taquicardia e hipotensión ortostática. La creatinina es de 2,1 mg/dL y la orina tiene sodio de 6 mEq/L con osmolaridad de 640 mOsm/kg. ¿Cuál es el diagnóstico más probable?",
+      options: [
         {
-          "t": "IRA prerrenal: riñón sano que conserva sodio y agua ante la hipoperfusión por la pérdida de volumen",
-          "why": "Correcta. Según el libro, la forma prerrenal se caracteriza por sodio urinario < 10 mEq/L y osmolaridad urinaria > 500 mOsm/kg."
+          t: "Insuficiencia renal aguda prerrenal por hipoperfusión.",
+          why: "La clave es la orina: sodio urinario menor de 10 mEq/L y osmolaridad mayor de 500 mOsm/kg significan que un túbulo sano reabsorbe sodio y agua. Con la clínica de pérdida de volumen, el problema está antes del riñón."
         },
         {
-          "t": "Necrosis tubular aguda establecida, con túbulo lesionado que no logra concentrar la orina ni retener sodio tras la hipovolemia",
-          "why": "Incorrecta. El patrón de sodio 6 mEq/L y osmolaridad 640 indica túbulos funcionantes; en la NTA el túbulo lesionado no conserva sodio ni concentra."
+          t: "Necrosis tubular aguda establecida por isquemia prolongada.",
+          why: "Supones que tres días de vómitos ya necrosaron el túbulo. Si el túbulo estuviera lesionado no podría conservar sodio ni concentrar la orina a 640 mOsm/kg; ese es justamente el dato que descarta la NTA."
         },
         {
-          "t": "IRA postrenal por obstrucción ureteral bilateral, con oliguria y orina concentrada por retención de solutos",
-          "why": "Incorrecta. Nada orienta a obstrucción; la clínica de hipovolemia (vómitos, taquicardia, hipotensión ortostática) apunta a hipoperfusión."
+          t: "Insuficiencia renal aguda postrenal por obstrucción ureteral bilateral.",
+          why: "No hay ningún dato de obstrucción: ni cólico, ni globo vesical, ni anuria. Además la obstrucción no explica una orina tan concentrada y con sodio tan bajo en las primeras horas."
         },
         {
-          "t": "Nefritis intersticial por fármacos, con daño inflamatorio del intersticio y pérdida de la capacidad de concentrar",
-          "why": "Incorrecta. No hay fármaco en la historia, y el daño intersticial es intrínseco; no explica una orina tan concentrada tras vómitos."
+          t: "Nefritis intersticial aguda por fármacos nefrotóxicos.",
+          why: "Inventas un fármaco que la historia no menciona. La nefritis intersticial es intrínseca y suele acompañarse de fiebre, eosinofilia y alteraciones urinarias; aquí todo apunta a hipovolemia."
         }
       ],
-      "correct": 0
+      correct: 0,
+      rule: "Con sodio urinario bajo y orina concentrada, el parénquima conserva su función: busca la causa antes del riñón."
     },
     {
-      "stem": "Un hombre de 58 años, 80 kg, ingresa por deshidratación grave. Su creatinina sérica es de 2,0 mg/dL. Con la fórmula de aclaramiento de creatinina del libro, ¿cuál es su filtrado estimado y su estadio según la tabla de filtrado glomerular?",
-      "options": [
+      id: "22-2",
+      stem: "Un hombre de 58 años, de 80 kg, ingresa por deshidratación grave con creatinina sérica de 2,0 mg/dL. Aplicando la fórmula de Cockcroft-Gault, ¿cuál es su aclaramiento de creatinina y su estadio?",
+      options: [
         {
-          "t": "Aproximadamente 91,1 mL/min, estadio 1",
-          "why": "Incorrecto. Es 6560 / 72: se olvida dividir entre la creatinina sérica."
+          t: "38,7 mL/min, estadio 3",
+          why: "Es 45,56 multiplicado por 0,85. Ese factor corrige la masa muscular menor de la mujer; aplicarlo a un varón subestima el filtrado y desplaza el estadio."
         },
         {
-          "t": "Aproximadamente 22,8 mL/min, estadio 4",
-          "why": "Incorrecto. Es 45,56 / 2: se divide dos veces entre la creatinina."
+          t: "22,8 mL/min, estadio 4",
+          why: "Llegaste a este número dividiendo dos veces entre la creatinina. La fórmula lleva el 72 y la creatinina en el denominador una sola vez; repetirla reduce el filtrado a la mitad."
         },
         {
-          "t": "Aproximadamente 38,7 mL/min, estadio 3",
-          "why": "Incorrecto. Es 45,56 × 0,85: se aplica a un hombre el factor que el libro reserva para mujeres."
+          t: "91,1 mL/min, estadio 1",
+          why: "Aquí dividiste 82 × 80 solo entre 72 y olvidaste la creatinina en el denominador. Con creatinina de 2,0 el filtrado no puede ser normal: eso describiría a un riñón sano."
         },
         {
-          "t": "Aproximadamente 45,6 mL/min, estadio 3",
-          "why": "Correcta. (140 − 58) × 80 / (72 × 2,0) = 82 × 80 / 144 = 6560 / 144 = 45,56 mL/min; es un hombre, no se multiplica por 0,85, y 30-59 es estadio 3."
+          t: "45,6 mL/min, estadio 3",
+          why: "(140 − 58) = 82; 82 × 80 = 6560; 72 × 2,0 = 144; 6560 / 144 = 45,56 mL/min. Al ser varón no se aplica el 0,85, y 45,56 cae en el rango 30-59, que es el estadio 3."
         }
       ],
-      "correct": 3
+      correct: 3,
+      rule: "Primero resta la edad, luego multiplica por el peso, y solo al final divide entre 72 por la creatinina; el 0,85 es exclusivo de mujeres."
     },
     {
-      "stem": "Una mujer de 70 años, 55 kg, con IRA tras un episodio de hipotensión, tiene creatinina sérica de 1,6 mg/dL. ¿Cuál es su aclaramiento de creatinina según la fórmula del libro y qué estadio le corresponde?",
-      "options": [
+      id: "22-3",
+      stem: "Una mujer de 70 años, de 55 kg, cursa con insuficiencia renal aguda tras un episodio de hipotensión. Su creatinina sérica es de 1,6 mg/dL. ¿Cuál es su aclaramiento de creatinina y su estadio?",
+      options: [
         {
-          "t": "Aproximadamente 33,4 mL/min, estadio 3",
-          "why": "Incorrecto. Es el resultado sin el factor 0,85; al ser mujer debe aplicarse y el valor baja a estadio 4."
+          t: "33,4 mL/min, estadio 3",
+          why: "Es el resultado sin aplicar el factor 0,85. Al ser mujer debes multiplicar, porque su menor masa muscular produce menos creatinina para el mismo filtrado."
         },
         {
-          "t": "Aproximadamente 28,4 mL/min, estadio 4",
-          "why": "Correcta. (140 − 70) × 55 / (72 × 1,6) = 3850 / 115,2 = 33,42; × 0,85 por ser mujer = 28,41 mL/min, que cae en 15-29 (estadio 4)."
+          t: "28,4 mL/min, estadio 4",
+          why: "(140 − 70) × 55 = 3850; 72 × 1,6 = 115,2; 3850 / 115,2 = 33,42; por ser mujer 33,42 × 0,85 = 28,41 mL/min. Ese valor entra en 15-29, que es el estadio 4."
         },
         {
-          "t": "Aproximadamente 39,3 mL/min, estadio 3",
-          "why": "Incorrecto. Corresponde a dividir entre 0,85 en lugar de multiplicar."
+          t: "39,3 mL/min, estadio 3",
+          why: "Dividiste entre 0,85 en lugar de multiplicar. El factor reduce el resultado final, porque corrige una producción de creatinina menor; invertirlo infla el filtrado."
         },
         {
-          "t": "Aproximadamente 45,5 mL/min, estadio 3",
-          "why": "Incorrecto. Es 3850 / 72 × 0,85: se olvida dividir entre la creatinina sérica."
+          t: "45,5 mL/min, estadio 3",
+          why: "Es 3850 / 72 × 0,85: dejaste fuera la creatinina sérica. Con creatinina de 1,6 el filtrado tiene que ser menor que en una persona con creatinina de 1,0."
         }
       ],
-      "correct": 1
+      correct: 1,
+      rule: "En la mujer el último paso es multiplicar por 0,85; si el número te queda igual al de un varón con los mismos datos, revisaste mal."
     },
     {
-      "stem": "Un hombre de 52 años sufre un shock séptico con hipotensión prolongada. Tras restablecer la presión arterial, a las 48 horas continúa oligúrico con creatinina en ascenso. La biopsia muestra células epiteliales tubulares desprendidas en el segmento S3 del túbulo proximal. ¿Qué mecanismo explica mejor que la oliguria persista a pesar de normalizar la perfusión?",
-      "options": [
+      id: "22-4",
+      stem: "Un hombre de 52 años con shock séptico e hipotensión prolongada sigue oligúrico a las 48 horas, aunque la presión arterial ya se normalizó. La biopsia muestra células tubulares desprendidas en el segmento S3. ¿Qué mecanismo explica que persista la oliguria?",
+      options: [
         {
-          "t": "Obstrucción tubular por células desprendidas unidas a proteína de Tamm-Horsfall, con aumento de la presión intratubular",
-          "why": "Correcta. Es lo descrito en la fase de iniciación y extensión: la obstrucción eleva la presión intratubular y reduce el volumen urinario."
+          t: "Hipovolemia efectiva persistente con activación del eje renina-angiotensina.",
+          why: "Te quedas en la fase prerrenal. La perfusión ya se restituyó: una causa puramente hemodinámica revierte en menos de 24 horas, y este paciente sigue oligúrico al doble de tiempo con lesión demostrada."
         },
         {
-          "t": "Persistencia de la hipovolemia efectiva con activación del eje renina-angiotensina y reabsorción tubular conservada",
-          "why": "Incorrecta. Ya se restituyó la perfusión; si la causa fuera solo prerrenal, el cuadro revertiría en menos de 24 h."
+          t: "Obstrucción ureteral bilateral por coágulos o cálculos.",
+          why: "Cambias de compartimiento sin evidencia: no hay anuria, globo vesical ni imagen que sugiera obstrucción de la vía excretora. El hallazgo de la biopsia es tubular, dentro del parénquima."
         },
         {
-          "t": "Obstrucción ureteral bilateral por coágulos o cálculos, con dilatación de la vía excretora y presión retrógrada",
-          "why": "Incorrecta. No hay datos de obstrucción de la vía excretora; el hallazgo histológico es tubular."
+          t: "Obstrucción tubular por células desprendidas y proteína de Tamm-Horsfall.",
+          why: "Las células necróticas del túbulo se desprenden, se adhieren a la proteína de Tamm-Horsfall y forman cilindros. Esa obstrucción eleva la presión intratubular y frena la salida de orina aunque haya presión arterial normal."
         },
         {
-          "t": "Déficit de angiotensina II, que dilata la arteriola eferente y reduce la reabsorción de sodio en el túbulo proximal",
-          "why": "Incorrecta. No es el mecanismo descrito; en la NTA lo central es la lesión y obstrucción tubular, con vasoconstricción por mediadores y angiotensina II aumentada."
+          t: "Déficit de angiotensina II con dilatación de la arteriola eferente.",
+          why: "Inviertes el sistema: en la NTA la angiotensina II está elevada. Un déficit de angiotensina II dilataría la eferente y bajaría el filtrado, pero no explica la biopsia ni la presión ya normalizada."
         }
       ],
-      "correct": 0
+      correct: 2,
+      rule: "Si la oliguria sigue después de corregir la presión, piensa dentro del túbulo: cilindros de células y Tamm-Horsfall, no hipovolemia."
     },
     {
-      "stem": "En un modelo de isquemia renal, el estudio de la microcirculación en la fase de vasoconstricción muestra caída de alrededor del 50% del flujo y aumento de las resistencias vasculares. ¿Qué desequilibrio de mediadores del endotelio lesionado explica este hallazgo?",
-      "options": [
+      id: "22-5",
+      stem: "Un modelo experimental de isquemia renal muestra, en la fase de vasoconstricción, una caída del flujo cercana al 50% y aumento de las resistencias vasculares. ¿Qué desequilibrio de mediadores del endotelio lesionado explica ese hallazgo?",
+      options: [
         {
-          "t": "Aumento de óxido nítrico y bradicinina con mayor respuesta a la acetilcolina, que dilata la arteriola aferente y baja las resistencias",
-          "why": "Incorrecto. Es el perfil contrario: en la NTA la respuesta vasodilatadora está disminuida."
+          t: "Aumento de endotelina-1 y tromboxano A2 con baja respuesta vasodilatadora.",
+          why: "El endotelio dañado libera sobre todo vasoconstrictores y pierde la respuesta a acetilcolina, bradicinina y óxido nítrico. Predominar la constricción y faltar la relajación explica a la vez la caída del flujo y el alza de resistencias."
         },
         {
-          "t": "Disminución de endotelina-1 y adenosina con aumento de prostaciclina, lo que produce vasodilatación aferente y mayor flujo",
-          "why": "Incorrecto. La endotelina y la adenosina están aumentadas en la vasoconstricción, y el flujo cae cerca de 50%."
+          t: "Aumento de óxido nítrico y bradicinina, con mayor respuesta a la acetilcolina vascular.",
+          why: "Describes el perfil contrario al de la isquemia. Si el óxido nítrico y la bradicinina aumentaran, el vaso se dilataría y el flujo subiría, no caería al 50%."
         },
         {
-          "t": "Aumento de endotelina-1, angiotensina II y tromboxano A2, con baja respuesta a acetilcolina, bradicinina y óxido nítrico",
-          "why": "Correcta. El libro describe este predominio de vasoconstrictores y baja respuesta vasodilatadora en el endotelio lesionado."
+          t: "Disminución de endotelina-1 y adenosina, con aumento de la prostaciclina.",
+          why: "Inviertes los mediadores. La endotelina-1 y la adenosina aumentan en esta fase, y la prostaciclina no alcanza para contrarrestar la vasoconstricción."
         },
         {
-          "t": "Aumento del péptido natriurético auricular con vasodilatación eferente, que reduce la presión capilar y el filtrado",
-          "why": "Incorrecto. El péptido natriurético no es el mediador descrito en esta fase; el libro cita endotelina-1, angiotensina II, tromboxano A2, prostaglandina H2, leucotrienos y adenosina."
+          t: "Aumento del péptido natriurético auricular, con vasodilatación de la eferente.",
+          why: "Introduces un mediador que pertenece a la regulación del volumen, no a esta fase. Además su efecto sería vasodilatador y reduciría las resistencias, lo contrario del dato del modelo."
         }
       ],
-      "correct": 2
+      correct: 0,
+      rule: "En la fase vasoconstrictora de la NTA predominan endotelina-1, angiotensina II y tromboxano A2, y la respuesta vasodilatadora está apagada."
     },
     {
-      "stem": "Un hombre de 74 años con hipertrofia prostática consulta por anuria de 18 horas, distensión suprapúbica y creatinina de 3,8 mg/dL. Se coloca sonda vesical con salida de 1200 mL. Si la obstrucción hubiera persistido por semanas sin tratamiento, ¿qué evolución plantea el libro?",
-      "options": [
+      id: "22-6",
+      stem: "Un hombre de 74 años con hipertrofia prostática presenta anuria de 18 horas y creatinina de 3,8 mg/dL; tras colocar la sonda vesical salen 1200 mL. Si la obstrucción hubiera persistido durante semanas, ¿qué evolución esperarías?",
+      options: [
         {
-          "t": "Resolución espontánea por mecanismos de autorregulación, ya que el origen es prerrenal y el parénquima está sano",
-          "why": "Incorrecta. La obstrucción de la vía excretora es postrenal, no prerrenal, y no se corrige por autorregulación hemodinámica."
+          t: "Resolución espontánea por autorregulación del flujo renal y de la presión de perfusión.",
+          why: "Confías la salida a la autorregulación, que solo ajusta el tono vascular. No puede vencer un obstáculo mecánico en la vía urinaria: sin desobstruir, la orina sigue retenida."
         },
         {
-          "t": "Evolución a hipervolemia con poliuria permanente por pérdida de la capacidad de concentrar, sin daño del parénquima",
-          "why": "Incorrecta. La obstrucción causa oliguria o anuria, no poliuria; el libro no describe poliuria en la obstrucción."
+          t: "Transformación en insuficiencia renal intrínseca por daño del parénquima.",
+          why: "La presión retrógrada sostenida durante semanas lesiona el parénquima y el cuadro deja de ser puramente obstructivo. El riñón pierde capacidad de recuperarse aunque se libere la vía."
         },
         {
-          "t": "Evolución a glomerulonefritis proliferativa con proteinuria en rango nefrótico y hematuria",
-          "why": "Incorrecta. El libro describe la evolución a IRA intrínseca por daño del parénquima, no una glomerulonefritis."
+          t: "Poliuria permanente por pérdida de la capacidad de concentrar.",
+          why: "Confundes con la enfermedad crónica. La obstrucción produce oliguria o anuria; la poliuria por pérdida de concentración es el primer síntoma de la lesión crónica de las nefronas, no de la obstrucción aguda."
         },
         {
-          "t": "Transformación en IRA intrínseca por daño del parénquima si la obstrucción persiste mucho tiempo",
-          "why": "Correcta. El libro señala que, si la obstrucción persiste por periodos prolongados, el paciente desarrollará IRA intrínseca."
+          t: "Glomerulonefritis proliferativa con proteinuria nefrótica.",
+          why: "Buscas un daño inmunitario donde solo hay mecánica. La obstrucción no inflama los glomérulos de esa forma; el daño que produce es tubulointersticial por presión."
         }
       ],
-      "correct": 3
+      correct: 1,
+      rule: "Una obstrucción sostenida deja de ser postrenal: si el parénquima se daña, el cuadro se vuelve intrínseco e irreversible."
     },
     {
-      "stem": "Una mujer de 30 años presenta gastroenteritis aguda y creatinina de 1,9 mg/dL (basal 0,7). No tiene fármacos nefrotóxicos. Se rehidrata de manera enérgica y a las 20 horas la creatinina es de 0,8 mg/dL. ¿Qué concluye mejor el caso?",
-      "options": [
+      id: "22-7",
+      stem: "Una mujer de 30 años con gastroenteritis aguda tiene creatinina de 1,9 mg/dL (basal 0,7) y no recibió nefrotóxicos. Tras rehidratación enérgica, a las 20 horas la creatinina es de 0,8 mg/dL. ¿Qué mecanismo explica esta recuperación tan rápida?",
+      options: [
         {
-          "t": "Necrosis tubular aguda en fase de reparación, con regeneración epitelial que requiere varias semanas para normalizar la creatinina",
-          "why": "Incorrecta. La recuperación en horas no es compatible con necrosis tubular; la fase de reparación es lenta."
+          t: "Regeneración del epitelio tubular después de una necrosis tubular aguda.",
+          why: "La regeneración existe, pero tarda semanas: requiere reparación del ADN, migración y proliferación celular. No puede explicar una creatinina que vuelve a la basal en 20 horas."
         },
         {
-          "t": "IRA prerrenal: sin necrosis tisular, la retención nitrogenada revierte antes de 24 h de lograr una perfusión adecuada",
-          "why": "Correcta. Es la regla del libro para la forma prerrenal."
+          t: "Alivio espontáneo de una obstrucción intermitente.",
+          why: "Supones un obstáculo que nadie buscó. No hay cólico, globo vesical ni anuria, y la recuperación coincidió exactamente con la reposición de volumen, no con el paso del tiempo."
         },
         {
-          "t": "IRA postrenal por obstrucción intermitente, con alivio espontáneo del obstáculo y diuresis conservada entre episodios",
-          "why": "Incorrecta. No hay evidencia de obstrucción y el cuadro responde a volumen."
+          t: "Resolución de una glomerulonefritis aguda al reponer volumen.",
+          why: "La glomerulonefritis es un daño intrínseco e inmunitario: no revierte con suero en horas. Además faltan hematuria, hipertensión y proteinuria, que la historia no menciona."
         },
         {
-          "t": "Glomerulonefritis aguda con resolución espontánea, porque el daño inflamatorio glomerular cede al reponer el volumen",
-          "why": "Incorrecta. La glomerulonefritis es una causa intrínseca y no revierte con la rehidratación en horas."
+          t: "Hipoperfusión sin necrosis, con reversión al restituir la perfusión.",
+          why: "Sin necrosis no hay tejido que reparar: al volver el flujo, el FG se recupera y la retención nitrogenada cede antes de 24 horas. Es el comportamiento que define la forma prerrenal."
         }
       ],
-      "correct": 1
+      correct: 3,
+      rule: "Si la creatinina cae en menos de 24 horas al reponer volumen, era prerrenal; la NTA tarda semanas en recuperarse."
     },
     {
-      "stem": "Una mujer de 66 años cursa con IRA oligúrica de 10 días de evolución. Presenta hemoglobina de 9 g/dL (previa normal), pH de 7,25 con bicarbonato bajo y potasio de 5,9 mEq/L. ¿Qué par de mecanismos explica la acidosis y la anemia?",
-      "options": [
+      id: "22-8",
+      stem: "Una mujer de 66 años con insuficiencia renal aguda oligúrica de 10 días presenta hemoglobina de 9 g/dL (antes normal), pH de 7,25 con bicarbonato bajo y potasio de 5,9 mEq/L. ¿Qué mecanismos explican la acidosis y la anemia?",
+      options: [
         {
-          "t": "Acidosis por pérdida de bicarbonato en heces con compensación respiratoria; anemia por hemólisis inmunitaria",
-          "why": "Incorrecta. No son los mecanismos descritos para la IRA: la acidosis es renal, por menor excreción de H+."
+          t: "Falta de amoniaco y de secreción de H+, junto con déficit de eritropoyetina.",
+          why: "El riñón lesionado no fabrica amoniaco ni secreta hidrogeniones, así que el ácido se acumula y el bicarbonato baja. La anemia aparece después de una semana porque falta la eritropoyetina que estimula la médula ósea."
         },
         {
-          "t": "Acidosis por incapacidad de sintetizar amoniaco y secretar H+; anemia por déficit de eritropoyetina",
-          "why": "Correcta. Ambos mecanismos son los que describe el libro, y la anemia aparece después de una semana de IRA."
+          t: "Pérdida de bicarbonato en heces, junto con hemólisis inmunitaria y reticulocitosis.",
+          why: "Buscas la causa fuera del riñón. No hay diarrea en la historia y la hemólisis daría reticulocitosis; aquí la anemia es hiporregenerativa por falta de eritropoyetina, y la acidosis es renal."
         },
         {
-          "t": "Acidosis por mayor síntesis renal de amoniaco y mayor acidez titulable; anemia por exceso de eritropoyetina",
-          "why": "Incorrecta. La síntesis de amoniaco y la acidez titulable están disminuidas, y la eritropoyetina es deficiente."
+          t: "Mayor síntesis de amoniaco y exceso de eritropoyetina.",
+          why: "Inviertes los dos mecanismos. En la IRA el amoniaco está disminuido y la eritropoyetina también; con exceso de ambas el pH subiría y la hemoglobina no caería."
         },
         {
-          "t": "Acidosis por exceso de excreción de H+ con retención de fosfato; anemia por déficit de hierro de la dieta",
-          "why": "Incorrecta. En la IRA se retiene H+ por menor excreción, y la anemia se debe a la falta de eritropoyetina, no al hierro de la dieta."
+          t: "Exceso de excreción de H+ y déficit de hierro en la dieta.",
+          why: "Si se excretara más H+ tendríamos alcalosis, no un pH de 7,25. La anemia de la IRA no depende del hierro de la dieta sino de la falta de eritropoyetina."
         }
       ],
-      "correct": 1
+      correct: 0,
+      rule: "Acidosis en la IRA: menos amoniaco y menos secreción de H+. Anemia que aparece tras una semana: falta eritropoyetina."
     },
     {
-      "stem": "Un hombre de 45 años tiene creatinina basal de 1,0 mg/dL. Tras una rabdomiólisis, la creatinina alcanza 3,2 mg/dL en 48 horas y la diuresis es de 0,3 mL/kg/h durante 24 horas. Según los criterios AKIN descritos en el libro, ¿qué estadio presenta?",
-      "options": [
+      id: "22-9",
+      stem: "Un hombre de 45 años con creatinina basal de 1,0 mg/dL desarrolla rabdomiólisis. En 48 horas la creatinina llega a 3,2 mg/dL y la diuresis se mantiene en 0,3 mL/kg/h durante 24 horas. ¿Qué estadio AKIN presenta?",
+      options: [
         {
-          "t": "Estadio 1: la creatinina subió más de 0,3 mg/dL y la diuresis fue < 0,5 mL/kg/h por 6 h",
-          "why": "Incorrecto. El estadio 1 es un aumento ≥ 0,3 mg/dL o 150-200%; aquí supera 300% y la diuresis baja dura 24 h."
+          t: "AKIN 1, porque la creatinina subió solo 2,2 mg/dL sobre la basal",
+          why: "Miras el ascenso absoluto y no el relativo. El estadio 1 acepta hasta 200% del basal, y este paciente está en 320%; además la oliguria ya lleva 24 horas y no 6."
         },
         {
-          "t": "Estadio 2: la creatinina llegó a 2-3 veces el basal y la diuresis fue < 0,5 mL/kg/h por 12 h",
-          "why": "Incorrecto. El estadio 2 es de más de 200 hasta 300%; aquí 3,2 / 1,0 = 320% está por encima de ese rango y la oliguria dura 24 h."
+          t: "AKIN 2, porque el porcentaje no supera 300%",
+          why: "Calculas mal el porcentaje: 3,2 / 1,0 = 3,2, es decir 320%. El estadio 2 llega hasta 300% y su criterio de diuresis es de 12 horas, no de 24."
         },
         {
-          "t": "Sin criterios AKIN: la creatinina no llegó a 4 mg/dL y una diuresis de 0,3 mL/kg/h por 24 h no cuenta",
-          "why": "Incorrecto. Cumple ampliamente tanto el criterio de creatinina como el de diuresis; 4 mg/dL es solo una de las alternativas del estadio 3."
+          t: "AKIN 3, porque supera 300% y la oliguria dura 24 h",
+          why: "3,2 dividido para 1,0 da 320%, que pasa el umbral de 300% del estadio 3. A eso se suma una diuresis menor de 0,5 mL/kg/h durante 24 horas, que es el otro criterio del mismo estadio."
         },
         {
-          "t": "Estadio 3: la creatinina subió a 320% del basal (> 300%) y la diuresis fue < 0,5 mL/kg/h por 24 h",
-          "why": "Correcta. 3,2 / 1,0 = 320% (> 300%) y diuresis < 0,5 mL/kg/h por 24 h: ambos criterios del estadio 3."
+          t: "Ningún estadio, porque falta un segundo control",
+          why: "Exiges un requisito que los criterios no piden: basta una creatinina con su basal conocido o el criterio de diuresis. Aquí se cumplen los dos a la vez."
         }
       ],
-      "correct": 3
+      correct: 2,
+      rule: "Para estadificar divide la creatinina actual entre la basal; 320% es estadio 3, y la oliguria de 24 horas lo confirma."
     },
     {
-      "stem": "Un paciente de 70 kg orina 180 mL durante 6 horas tras una cirugía mayor. La creatinina aún no ha cambiado. ¿Qué interpretación es correcta según los criterios del libro?",
-      "options": [
+      id: "22-10",
+      stem: "Un paciente de 70 kg orina 180 mL durante 6 horas tras una cirugía mayor; la creatinina todavía no se ha modificado. Al aplicar el criterio de diuresis, ¿qué conclusión es correcta?",
+      options: [
         {
-          "t": "Diuresis de 0,43 mL/kg/h, menor de 0,5 por 6 h: cumple AKIN 1 y RIFLE R, y el libro pide cautela al usar el criterio de diuresis solo",
-          "why": "Correcta. 180 / (70 × 6) = 0,43 mL/kg/h < 0,5 durante 6 h; el libro da 6 h para AKIN 1 y RIFLE R, y señala que el criterio de diuresis (también en KDIGO) es debatido, sin precisar una duración."
+          t: "0,86 mL/kg/h, normal para todos los sistemas de clasificación",
+          why: "Dividiste entre 3 horas en lugar de 6. El cálculo correcto usa todo el período: 180 / (70 × 6) = 0,43 mL/kg/h, que está por debajo del umbral de 0,5."
         },
         {
-          "t": "Diuresis de 0,86 mL/kg/h, mayor de 0,5: no cumple el criterio de diuresis de ningún sistema y se considera normal",
-          "why": "Incorrecta. Resulta de dividir entre 3 h en lugar de 6; el valor real es 0,43."
+          t: "2,57 mL/kg/h, poliuria que descarta la oliguria",
+          why: "Dividiste 180 entre 70 y olvidaste el tiempo. Sin las horas el resultado no es una tasa; la diuresis se mide siempre por kilogramo y por hora."
         },
         {
-          "t": "Diuresis de 2,57 mL/kg/h, que indica poliuria y descarta oliguria pese a la cirugía mayor",
-          "why": "Incorrecta. Es el resultado de dividir 180 entre 70 sin tener en cuenta el tiempo y mezclar unidades."
+          t: "Ninguno, porque primero debe subir la creatinina",
+          why: "Crees que los criterios son consecutivos. Son alternativos: se cumple AKIN o RIFLE con la creatinina o con la diuresis, y el de diuresis puede aparecer antes."
         },
         {
-          "t": "Sin criterio todavía: la creatinina no ha cambiado y AKIN, RIFLE y KDIGO exigen primero que ella suba",
-          "why": "Incorrecta. Los criterios de diuresis son independientes de los de creatinina; basta con uno."
+          t: "0,43 mL/kg/h, menor de 0,5, cumple AKIN 1 y RIFLE R",
+          why: "180 / (70 × 6) = 0,43 mL/kg/h, por debajo de 0,5 durante 6 horas. Eso ya llena el criterio de diuresis del estadio 1 de AKIN y de la R de RIFLE, aunque la creatinina no haya cambiado."
         }
       ],
-      "correct": 0
+      correct: 3,
+      rule: "La diuresis siempre se calcula como mL divididos entre peso y horas; si el resultado es menor de 0,5, el criterio se cumple."
     },
     {
-      "stem": "Un hombre de 70 años, 60 kg, tiene enfermedad renal crónica con creatinina basal de 2,9 mg/dL y potasio de 4,9 mEq/L. Tras 3 días de vómitos y poca ingesta presenta creatinina de 6,8 mg/dL y potasio de 6,3 mEq/L. ¿Qué explica mejor el cambio brusco del potasio?",
-      "options": [
+      id: "22-11",
+      stem: "Un hombre de 70 años, de 60 kg, con enfermedad renal crónica (creatinina basal 2,9 mg/dL, potasio 4,9 mEq/L) presenta tras tres días de vómitos creatinina de 6,8 mg/dL y potasio de 6,3 mEq/L. ¿Qué mecanismo explica el aumento brusco del potasio?",
+      options: [
         {
-          "t": "El 90% del potasio se elimina por las heces, así que los vómitos y la poca ingesta lo retienen y elevan su concentración plasmática",
-          "why": "Incorrecta. Según el libro, el 90% del potasio se elimina por el riñón y solo el 10% por las heces."
+          t: "Retención de potasio, porque el 90% se elimina por las heces",
+          why: "Inviertes la vía de eliminación: el riñón elimina el 90% del potasio y solo el 10% va por las heces. Si el riñón falla, la vía principal se cierra y el potasio sube."
         },
         {
-          "t": "El filtrado aumentó por hiperfiltración de las nefronas remanentes, lo que arrastra potasio desde el intersticio hacia el plasma",
-          "why": "Incorrecta. El filtrado cayó; la hiperfiltración es de las nefronas remanentes, pero no explica la hiperpotasemia aguda."
+          t: "Caída del filtrado de 20 a 9 mL/min, por debajo del rango que mantiene el potasio",
+          why: "Su aclaramiento basal era 70 × 60 / (72 × 2,9) = 20,1 mL/min y ahora es 4200 / (72 × 6,8) = 8,6 mL/min. El potasio se sostiene hasta un filtrado de 10 a 15 mL/min; por debajo, la regulación ya no alcanza."
         },
         {
-          "t": "El filtrado pasó de unos 20 a unos 9 mL/min: la regulación del potasio, mantenida con FG de 10-15 mL/min, se agota al caer por debajo",
-          "why": "Correcta. Cl basal = 70 × 60 / (72 × 2,9) = 20,1 mL/min; Cl actual = 4200 / (72 × 6,8) = 8,6 mL/min. El libro dice que el potasio se mantiene estable con FG de 10-15 mL/min; con 8,6 queda por debajo de ese rango y la IRA superpuesta supera la reserva."
+          t: "Hipercalcemia por exceso de calcitriol, que saca potasio de la célula",
+          why: "En la IRA el calcio suele estar bajo, no alto, y el calcitriol no mueve el potasio al extracellular. La hiperpotasemia depende de la excreción renal insuficiente."
         },
         {
-          "t": "La hiperpotasemia es consecuencia de hipercalcemia por exceso de calcitriol, que desplaza el potasio fuera de la célula",
-          "why": "Incorrecta. El libro describe hipocalcemia en la IRA y la hiperpotasemia depende de la menor excreción renal."
+          t: "Hiperfiltración de las nefronas remanentes, con mayor excreción de potasio por orina",
+          why: "El filtrado cayó, no subió: la creatinina se duplicó con creces. La hiperfiltración compensadora describe a un riñón que aún mantiene la función, no a uno en falla aguda."
         }
       ],
-      "correct": 2
+      correct: 1,
+      rule: "El potasio se mantiene hasta un filtrado de 10-15 mL/min; si calculas un filtrado menor y el potasio sube, el mecanismo es renal, no dietético."
     }
   ]
 }
