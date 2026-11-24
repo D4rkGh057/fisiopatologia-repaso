@@ -5,6 +5,63 @@ window.CHAPTERS.push(
   id: 20,
   weight: 3,
   title: "20. Síndrome nefrótico",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>En el síndrome nefrótico el filtro del riñón deja escapar proteínas por la orina. Se pierde sobre todo albúmina, la proteína más abundante de la sangre. Esa fuga explica el edema, las infecciones, las trombosis y el colesterol alto. El daño no es inflamatorio: por eso la orina no lleva sangre.</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <ol>
+    <li>El filtro del riñón es el <b>glomérulo</b>. Tiene tres capas: el <b>endotelio</b> (la pared interna del capilar), la <b>membrana basal</b> (una malla de sostén) y los <b>podocitos</b> (células con pies que tapan los últimos huecos).</li>
+    <li>Los podocitos están cubiertos de cargas negativas. La albúmina también es negativa, y cargas iguales se repelen: la albúmina queda dentro del vaso.</li>
+    <li>En el nefrótico se neutralizan esas cargas y el podocito se despega de la membrana basal. Quedan zonas sin cubierta y la albúmina escapa: <b>proteinuria masiva</b>.</li>
+    <li>Al perderse albúmina baja la <b>presión oncótica</b>, que es la fuerza con que las proteínas retienen agua dentro del vaso.</li>
+    <li>Con poca presión oncótica el agua sale del capilar al <b>intersticio</b> (el espacio entre las células) y aparece el <b>edema</b>.</li>
+    <li>El vaso queda con poco volumen: <b>hipovolemia relativa</b>. El riñón lo lee como falta de líquido y activa el eje <b>renina-angiotensina-aldosterona</b> y la <b>ADH</b>, mientras frena el <b>péptido natriurético auricular</b>.</li>
+    <li>El riñón retiene sodio y agua, y el edema crece.</li>
+    <li>La orina arrastra defensas y frenos de la coagulación: <b>IgG</b> y <b>complemento</b> (infecciones), <b>antitrombina III</b> (trombosis) y <b>transferrina</b> (anemia).</li>
+    <li>El hígado fabrica más lípidos y se frena la <b>lipoproteína lipasa</b>, la enzima que los quema: aparece la <b>dislipidemia</b>.</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <ul>
+    <li><b>Edema de párpados al despertar</b>: el líquido sale del vaso y de noche se acumula en el tejido blando de la cara.</li>
+    <li><b>Orina espumosa</b>: la espuma aparece cuando la orina lleva mucha proteína.</li>
+    <li><b>Albúmina baja en la sangre</b>: se pierde por la orina más rápido de lo que el hígado la fabrica.</li>
+    <li><b>Peritonitis por neumococo</b> en el niño: faltan IgG y complemento, las proteínas que marcan la bacteria para que la fagociten.</li>
+    <li><b>Trombosis venosa</b>: falta antitrombina III, el freno natural de la coagulación, y sube el fibrinógeno.</li>
+    <li><b>Anemia microcítica que no responde a hierro</b>: falta transferrina, la proteína que lleva el hierro a la médula.</li>
+    <li><b>Colesterol y triglicéridos altos</b>: el hígado fabrica más y la lipoproteína lipasa no los degrada.</li>
+    <li><b>Cuerpos ovales grasos con cruz de Malta</b>: son lípidos del plasma que se filtran y el túbulo reabsorbe.</li>
+  </ul>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Te da una albúmina baja y pregunta por qué el líquido se va al intersticio.</li>
+    <li>Te pone una complicación y pregunta qué proteína falta: infección, trombosis o anemia.</li>
+    <li>Te muestra un laboratorio raro (triglicéridos de 780, anemia microcítica sin respuesta al hierro) y pide el mecanismo.</li>
+    <li>Te pide el diagnóstico más probable según la edad y la biopsia.</li>
+    <li>Te da una diuresis en mL/kg/h y pide la interpretación con la cifra exacta.</li>
+  </ul>
+  <p class="note">Así lo dice él: <i>Paciente masculino de 4 años con edema palpebral matutino, proteinuria de 4+ y albúmina de 1,9 g/dL. ¿Cuál es el mecanismo que explica principalmente la acumulación de líquido en el intersticio?</i></p>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> responder aumento de la permeabilidad capilar o presión oncótica alta para el edema. En el nefrótico la presión oncótica BAJA y el capilar sistémico no está inflamado. Otra trampa: invertir el eje; la renina, la angiotensina, la aldosterona y la ADH suben, y el péptido natriurético baja.</div>
+
+  <h2>Números y cálculos</h2>
+  <ul>
+    <li>Proteinuria del síndrome nefrótico en adultos: más de 3,5 g/24 h (lo normal es hasta 150-300 mg/24 h).</li>
+    <li>Hipoalbuminemia: albúmina de 3,5 g/dL o menos. Bajo 2 g/dL el riesgo de trombosis es alto.</li>
+    <li>Cambios mínimos: niños de 1 a 6 años, el 80-90% de los casos en esa edad.</li>
+    <li>Diuresis normal: 0,5-1 mL/kg/h en el adulto y 1-2 mL/kg/h en el niño.</li>
+  </ul>
+  <p>Cuenta del caso del libro: una niña de 4 años pesa 11,46 kg y hace 0,6 mL/kg/h.</p>
+  <ol>
+    <li>Por hora: 0,6 × 11,46 = 6,9 mL/h. Por día: 6,9 × 24 ≈ 165 mL.</li>
+    <li>Mínimo esperado en el niño: 1 × 11,46 × 24 ≈ 275 mL/día.</li>
+    <li>165 mL es cerca del 60% del mínimo, es decir un 40% por debajo: retención de sodio y agua.</li>
+  </ol>
+  <p>Si usaras el rango del adulto (0,5 mL/kg/h), 0,6 parecería normal y perderías el diagnóstico.</p>
+  `,
   summary: `
   <h2>1. Qué falla</h2>
   <p>La barrera de filtración glomerular tiene tres capas: <b>endotelio fenestrado</b>, <b>membrana basal glomerular (MBG)</b> y <b>podocitos</b> con su diafragma de hendidura. Normalmente deja pasar menos del 0,1% de la albúmina plasmática. Si la barrera se daña, pierde selectividad y se escapan proteínas. El daño es <b>no inflamatorio</b>.</p>
@@ -101,124 +158,148 @@ window.CHAPTERS.push(
   `,
   questions: [
     {
-      stem: "Un niño de 3 años presenta edema palpebral matutino, luego generalizado, con orina de proteínas +++ y sin hematíes ni hipertensión. Se realiza biopsia renal por recaídas frecuentes: la microscopía de luz es normal y la inmunofluorescencia es negativa. ¿Cuál es la glomerulopatía más probable?",
+      id: "20-0",
+      stem: "Un niño de 4 años consulta por edema palpebral matutino de dos semanas de evolución. La orina muestra proteinuria de 4+ y no hay hematíes ni hipertensión. La biopsia renal informa microscopía de luz normal e inmunofluorescencia negativa. ¿Cuál es el diagnóstico más probable?",
       options: [
-        { t: "Glomeruloesclerosis focal y segmentaria, con esclerosis de segmentos de algunos glomérulos visible en la microscopía de luz", why: "Hay esclerosis de algunos glomérulos y solo de segmentos; la microscopía de luz no sería normal." },
-        { t: "Enfermedad de cambios mínimos, con microscopía de luz normal e inmunofluorescencia negativa, típica de niños de 1 a 6 años", why: "Correcta. Es la principal causa en niños, sin alteraciones en la microscopía de luz y con inmunofluorescencia negativa." },
-        { t: "Glomerulopatía membranosa, con engrosamiento difuso de la membrana basal por inmunocomplejos subepiteliales", why: "El engrosamiento de la membrana basal por inmunocomplejos sería visible en la biopsia; aquí la microscopía es normal." },
-        { t: "Nefropatía membranoproliferativa, con proliferación celular y engrosamiento de la membrana basal en la biopsia", why: "Se caracteriza por proliferación celular y engrosamiento de la membrana basal; la biopsia no sería normal." }
+        { t: "Glomeruloesclerosis focal y segmentaria con esclerosis de algunos segmentos glomerulares", why: "Supones que una biopsia de luz normal descarta esclerosis; la GEFS afecta solo segmentos de algunos glomérulos y muestra focos de esclerosis al microscopio." },
+        { t: "Enfermedad de cambios mínimos con borramiento difuso de los pedicelos", why: "El podocito pierde su cubierta, los pedicelos se borran de forma difusa y la luz glomerular queda normal; con inmunofluorescencia negativa y esa edad es la causa más frecuente." },
+        { t: "Glomerulopatía membranosa con engrosamiento de la membrana basal glomerular", why: "Confundes proteinuria con depósito de complejos; la membranosa engruesa la membrana basal y da inmunofluorescencia positiva, dato que el informe niega." },
+        { t: "Glomerulonefritis membranoproliferativa con proliferación de células mesangiales", why: "Buscas proliferación donde el informe dice normalidad; la membranoproliferativa muestra hipercelularidad y depósitos de C3 en la biopsia." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Biopsia de luz normal e inmunofluorescencia negativa en un niño de 1 a 6 años con nefrótico: cambios mínimos."
     },
     {
-      stem: "Una niña de 6 años con síndrome nefrótico en actividad (albúmina 1,9 g/dL, proteinuria masiva) ingresa con fiebre, dolor abdominal difuso y signos de peritonitis. El cultivo del líquido ascítico desarrolla Streptococcus pneumoniae. ¿Qué mecanismo explica mejor su susceptibilidad a esta infección?",
+      id: "20-1",
+      stem: "Una niña de 6 años con síndrome nefrótico y albúmina de 1,8 g/dL ingresa con fiebre, dolor abdominal difuso y líquido ascítico del que se aísla Streptococcus pneumoniae. ¿Cuál es el mecanismo que explica su susceptibilidad a esta infección?",
       options: [
-        { t: "Pérdida urinaria de antitrombina III, con microtrombosis mesentérica y paso de bacterias a la cavidad peritoneal", why: "La pérdida de antitrombina III explica la hipercoagulabilidad, no la susceptibilidad a la infección." },
-        { t: "Pérdida urinaria de transferrina, con anemia por falta de transporte de hierro y sin efecto sobre la opsonización", why: "La pérdida de transferrina produce anemia microcítica resistente al hierro, pero no altera la opsonización ni explica la peritonitis neumocócica." },
-        { t: "Aumento de la presión oncótica plasmática, que dificulta la migración de leucocitos al intersticio", why: "En el síndrome nefrótico la presión oncótica está disminuida, no aumentada." },
-        { t: "Pérdida urinaria de IgG y complemento, con opsonización y fagocitosis deficientes", why: "Correcta. Es el mecanismo que describe el libro, junto con la pérdida de zinc y hierro y la disfunción linfocitaria." }
+        { t: "Pérdida urinaria de antitrombina III con aumento del fibrinógeno plasmático", why: "Confundes la coagulación con la defensa humoral; sin antitrombina el paciente trombotiza, pero la opsonización del neumococo depende de IgG y C3." },
+        { t: "Pérdida urinaria de transferrina con ferropenia funcional secundaria", why: "La transferrina perdida deja el hierro fuera de la médula y da anemia microcítica; el neumococo se frena con opsoninas, no con hierro." },
+        { t: "Pérdida urinaria de aciltransferasa y de lipoproteína lipasa circulante", why: "Ese déficit enzimático pertenece al metabolismo de los lípidos y explica la dislipidemia, no la peritonitis neumocócica." },
+        { t: "Pérdida urinaria de IgG y de proteínas del complemento", why: "La proteinuria arrastra IgG y C3 a la orina; sin opsoninas el neumococo escapa a la fagocitosis y coloniza el peritoneo cuando la albúmina está en 1,8 g/dL." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Nefrótico que se infecta perdió IgG y complemento por orina; la antitrombina solo explica trombosis."
     },
     {
-      stem: "Una mujer de 30 años con síndrome nefrótico presenta hemoglobina 8,9 g/dL con anemia microcítica e hipocrómica. Recibió hierro oral durante 8 semanas sin ninguna respuesta. ¿Qué mecanismo es el más probable?",
+      id: "20-2",
+      stem: "Una mujer de 30 años con síndrome nefrótico presenta hemoglobina de 8,9 g/dL con hematíes microcíticos e hipocrómicos. Recibió hierro oral durante ocho semanas sin mejoría y su creatinina es normal. ¿Qué mecanismo explica esta anemia refractaria?",
       options: [
-        { t: "Pérdida urinaria de transferrina por la barrera dañada, con mala llegada del hierro a la médula ósea", why: "Correcta. Sin transferrina el hierro no llega a la médula para fabricar eritrocitos, por eso no responde al hierro oral." },
-        { t: "Déficit de eritropoyetina por daño del parénquima renal, con anemia normocítica y normocrómica", why: "Es el mecanismo de la anemia de la enfermedad renal crónica avanzada, y esa anemia es normocítica, no microcítica e hipocrómica." },
-        { t: "Hemólisis microangiopática con fragmentación de eritrocitos y consumo de hierro en el bazo", why: "No hay datos de hemólisis, y el libro no la asocia al síndrome nefrótico." },
-        { t: "Menor absorción intestinal de hierro por edema de la pared del intestino secundario a hipoalbuminemia", why: "El libro no explica así la anemia; la causa es la pérdida urinaria de la proteína transportadora, la transferrina." }
+        { t: "Pérdida urinaria de transferrina que impide llevar hierro a la médula ósea", why: "La transferrina se pierde con la proteinuria; sin transportador el hierro absorbido no llega a la médula y la anemia sigue microcítica aunque tome hierro oral." },
+        { t: "Déficit de eritropoyetina por lesión del parénquima renal", why: "Asumes anemia renal por daño tubular; aquí la creatinina es normal y el déficit de eritropoyetina produce anemia normocítica, no microcítica." },
+        { t: "Hemólisis microangiopática con fragmentación de eritrocitos en la sangre", why: "Buscas hemólisis porque el hierro no funciona; la hemólisis se ve en el frotis y no es un rasgo del síndrome nefrótico." },
+        { t: "Menor absorción intestinal de hierro por edema de la pared intestinal con pérdida de transportadores", why: "Atribuyes la refractariedad a mala absorción; el problema no es absorber hierro sino transportarlo cuando falta transferrina." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Anemia microcítica que no responde a hierro en el nefrótico: se perdió transferrina por la orina."
     },
     {
-      stem: "Un paciente con síndrome nefrótico y proteinuria masiva mantiene triglicéridos de 780 mg/dL pese a ajustes en la dieta. ¿Qué mecanismo vincula directamente la proteinuria con esta hipertrigliceridemia severa y persistente?",
+      id: "20-3",
+      stem: "Un hombre de 40 años con síndrome nefrótico mantiene triglicéridos de 780 mg/dL con quilomicrones en el suero, pese a dieta estricta y proteinuria masiva sostenida. ¿Cuál es el mecanismo que vincula la proteinuria con esta hipertrigliceridemia persistente?",
       options: [
-        { t: "La Angptl4 activa la lipoproteína lipasa y acelera el catabolismo de quilomicrones y VLDL", why: "Es el efecto contrario al que describe el libro: la Angptl4 inhibe la LPL." },
-        { t: "La hipoalbuminemia aumenta la excreción urinaria de triglicéridos y estimula su síntesis hepática compensatoria", why: "La dislipidemia se debe a mayor síntesis y menor catabolismo, no a pérdida urinaria de triglicéridos." },
-        { t: "La Angptl4, secretada en exceso, inhibe la lipoproteína lipasa y se acumulan quilomicrones y VLDL", why: "Correcta. Al inhibirse la LPL los triglicéridos no se hidrolizan, y se explica la hipertrigliceridemia severa y persistente." },
-        { t: "La deficiencia de aciltransferasa por pérdida urinaria impide la maduración normal de la HDL", why: "Es un hecho que describe el libro, pero afecta a la HDL y no explica la hipertrigliceridemia severa." }
+        { t: "La Angptl4 activa la lipoproteína lipasa y acelera el catabolismo de quilomicrones", why: "Inviertes la acción de la Angptl4: si activara la enzima, los triglicéridos bajarían en lugar de mantenerse en 780 mg/dL." },
+        { t: "La hipoalbuminemia aumenta la síntesis hepática de quilomicrones y de VLDL", why: "El hígado sintetiza más lipoproteínas, pero el dato persistente se explica porque el catabolismo está frenado, no solo por la síntesis." },
+        { t: "La Angptl4 inhibe la lipoproteína lipasa y frena el catabolismo de quilomicrones", why: "La proteinuria masiva estimula la Angptl4, que apaga la lipoproteína lipasa; sin esa enzima los quilomicrones y las VLDL no liberan sus triglicéridos." },
+        { t: "La pérdida urinaria de lipoproteína lipasa impide hidrolizar los triglicéridos", why: "Confundes la enzima con una proteína que se filtra; la lipoproteína lipasa sigue en el endotelio y lo que falla es su actividad inhibida." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "Hipertrigliceridemia persistente del nefrótico: Angptl4 inhibe la lipoproteína lipasa, no la activa."
     },
     {
-      stem: "Un paciente con síndrome nefrótico mantiene proteinuria masiva por 18 meses. Ahora presenta descenso de la tasa de filtración glomerular y la biopsia muestra fibrosis tubulointersticial. ¿Qué mecanismo explica mejor esa progresión según el libro?",
+      id: "20-4",
+      stem: "Un paciente con síndrome nefrótico mantiene proteinuria masiva durante 18 meses y su filtración glomerular desciende. La biopsia muestra fibrosis tubulointersticial y túbulos con gotas de albúmina reabsorbida. ¿Cuál es el mecanismo de esta lesión crónica?",
       options: [
-        { t: "Hipotensión sostenida con isquemia tubular por pérdida de volumen intravascular y necrosis tubular aguda", why: "No es el mecanismo que describe el libro; además, en el nefrótico pueden coexistir hipertensión y retención de sodio." },
-        { t: "La reabsorción excesiva de albúmina satura megalina y cubilina y activa NF-κB, con citoquinas profibróticas", why: "Correcta. Es la toxicidad proteica sobre el túbulo que lleva a la fibrosis tubulointersticial y a la enfermedad renal crónica." },
-        { t: "Depósito progresivo de inmunocomplejos en la membrana basal, con engrosamiento y obstrucción capilar", why: "Eso corresponde a la glomerulopatía membranosa y no explica la fibrosis tubulointersticial causada por la proteinuria." },
-        { t: "Trombosis de la vena renal por hipercoagulabilidad, con infarto venoso del parénquima renal", why: "Es una posible complicación trombótica, pero no el mecanismo del daño tubular progresivo por proteinuria." }
+        { t: "Isquemia tubular por hipotensión arterial sostenida", why: "Atribuyes la fibrosis al bajo flujo; en el nefrótico predomina la retención de sodio y agua, y el daño lo produce la proteína que el túbulo reabsorbe." },
+        { t: "Depósito progresivo de inmunocomplejos en la membrana basal", why: "Piensas en un mecanismo inflamatorio; el nefrótico es no inflamatorio y la fibrosis se debe a la toxicidad de la albúmina filtrada." },
+        { t: "Trombosis de la vena renal por hipercoagulabilidad persistente", why: "La trombosis venosa es una complicación real, pero no produce la fibrosis tubulointersticial difusa que muestra esta biopsia." },
+        { t: "Reabsorción excesiva de albúmina que satura megalina y cubilina", why: "La albúmina unida a ácidos grasos satura megalina y cubilina, activa NF-κB y libera citoquinas profibróticas que fibrosan el intersticio." }
       ],
-      correct: 1
+      correct: 3,
+      rule: "Fibrosis en nefrótico de larga data: la albúmina reabsorbida activa NF-κB, no la isquemia."
     },
     {
-      stem: "Un paciente con síndrome nefrótico desarrolla hipovolemia relativa por hipoalbuminemia. ¿Qué combinación describe la respuesta neurohumoral que perpetúa el edema?",
+      id: "20-5",
+      stem: "Una mujer de 22 años con síndrome nefrótico y albúmina de 1,9 g/dL presenta un edema que progresa pese al reposo. Se estudia su perfil neurohumoral para explicar la retención de líquido. ¿Qué combinación de cambios perpetúa el edema?",
       options: [
-        { t: "↑ RAA, ↓ ADH, ↑ péptido natriurético auricular", why: "La ADH aumenta y el péptido natriurético se inhibe; esta opción invierte ambos." },
-        { t: "↓ RAA, ↑ ADH, ↑ péptido natriurético auricular", why: "El RAA se activa, no se inhibe, y el péptido natriurético se inhibe, no aumenta." },
-        { t: "↓ RAA, ↓ ADH, ↓ péptido natriurético auricular", why: "Solo es correcta la inhibición del péptido natriurético; el RAA y la ADH aumentan." },
-        { t: "↑ RAA, ↑ ADH, ↓ péptido natriurético auricular", why: "Correcta. Las tres respuestas favorecen la retención de sodio y agua ante la hipovolemia relativa." }
+        { t: "Aumento del eje renina-angiotensina-aldosterona, aumento de ADH, descenso del péptido natriurético auricular", why: "La hipovolemia relativa activa el eje renina-angiotensina-aldosterona y la ADH, y frena el péptido auricular: las tres respuestas retienen sodio y agua." },
+        { t: "Aumento del eje renina-angiotensina-aldosterona, descenso de ADH, aumento del péptido natriurético auricular", why: "Inviertes el efecto de la ADH y del péptido: con hipovolemia la ADH sube y el péptido natriurético se inhibe." },
+        { t: "Descenso del eje renina-angiotensina-aldosterona, aumento de ADH, descenso del péptido natriurético auricular", why: "Equivocas el eje renina: la caída de volumen lo activa; solo acertarías en el péptido natriurético bajo." },
+        { t: "Descenso del eje renina-angiotensina-aldosterona, descenso de ADH, aumento del péptido natriurético auricular", why: "Corriges al revés: el eje está activado y la ADH alta, mientras el péptido natriurético cae para no perder más sodio." }
       ],
-      correct: 3
+      correct: 0,
+      rule: "En nefrótico con hipovolemia relativa suben renina y ADH y baja el péptido natriurético; si la opción baja la ADH, está invertida."
     },
     {
-      stem: "Un lactante de 2 meses presenta edema y proteinuria masiva. Los padres, sanos y consanguíneos, refieren que no hubo respuesta al tratamiento con corticoides. ¿Cuál es la alteración más probable?",
+      id: "20-6",
+      stem: "Un lactante de 2 meses, hijo de padres sanos y consanguíneos, presenta edema desde la tercera semana de vida y proteinuria masiva. No respondió a cuatro semanas de prednisona y la ecografía renal es normal. ¿Cuál es el diagnóstico más probable?",
       options: [
-        { t: "Mutación del gen NPHS1, autosómica recesiva y resistente a corticoides (tipo finlandés)", why: "Correcta. Aparece en los primeros 3 meses, es resistente a corticoides y su herencia es autosómica recesiva." },
-        { t: "Anticuerpos anti-PLA2R dirigidos al podocito, causa de nefropatía membranosa primaria", why: "Es un cuadro autoinmune de la nefropatía membranosa primaria, que no se presenta típicamente a los 2 meses de vida." },
-        { t: "Variantes APOL1 (G1 y G2) con progresión rápida y resistencia a la inmunosupresión (GEFS)", why: "Se asocian a GEFS de progresión rápida, no al cuadro congénito de los primeros meses de vida." },
-        { t: "Enfermedad de cambios mínimos de aparición temprana, que suele responder a los corticoides", why: "El dato clave es la ausencia de respuesta a los corticoides; los cambios mínimos responden a ellos." }
+        { t: "Nefropatía membranosa primaria por anticuerpos anti-PLA2R", why: "Trasladas una causa del adulto al lactante; el anti-PLA2R describe la membranosa del adulto y aquí la membrana basal no está engrosada." },
+        { t: "Glomeruloesclerosis focal y segmentaria por variantes de APOL1", why: "Las variantes APOL1 dan progresión rápida en poblaciones de riesgo, pero no un inicio en las primeras semanas de vida con padres consanguíneos." },
+        { t: "Síndrome nefrótico congénito tipo finlandés por mutación de NPHS1", why: "La mutación de NPHS1 altera el diafragma de hendidura del podocito; sin ese cierre la proteinuria empieza en los primeros tres meses y no responde a corticoides." },
+        { t: "Enfermedad de cambios mínimos de inicio en el lactante con recaídas frecuentes", why: "Cambios mínimos predomina entre 1 y 6 años y responde a corticoides; este lactante empezó antes del mes y no respondió al tratamiento." }
       ],
-      correct: 0
+      correct: 2,
+      rule: "Menor de 3 meses con nefrótico resistente a corticoides y consanguinidad: pienso en NPHS1."
     },
     {
-      stem: "Un niño de 7 años con edema generalizado tiene proteinuria masiva y albúmina de 2,0 g/dL. La albúmina pesa más de 69 000 Da, un tamaño que normalmente la retiene en la membrana basal. En este paciente no hay inflamación glomerular ni hematuria. ¿Qué alteración de la barrera explica mejor el paso de la albúmina?",
+      id: "20-7",
+      stem: "Un niño de 7 años con edema generalizado tiene proteinuria de 6 g/24 h y albúmina de 2,0 g/dL, sin hematíes en la orina ni inflamación en la biopsia. ¿Qué cambio en la barrera de filtración permite el paso de la albúmina?",
       options: [
-        { t: "Aumento de la presión hidrostática capilar glomerular por encima de 60 mmHg, que fuerza el paso de la albúmina por poros normales", why: "La presión de ≈ 60 mmHg es la normal del capilar glomerular; el paso de albúmina depende de la selectividad de la barrera, no de empujarla." },
-        { t: "Fusión del endotelio con la membrana basal, que elimina la restricción por tamaño de las proteínas mayores de 69 000 Da", why: "El libro no describe esa fusión; el cuadro nefrótico se explica por la pérdida de la selectividad de carga." },
-        { t: "Neutralización de las cargas aniónicas del glicocálix podocitario y pérdida de integrinas, con podocitos despegados de la membrana basal", why: "Correcta. Se pierde la repulsión electrostática con la albúmina, también aniónica, y quedan áreas denudadas por donde escapan las proteínas." },
-        { t: "Hiperfiltración de nefronas sanas por pérdida de nefronas vecinas, que agranda los poros de la membrana basal sin cambiar su carga", why: "La hiperfiltración compensatoria es un mecanismo de progresión del daño, no la causa inicial de la proteinuria nefrótica." }
+        { t: "Aumento de la presión hidrostática del capilar glomerular con poros de tamaño normal", why: "Crees que más presión empuja la albúmina por poros sanos; los 60 mmHg son la presión normal y sin perder carga la albúmina sigue retenida." },
+        { t: "Neutralización de las cargas aniónicas y despegamiento del podocito de la membrana basal", why: "La albúmina es aniónica como el glicocálix del podocito; al neutralizarse las cargas desaparece la repulsión y, sin integrinas, quedan áreas denudadas por donde escapa." },
+        { t: "Dilatación de los poros endoteliales por hiperfiltración compensatoria sostenida", why: "Supones que la hiperfiltración abre poros; la hiperfiltración de las nefronas sanas acelera la esclerosis, pero no inicia la proteinuria." },
+        { t: "Engrosamiento de la membrana basal que atrapa albúmina y la vuelca al espacio urinario", why: "Confundes engrosamiento con fuga; el grosor de la membrana basal corresponde a la membranosa y no vuelca albúmina a la orina." }
       ],
-      correct: 2
+      correct: 1,
+      rule: "La albúmina escapa por pérdida de carga negativa y de podocitos, no por más presión ni poros más grandes."
     },
     {
-      stem: "Paciente A: niño de 5 años con edema generalizado, proteinuria de 6 g/24 h, albúmina 1,9 g/dL y orina sin hematíes. Paciente B: niño de 9 años con orina color cola, PA 140/90 mmHg, diuresis de 300 mL/día y proteinuria de 1,5 g/24 h. Según la anatomía glomerular del libro, ¿qué localización predominante del daño corresponde a cada uno?",
+      id: "20-8",
+      stem: "Una niña de 5 años tiene edema, proteinuria de 5 g/24 h, albúmina de 1,8 g/dL y una orina sin hematíes. ¿Qué sector del glomérulo debe estar dañado para producir proteinuria masiva sin hematuria?",
       options: [
-        { t: "A: endocapilar, con inflamación del endotelio y salida de eritrocitos; B: extracapilar, con daño de la membrana basal y los podocitos", why: "Está invertido: lo endocapilar (del endotelio hacia adentro) va con hematuria, y lo extracapilar (MBG y podocitos) va con proteinuria." },
-        { t: "A: extracapilar, con daño de la membrana basal y los podocitos; B: endocapilar, con inflamación del endotelio y hematuria", why: "Correcta. El daño extracapilar produce proteinuria masiva sin hematuria (nefrótico) y el endocapilar inflamatorio permite la salida de eritrocitos (nefrítico)." },
-        { t: "A y B: extracapilar, porque ambos tienen proteinuria y daño de la barrera de filtración podocitaria", why: "La hematuria con oliguria e hipertensión del paciente B indica daño endotelial inflamatorio; tener proteinuria no basta para ubicar la lesión." },
-        { t: "A y B: endocapilar, porque ambos tienen daño de la barrera de filtración con pérdida de proteínas", why: "Ambos dañan la barrera, pero el sitio dominante difiere y explica la presencia o ausencia de hematuria." }
+        { t: "Sector extracapilar: membrana basal y podocitos", why: "El daño hacia fuera del endotelio, en membrana basal y podocitos, no rompe el capilar; por eso hay proteinuria masiva sin eritrocitos en la orina." },
+        { t: "Sector endocapilar: endotelio y células mesangiales", why: "El daño endocapilar es inflamatorio y rompe el capilar; con esa lesión habría hematuria, que esta niña no tiene." },
+        { t: "Sector mixto: endotelio, mesangio y podocitos a la vez", why: "Si fuera mixto también habría lesión endocapilar y hematuria, ausente en el sedimento de esta paciente." },
+        { t: "Aparato yuxtaglomerular con liberación de renina", why: "El aparato yuxtaglomerular regula la presión arterial y no produce proteinuria masiva sin hematuria." }
       ],
-      correct: 1
+      correct: 0,
+      rule: "Proteinuria sin hematuria significa daño extracapilar; con hematuria el daño es endocapilar e inflamatorio."
     },
     {
-      stem: "Un hombre de 34 años con síndrome nefrótico, albúmina de 1,7 g/dL, desarrolla dolor lumbar derecho súbito y edema doloroso unilateral de la pierna derecha. El Doppler confirma trombosis venosa. ¿Qué combinación de alteraciones explica mejor este evento?",
+      id: "20-9",
+      stem: "Un hombre de 34 años con síndrome nefrótico y albúmina de 1,7 g/dL presenta dolor lumbar súbito y edema de la pierna derecha; el Doppler confirma trombosis venosa profunda. ¿Qué alteraciones de la coagulación explican este evento?",
       options: [
-        { t: "Aumento de la antitrombina III como respuesta compensatoria a la pérdida de volumen, con exceso de anticoagulación natural", why: "La antitrombina III se pierde por la orina, no aumenta; y un exceso de anticoagulación no produciría trombosis." },
-        { t: "Descenso del fibrinógeno por pérdida urinaria, con consumo de plaquetas y coagulación intravascular diseminada", why: "En el nefrótico el fibrinógeno está aumentado y hay mayor agregación plaquetaria, no consumo." },
-        { t: "Pérdida urinaria de IgG y complemento, con activación persistente de la cascada de coagulación por inmunocomplejos", why: "Esa pérdida explica la susceptibilidad a infecciones, no la trombosis." },
-        { t: "Pérdida urinaria de antitrombina III con aumento del fibrinógeno y de la agregación plaquetaria", why: "Correcta. Es el desequilibrio entre factores procoagulantes y anticoagulantes que describe el libro; la albúmina < 2 g/dL es el marcador de riesgo." }
+        { t: "Aumento de antitrombina III con descenso de fibrinógeno y consumo de plaquetas", why: "Inviertes los cuatro datos; una antitrombina alta con fibrinógeno bajo protegería de la trombosis en lugar de provocarla." },
+        { t: "Descenso de antitrombina III con descenso de fibrinógeno y plaquetas normales", why: "Aciertas la antitrombina, pero olvidas el fibrinógeno, que en el nefrótico sube y aporta el material del trombo." },
+        { t: "Aumento de antitrombina III con aumento del fibrinógeno y de las plaquetas", why: "Solo fallas en la antitrombina: si aumentara, el riesgo trombótico sería menor y no habría trombosis con albúmina de 1,7 g/dL." },
+        { t: "Descenso de antitrombina III con aumento del fibrinógeno y de la agregación plaquetaria", why: "La antitrombina III se pierde por orina y el hígado sintetiza más fibrinógeno: el equilibrio se inclina hacia el coágulo, sobre todo con albúmina bajo 2 g/dL." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Trombosis del nefrótico: antitrombina III baja y fibrinógeno alto; si la opción sube la antitrombina, está invertida."
     },
     {
-      stem: "En el examen de orina de una niña con síndrome nefrótico se observan cuerpos ovales grasos que, con luz polarizada, muestran la imagen de \"cruz de Malta\". ¿Qué son esos cuerpos y qué indica su presencia?",
+      id: "20-10",
+      stem: "En el sedimento urinario de una niña con síndrome nefrótico se observan cuerpos ovales grasos que brillan en cruz de Malta con luz polarizada. ¿Cuál es el origen de estos elementos?",
       options: [
-        { t: "Células tubulares con lípidos filtrados; los ésteres de colesterol dan la cruz de Malta con luz polarizada", why: "Correcta. Es la explicación del libro, e indica que la grasa viene del plasma filtrado por el glomérulo dañado." },
-        { t: "Leucocitos degenerados con lípidos adheridos, que indican infección urinaria sobreagregada de las vías bajas", why: "No son leucocitos; la lipiduria nefrótica no indica infección." },
-        { t: "Eritrocitos dismórficos con gotas de grasa, que indican sangrado por rotura de la membrana basal glomerular", why: "En el síndrome nefrótico no hay hematuria característica, y los cuerpos ovales no son eritrocitos." },
-        { t: "Gotas de grasa de origen intestinal eliminadas por el riñón, por menor capacidad de transporte con hipoalbuminemia", why: "Los lípidos de la orina proceden del plasma filtrado por el glomérulo dañado, no del intestino." }
+        { t: "Eritrocitos dismórficos que pierden la hemoglobina al atravesar el túbulo y se ven pálidos en el sedimento", why: "Confundes grasa con sangre; la hematuria del nefrítico da eritrocitos dismórficos y aquí el sedimento muestra lípidos." },
+        { t: "Lípidos plasmáticos filtrados que el túbulo reabsorbe y acumula en sus células", why: "Con la barrera dañada pasan lipoproteínas al filtrado; el túbulo las reabsorbe y los ésteres de colesterol forman la cruz de Malta." },
+        { t: "Leucocitos degenerados por una infección urinaria sobreagregada", why: "Supones infección por el aspecto del sedimento; los cuerpos ovales aparecen con lipiduria y no implican bacterias." },
+        { t: "Gotas de grasa de origen intestinal que el riñón elimina por la orina", why: "Buscas un origen digestivo; la grasa urinaria viene del plasma filtrado por el glomérulo lesionado." }
       ],
-      correct: 0
+      correct: 1,
+      rule: "Cruz de Malta en la orina significa lipiduria: lípidos filtrados y reabsorbidos por el túbulo."
     },
     {
-      stem: "Una niña de 4 años (11,46 kg) con síndrome nefrótico tiene albúmina de 2,0 g/dL y diuresis medida de 0,6 mL/kg/h. El libro da como normal 1-2 mL/kg/h en niños. ¿Cuál es la interpretación correcta?",
+      id: "20-11",
+      stem: "Una niña de 4 años con síndrome nefrótico pesa 11,46 kg y en seis horas orina 41 mL. Se considera normal en el niño 1-2 mL/kg/h y se habla de oliguria por debajo de 1 mL/kg/h. ¿Cuál es la interpretación correcta de su diuresis?",
       options: [
-        { t: "Normal: 0,6 mL/kg/h está dentro del rango de diuresis 0,5-1 mL/kg/h, por lo que no hay oliguria", why: "Ese rango es el de adultos; en niños el límite inferior es 1 mL/kg/h." },
-        { t: "≈ 1 650 mL/día, es decir poliuria por pérdida de la barrera de filtración y de la reabsorción de agua", why: "Error de cálculo: 0,6 × 11,46 × 24 da ≈ 165 mL/día, no 1 650, y el nefrótico retiene sodio y agua." },
-        { t: "≈ 165 mL/día, ≈ 40% por debajo del mínimo esperado de ≈ 275 mL/día, compatible con retención de sodio y agua", why: "Correcta. 0,6 × 11,46 × 24 ≈ 165 mL/día, frente a un mínimo esperado de ≈ 275 mL/día." },
-        { t: "≈ 275 mL/día, justo en el límite inferior esperado para su peso, sin retención de sodio y agua", why: "275 mL/día es el mínimo esperado (1 mL/kg/h × 11,46 kg × 24 h), no su diuresis real." }
+        { t: "0,6 mL/kg/h y 165 mL/día, dentro del rango normal del niño", why: "Usas el rango del adulto de 0,5 a 1 mL/kg/h; en el niño el mínimo es 1 y 0,6 queda por debajo, como corresponde a la retención de sodio y agua." },
+        { t: "1,2 mL/kg/h y 330 mL/día, justo en el límite inferior normal", why: "Duplicas la cifra: 41 mL en 6 horas son 6,8 mL/h y 6,8 entre 11,46 kg da 0,6 mL/kg/h, no 1,2." },
+        { t: "0,6 mL/kg/h y 165 mL/día, un 40% por debajo del mínimo esperado", why: "41 mL en 6 h son 6,8 mL/h, es decir 0,6 mL/kg/h; por día son 165 mL frente a los 275 mL del mínimo de 1 mL/kg/h, un 40% menos." },
+        { t: "0,6 mL/kg/h y 275 mL/día, en el mínimo esperado para su peso", why: "Confundes su diuresis con el mínimo esperado: 275 mL/día es lo que debería orinar, no lo que está orinando." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "Convierto la diuresis a mL/kg/h dividiendo por peso y por horas; en el niño el mínimo es 1, no 0,5."
     }
   ]
 }
