@@ -5,6 +5,50 @@ window.CHAPTERS.push(
   id: 33,
   weight: 5,
   title: "33. Cráneo hipertensivo",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>La <b>hipertensión intracraneal (HIC)</b> es una presión demasiado alta dentro del cráneo: más de <b>20 mmHg durante más de 10 minutos</b>. El cráneo adulto es una caja rígida, así que todo volumen extra empuja y sube la presión.</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <ol>
+    <li>Dentro del cráneo conviven tres volúmenes: <b>parénquima</b> (tejido cerebral), <b>sangre</b> y <b>LCR</b> (líquido cefalorraquídeo).</li>
+    <li>Por la <b>doctrina de Monro-Kellie</b>, si uno crece los otros deben achicarse para que la presión no suba.</li>
+    <li>Primero se compensa con menos LCR y menos sangre venosa; esa reserva es limitada.</li>
+    <li>El primer sistema que se comprime es el <b>venoso</b>, de paredes delgadas: baja el retorno, hay congestión y más volumen atrapado.</li>
+    <li>Sube la PIC, se comprimen los capilares y cae el flujo: llega hipoxia, acidosis y <b>edema</b> (hinchazón del tejido).</li>
+    <li>Se pierde la <b>autorregulación</b> (capacidad de mantener el flujo estable): el flujo pasa a depender de la presión arterial.</li>
+    <li>Si la presión sigue subiendo, el tejido se desplaza y se <b>hernia</b> (se introduce en compartimentos donde no cabe).</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <p>La <b>cefalea</b> aparece porque la presión estira arterias y nervios; el <b>vómito en proyectil</b> porque se irrita el centro del vómito en el bulbo.</p>
+  <p>El <b>papiledema</b> es hinchazón del nervio óptico por transmisión de la presión; la <b>diplopía</b> suele ser por parálisis del VI par.</p>
+  <p>La <b>tríada de Cushing</b> (hipertensión, bradicardia y respiración lenta e irregular) avisa que se comprimen los centros del bulbo.</p>
+  <p>Cada herniación tiene su firma: uncal (III par y midriasis ipsilateral), subfalcina (pierna contralateral por la cerebral anterior), central (miosis y Cheyne-Stokes), ascendente (sordera y IV par) y amigdalina (apnea y muerte).</p>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Te da presión arterial y PIC y te pide calcular o interpretar la PPC.</li>
+    <li>Te pregunta qué sistema se afecta primero o por qué la PIC sube de golpe.</li>
+    <li>Te describe pupilas, postura o respiración y pide el tipo de herniación.</li>
+    <li>Te pide reconocer la tríada de Cushing o clasificar la PIC por grado.</li>
+    <li>Mini ejemplo en su voz: "Un paciente tiene 140/90 y PIC de 22 mmHg sostenida; ¿cuál es su PPC y qué significa?".</li>
+  </ul>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> sumar la PIC en vez de restarla, o restarla a la diastólica. La fórmula es PPC = PAM - PIC, con PAM = (PAS + 2 PAD) / 3. También: HIC no es "más de 20 mmHg un rato", sino más de 20 mmHg por más de 10 minutos.</div>
+
+  <h2>Números y cálculos</h2>
+  <p><b>PPC = PAM - PIC</b> y <b>PAM = (PAS + 2 PAD) / 3</b>. Ejemplo: 120/80 y PIC 15 → PAM = (120 + 160) / 3 = 93,3; PPC = 93,3 - 15 = 78,3 mmHg (normal 70-100).</p>
+  <ul>
+    <li>PIC normal: adulto 10-15 mmHg; HIC &gt; 20 mmHg por &gt; 10 min.</li>
+    <li>Grados: leve 20-30, moderada 30-40, grave &gt; 40 mmHg.</li>
+    <li>PPC normal: 70-100 mmHg.</li>
+    <li>1 mmHg ≈ 1,36 cmH2O.</li>
+    <li>LCR: 150 mL, se produce 21 mL/h; el parénquima es el 80% de la PIC.</li>
+  </ul>
+  <div class="note"><b>Alerta del libro:</b> afirma que 10-15 mmHg "equivale a 13,6 cc H2O"; la equivalencia correcta que él mismo da es 1 mmHg ≈ 1,36 cmH2O.</div>
+  `,
   summary: `
   <h2>1. Fundamentos</h2>
   <p>La <b>hipertensión intracraneal (HIC)</b> es el aumento prolongado de la presión intracraneal (PIC) <b>&gt; 20 mmHg durante más de 10 minutos</b>. El cráneo del adulto es una cavidad <b>rígida e inextensible</b> (suturas cerradas), de modo que cualquier aumento de masa (edema, tumor, hematoma, trombosis venosa) o de LCR (hidrocefalia comunicante o no comunicante) eleva la presión. En recién nacidos y niños con suturas abiertas el cráneo puede separarse y abombar la fontanela anterior.</p>
@@ -90,124 +134,148 @@ window.CHAPTERS.push(
   `,
   questions: [
     {
-      stem: "Un hombre de 48 años con traumatismo craneoencefálico tiene presión arterial 140/90 mmHg. El monitor registra una PIC de 22 mmHg sostenida durante 15 minutos. Con las fórmulas del capítulo, ¿cuál es la interpretación correcta?",
+      id: "33-0",
+      stem: "Un hombre de 48 años con traumatismo craneoencefálico tiene presión arterial 140/90 mmHg. El monitor registra una PIC de 22 mmHg sostenida durante 15 minutos. ¿Cuál es la interpretación correcta con las fórmulas del capítulo?",
       options: [
-        { t: "PAM 106,7 mmHg y PPC 128,7 mmHg (PAM + PIC); la PPC elevada indica sobreperfusión sin hipertensión intracraneal", why: "Suma la PIC en lugar de restarla, y además 22 mmHg sostenidos por más de 10 minutos ya cumplen criterio de HIC." },
-        { t: "PAM 106,7 mmHg y PPC 84,7 mmHg (PAM - PIC); hay hipertensión intracraneal leve con perfusión aún en 70-100 mmHg", why: "Correcta. PAM = (140 + 180) / 3 = 106,7; PPC = 106,7 - 22 = 84,7 mmHg (70-100). PIC 20-30 mmHg sostenida es HIC leve." },
-        { t: "PAM 106,7 mmHg y PPC 68 mmHg (diastólica - PIC); hay hipertensión intracraneal con isquemia por PPC menor de 70 mmHg", why: "El resultado 68 sale de restar la PIC a la diastólica (90 - 22); la PPC se calcula con la PAM." },
-        { t: "PAM 115 mmHg y PPC 93 mmHg (promedio simple - PIC); la PIC de 22 mmHg aún no alcanza el umbral patológico", why: "La PAM no es el promedio simple de sistólica y diastólica, ni 22 mmHg es normal: el límite es 20 mmHg." }
+        { t: "PAM 106,7 y PPC 128,7 (PAM + PIC); sobreperfusión sin hipertensión intracraneal.", why: "Suma la PIC donde debe restarla, y con 22 mmHg sostenidos por más de 10 minutos ya se cumple el criterio de HIC." },
+        { t: "PAM 106,7 y PPC 84,7 (PAM - PIC); HIC leve con perfusión aún normal.", why: "Correcta. PAM = (140 + 180) / 3 = 106,7; PPC = 106,7 - 22 = 84,7 mmHg, dentro de 70-100; una PIC de 20-30 mmHg sostenida es HIC leve." },
+        { t: "PAM 106,7 y PPC 68 (diastólica - PIC); HIC con isquemia por PPC baja.", why: "El 68 sale de restar la PIC a la diastólica (90 - 22); la PPC se calcula con la PAM, no con la diastólica." },
+        { t: "PAM 115 y PPC 93 (promedio simple - PIC); PIC 22 aún es normal.", why: "La PAM no es el promedio simple de sistólica y diastólica, y una PIC de 22 mmHg supera el límite de 20 mmHg." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Calcula PAM = (PAS + 2 PAD) / 3 y luego PPC = PAM - PIC; nunca sumes la PIC ni uses la diastólica."
     },
     {
-      stem: "Un paciente de 55 años con un glioblastoma frontal aumenta progresivamente el volumen del parénquima. Durante semanas la PIC se mantiene casi normal, y luego, con un pequeño incremento adicional de volumen, se eleva de forma brusca. ¿Cuál es la explicación fisiopatológica según el capítulo?",
+      id: "33-1",
+      stem: "Un paciente de 55 años con un glioblastoma frontal aumenta progresivamente el volumen del parénquima. Durante semanas la PIC se mantiene casi normal y luego, con un pequeño incremento adicional, sube de forma brusca. ¿Cuál es la explicación?",
       options: [
-        { t: "Monro-Kellie: al subir un volumen se compensa con menos LCR y menos sangre venosa; agotada esa reserva, la PIC sube de forma exponencial", why: "Correcta. El cráneo es rígido: la compensación inicial es limitada y una vez agotada cualquier incremento eleva mucho la PIC." },
-        { t: "El parénquima es muy compresible y absorbe el volumen extra durante semanas, hasta que la barrera hematoencefálica cede y la PIC se dispara", why: "El libro describe el parénquima como mínimamente compresible; la reserva está en el LCR y la sangre." },
-        { t: "El LCR aumenta su producción para amortiguar el tumor, hasta que el sistema ventricular se satura y la PIC sube bruscamente", why: "La compensación es la contraria: se reduce la producción de LCR y aumenta la resistencia a su reabsorción." },
-        { t: "El cráneo del adulto se expande de forma gradual por las suturas, hasta alcanzar su límite elástico y elevar la PIC de golpe", why: "Las suturas del adulto ya están cerradas: el cráneo es una cavidad rígida e inextensible." }
+        { t: "Monro-Kellie: se compensa con menos LCR y sangre venosa; agotada la reserva, la PIC sube de forma exponencial.", why: "Correcta. El cráneo es rígido y la compensación inicial es limitada; una vez agotada, cualquier incremento de volumen eleva mucho la PIC." },
+        { t: "El parénquima es muy compresible y absorbe el volumen hasta que la barrera hematoencefálica cede.", why: "El parénquima es poco compresible; la reserva real está en el LCR y en la sangre venosa." },
+        { t: "El LCR aumenta su producción para amortiguar el tumor hasta que el sistema ventricular se satura.", why: "La compensación es la contraria: baja la producción de LCR y aumenta la resistencia a su reabsorción." },
+        { t: "El cráneo del adulto se expande de forma gradual por las suturas abiertas hasta alcanzar su límite elástico y luego se rompe.", why: "Las suturas del adulto están cerradas: el cráneo es una cavidad rígida e inextensible." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Monro-Kellie primero compensa con LCR y sangre venosa; si el volumen sigue creciendo, la PIC sube de forma exponencial."
     },
     {
+      id: "33-2",
       stem: "Una mujer de 30 años presenta un hematoma intraparenquimatoso que eleva la PIC. Una enfermera pregunta qué sistema se compromete primero y por qué se perpetúa el deterioro. ¿Qué respuesta es correcta?",
       options: [
-        { t: "El arterial, porque su alta presión interna lo comprime primero, reduce el aporte de sangre y genera edema vasogénico perilesional", why: "Las arterias no son el sistema que se afecta primero; el libro señala que el primer sistema afectado es el venoso, de paredes delgadas." },
-        { t: "El del LCR, porque se bloquea su reabsorción y el líquido acumulado comprime el parénquima con edema intersticial progresivo", why: "El LCR es buffer, pero el libro señala al sistema venoso como el primero en afectarse." },
-        { t: "El capilar, porque el edema citotóxico lo dilata, baja la presión y aumenta el volumen sanguíneo de la zona lesionada", why: "Los capilares se comprimen y el flujo cae; no se dilatan por edema citotóxico." },
-        { t: "El venoso: sus paredes delgadas se comprimen, baja el retorno y hay congestión, más sangre y más PIC, con hipoxia y edema citotóxico", why: "Correcta. Se forma un círculo vicioso: más presión, menos retorno venoso, más edema." }
+        { t: "El arterial, porque su alta presión lo comprime primero y genera edema vasogénico.", why: "Las arterias no se comprimen primero: tienen pared gruesa y presión alta. Lo que se aplasta es el sistema venoso, de paredes delgadas y compresibles." },
+        { t: "El del LCR, porque se bloquea su reabsorción y comprime el parénquima.", why: "El LCR es el amortiguador principal, pero el primer sistema que se comprime es el venoso." },
+        { t: "El capilar, porque el edema citotóxico lo dilata y aumenta el volumen sanguíneo.", why: "Los capilares se comprimen y el flujo cae; no se dilatan por edema citotóxico." },
+        { t: "El venoso: paredes delgadas, menos retorno, congestión, más PIC, hipoxia y edema.", why: "Correcta. Al comprimirse el sistema venoso baja el retorno, hay congestión y más volumen atrapado; se forma un círculo vicioso de más presión y más edema." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "En la HIC el primero en sufrir es el sistema venoso; si te preguntan el amortiguador principal, ese es el LCR."
     },
     {
-      stem: "Un hombre de 62 años con HIC por un hematoma subdural sufre un descenso súbito de la presión arterial a 70/40 mmHg tras sedación. En pocos minutos presenta deterioro neurológico marcado. La resonancia previa no mostraba cambios nuevos. ¿Qué mecanismo explica mejor el deterioro súbito?",
+      id: "33-3",
+      stem: "Un hombre de 62 años con HIC por un hematoma subdural sufre un descenso súbito de la presión arterial a 70/40 mmHg tras la sedación. En pocos minutos presenta deterioro neurológico marcado. La resonancia previa no mostraba cambios nuevos. ¿Qué mecanismo lo explica?",
       options: [
-        { t: "La autorregulación está conservada: la vasodilatación mantiene el flujo y el deterioro es independiente de la presión arterial", why: "En la HIC con compensación agotada se pierde la autorregulación." },
-        { t: "Pérdida de la autorregulación cerebrovascular: el flujo pasa a depender de la presión arterial y su caída produce isquemia", why: "Correcta. Cuando la PIC supera la compensación, el cerebro ya no controla el diámetro de sus vasos; si baja la presión arterial, el flujo cae demasiado." },
-        { t: "Activación del reflejo de Cushing, con hipertensión, bradicardia y respiración irregular que agravan la PIC", why: "El reflejo de Cushing es hipertensión con bradicardia; este paciente presenta hipotensión." },
-        { t: "Edema intersticial agudo por reabsorción acelerada de LCR tras la sedación, que eleva la PIC sin relación con la presión arterial", why: "El edema intersticial se debe a dificultad en la reabsorción de LCR y no explica un deterioro tras una hipotensión súbita." }
+        { t: "La autorregulación está conservada: la vasodilatación mantiene el flujo y el deterioro no depende de la presión.", why: "En la HIC con reserva agotada la autorregulación se pierde; asumir que protege es lo que explica el error." },
+        { t: "Pérdida de la autorregulación: el flujo depende de la presión arterial y su caída produce isquemia.", why: "Correcta. Cuando la PIC supera la compensación, el cerebro ya no regula el calibre de sus vasos: si baja la presión arterial, el flujo cae y aparece isquemia." },
+        { t: "Reflejo de Cushing con hipertensión, bradicardia y respiración irregular que agravan la PIC.", why: "El reflejo de Cushing es hipertensión con bradicardia; este paciente está hipotenso." },
+        { t: "Edema intersticial agudo por reabsorción acelerada de LCR tras la sedación.", why: "El edema intersticial se debe a dificultad en la reabsorción de LCR y no explica un deterioro tras una hipotensión súbita." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Con HIC y reserva agotada, la autorregulación se pierde: una caída de la presión arterial se traduce en isquemia."
     },
     {
+      id: "33-4",
       stem: "Una unidad de neurocríticos monitoriza a un joven con traumatismo craneal. Durante 20 minutos la PIC se mantiene en 36 mmHg. Según la clasificación del capítulo, ¿cómo se clasifica y qué implica?",
       options: [
-        { t: "Leve (20-30 mmHg); es hipertensión intracraneal porque la PIC supera 20 mmHg por más de 10 minutos", why: "36 mmHg supera el intervalo de 20-30 mmHg; el criterio de HIC sí es correcto." },
-        { t: "Grave (más de 30 mmHg); es hipertensión intracraneal porque la PIC supera 20 mmHg por más de 10 minutos", why: "Grave es PIC mayor de 40 mmHg; entre 30 y 40 es moderada." },
-        { t: "Moderada (30-40 mmHg); es hipertensión intracraneal porque la PIC supera 20 mmHg por más de 10 minutos", why: "Correcta. 36 mmHg está en el rango moderado y se sostuvo más de 10 minutos, cumpliendo la definición de HIC." },
-        { t: "Moderada (30-40 mmHg); no se considera hipertensión intracraneal hasta mantenerse más de 60 minutos", why: "El libro define HIC como PIC mayor de 20 mmHg por más de 10 minutos." }
+        { t: "Leve (20-30 mmHg); es HIC porque la PIC supera 20 mmHg por más de 10 minutos.", why: "El rango leve es de 20 a 30 mmHg; con 36 mmHg el paciente ya está en el grado moderado de la clasificación." },
+        { t: "Grave (más de 30 mmHg); es HIC porque la PIC supera 20 mmHg por más de 10 minutos.", why: "Grave es una PIC mayor de 40 mmHg; entre 30 y 40 mmHg corresponde al grado moderado, no al grave." },
+        { t: "Moderada (30-40 mmHg); es HIC porque la PIC supera 20 mmHg por más de 10 minutos.", why: "Correcta. 36 mmHg está en el rango moderado de 30-40 y se sostuvo más de 10 minutos, así que cumple la definición de HIC." },
+        { t: "Moderada (30-40 mmHg); no es HIC hasta mantenerse más de 60 minutos.", why: "El umbral de hipertensión intracraneal sostenida es PIC mayor de 20 mmHg durante más de 10 minutos; el tiempo y la cifra de la opción no coinciden con ese criterio." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "HIC = PIC > 20 mmHg por > 10 min; grados: leve 20-30, moderada 30-40, grave > 40."
     },
     {
-      stem: "Una mujer de 45 años con un meningioma tiene, en la TAC, edema perilesional extenso. En fisiopatología se explica que hay apertura de uniones estrechas de la barrera hematoencefálica con salida de proteínas plasmáticas al intersticio, con participación de IL-1β y TNF-α. ¿Qué tipo de edema describe este mecanismo?",
+      id: "33-5",
+      stem: "Una mujer de 45 años con un meningioma tiene en la TAC un edema perilesional extenso. Se explica por apertura de uniones estrechas de la barrera hematoencefálica, salida de proteínas al intersticio y participación de IL-1β y TNF-α. ¿Qué tipo de edema es?",
       options: [
-        { t: "Vasogénico: mayor permeabilidad capilar con salida de líquido y proteínas plasmáticas al intersticio", why: "Correcta. Es el edema por alteración de los vasos con trasudación y exudación de líquido de la sangre al tejido." },
-        { t: "Citotóxico: falla de las bombas dependientes de energía, con entrada de Na+ y agua a la célula y edema intracelular", why: "El citotóxico es intracelular y por falla de energía; aquí el líquido sale de los vasos al intersticio." },
-        { t: "Intersticial: dificultad en la circulación y reabsorción del LCR, con paso de líquido al parénquima periventricular", why: "Ese edema se ve en la hidrocefalia, por alteración del LCR, no por ruptura de la barrera." },
-        { t: "Hidrostático (osmótico): solutos plasmáticos como glucosa o sodio arrastran agua al parénquima a través de una barrera íntegra", why: "Corresponde a un gradiente osmótico plasmático, no a una barrera dañada con paso de proteínas." }
+        { t: "Vasogénico: mayor permeabilidad capilar con salida de líquido y proteínas al intersticio.", why: "Correcta. La alteración de los vasos permite el paso de líquido y proteínas de la sangre al tejido: eso define el edema vasogénico." },
+        { t: "Citotóxico: falla de las bombas de energía con entrada de Na+ y agua a la célula.", why: "El citotóxico es intracelular y por falla de energía; aquí el líquido sale de los vasos al intersticio." },
+        { t: "Intersticial: dificultad en la circulación y reabsorción del LCR hacia el parénquima.", why: "El intersticial se ve en la hidrocefalia por alteración del LCR, no por ruptura de la barrera." },
+        { t: "Hidrostático: solutos plasmáticos como glucosa o sodio arrastran agua con barrera íntegra.", why: "El hidrostático corresponde a un gradiente osmótico plasmático con barrera íntegra, no a una barrera dañada con paso de proteínas." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Barrera rota con proteínas en el intersticio = vasogénico; bomba de energía fallida = citotóxico; problema de LCR = intersticial."
     },
     {
-      stem: "Una paciente de 58 años presenta un meningioma parasagital en la convexidad frontoparietal derecha. Desarrolla debilidad de la pierna izquierda sin afectación facial ni del brazo, y la TAC muestra desplazamiento de las estructuras de la línea media bajo la hoz. ¿Qué herniación y qué estructura vascular explican el déficit?",
+      id: "33-6",
+      stem: "Una paciente de 58 años presenta un meningioma parasagital en la convexidad frontoparietal derecha. Desarrolla debilidad de la pierna izquierda sin afectación facial ni del brazo, y la TAC muestra desplazamiento de la línea media bajo la hoz. ¿Qué herniación y qué estructura explican el déficit?",
       options: [
-        { t: "Transtentorial uncal, con compresión del III par y del tronco por una masa de la fosa media, con midriasis ipsilateral", why: "La uncal produce midriasis ipsilateral y hemiplejia contralateral por lesiones de fosa media, no un déficit aislado de la pierna." },
-        { t: "Transtentorial central, con descenso del diencéfalo a través de la tienda del cerebelo, con miosis bilateral y Cheyne-Stokes", why: "Cursa con alteración de conciencia, miosis bilateral y Cheyne-Stokes." },
-        { t: "Amigdalina, con descenso de las amígdalas cerebelosas por el agujero magno y compresión del bulbo, con paro cardiorrespiratorio", why: "Produce paro cardiorrespiratorio, no un déficit aislado de la pierna." },
-        { t: "Subfalcina: la masa de la convexidad desplaza la línea media bajo la hoz y comprime la arteria cerebral anterior, con paresia crural", why: "Correcta. La masa de la convexidad frontoparietal desplaza la línea media bajo la hoz en la cisura interhemisférica." }
+        { t: "Transtentorial uncal, con compresión del III par y midriasis ipsilateral.", why: "La uncal produce midriasis ipsilateral y hemiplejia contralateral por lesiones de fosa media, no un déficit aislado de la pierna." },
+        { t: "Transtentorial central, con descenso del diencéfalo y miosis bilateral.", why: "La central cursa con alteración de conciencia, miosis bilateral y Cheyne-Stokes." },
+        { t: "Amigdalina, con descenso de las amígdalas cerebelosas y paro cardiorrespiratorio.", why: "La amigdalina produce apnea y paro cardiorrespiratorio, no paresia crural aislada." },
+        { t: "Subfalcina: la masa desplaza la línea media bajo la hoz y comprime la cerebral anterior.", why: "Correcta. La masa de convexidad desplaza la línea media bajo la hoz y comprime la arteria cerebral anterior, cuyo territorio incluye la pierna." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Pierna contralateral aislada + masa de convexidad = subfalcina por compresión de la cerebral anterior."
     },
     {
-      stem: "Un varón de 54 años con hematoma intracerebral grande llega con somnolencia. Presión arterial 195/95 mmHg, frecuencia cardiaca 46 lpm y respiración irregular y lenta de 9 por minuto. ¿Cómo se interpreta este cuadro hemodinámico?",
+      id: "33-7",
+      stem: "Un varón de 54 años con hematoma intracerebral grande llega con somnolencia. Presión arterial 195/95 mmHg, frecuencia cardiaca 46 lpm y respiración irregular y lenta de 9 por minuto. ¿Cómo se interpreta este cuadro?",
       options: [
-        { t: "Shock neurogénico: hipotensión y bradicardia por pérdida del tono simpático tras una lesión medular alta, con piel caliente", why: "El paciente está hipertenso; el shock neurogénico cursa con hipotensión." },
-        { t: "Tríada de Cushing: hipertensión, bradicardia y respiración lenta e irregular por compresión de los centros vasomotor y respiratorio", why: "Correcta. El libro la describe en HIC avanzada con compresión de los centros vasomotor y respiratorio." },
-        { t: "Crisis hipertensiva primaria con bradicardia por betabloqueo previo y depresión respiratoria por opioides, sin relación con la PIC", why: "No hay base para atribuirlo a fármacos; el conjunto coincide con la tríada de Cushing." },
-        { t: "Respuesta simpática por dolor: hipertensión con taquicardia y taquipnea que aumentan el gasto cardiaco y el flujo cerebral", why: "La frecuencia cardiaca y la respiratoria están disminuidas; no hay taquicardia ni taquipnea." }
+        { t: "Shock neurogénico: hipotensión y bradicardia por pérdida del tono simpático.", why: "El paciente está hipertenso; el shock neurogénico cursa con hipotensión, no con presión de 195/95." },
+        { t: "Tríada de Cushing: hipertensión, bradicardia y respiración lenta por compresión de centros bulbares.", why: "Correcta. La hipertensión busca mantener la perfusión, y la bradicardia y la respiración lenta reflejan compresión de los centros vasomotor y respiratorio del bulbo." },
+        { t: "Crisis hipertensiva primaria con bradicardia por betabloqueo y depresión respiratoria por opioides.", why: "No hay dato de fármacos; el conjunto de hipertensión, bradicardia y respiración lenta es la tríada de Cushing." },
+        { t: "Respuesta simpática por dolor: hipertensión con taquicardia y taquipnea.", why: "La frecuencia cardiaca y la respiratoria están disminuidas; no hay taquicardia ni taquipnea." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "HTA + bradicardia + respiración lenta e irregular en HIC = tríada de Cushing; no la confundas con taquicardia e hipotensión."
     },
     {
-      stem: "Un niño de 8 años con tumor de fosa posterior tiene hidrocefalia obstructiva y se le coloca un drenaje ventricular externo. Tras un drenaje rápido de LCR presenta deterioro neurológico agudo con sordera y diplopía por parálisis del IV par. ¿Qué fenómeno ocurrió?",
+      id: "33-8",
+      stem: "Un niño de 8 años con tumor de fosa posterior tiene hidrocefalia obstructiva y se le coloca un drenaje ventricular externo. Tras un drenaje rápido de LCR presenta deterioro agudo con sordera y diplopía por parálisis del IV par. ¿Qué fenómeno ocurrió?",
       options: [
-        { t: "Hernia subfalcina por desplazamiento de la línea media, con compresión de la arteria cerebral anterior y paresia crural, tras drenar LCR", why: "No explica sordera ni parálisis del IV par; es propia de masas de convexidad frontoparietal." },
-        { t: "Hernia amigdalina por descenso de las amígdalas cerebelosas, con compresión bulbar, apnea y paro cardiorrespiratorio súbito", why: "Esta cursa con apnea y paro cardiorrespiratorio, no con sordera ni parálisis del IV par." },
-        { t: "Hernia transtentorial ascendente: el cerebelo asciende por la tienda y comprime el mesencéfalo y los colículos inferiores, tras drenar LCR", why: "Correcta. Se ve en lesiones infratentoriales y tras un drenaje súbito de LCR por derivación ventricular externa." },
-        { t: "Hernia transtentorial central por lesiones supratentoriales bilaterales, con miosis, Cheyne-Stokes y deterioro de la conciencia", why: "Produce miosis bilateral y Cheyne-Stokes con lesión supratentorial; el caso es infratentorial." }
+        { t: "Hernia subfalcina por desplazamiento de la línea media, con paresia crural tras drenar LCR.", why: "La subfalcina afecta la cerebral anterior y da paresia crural; no explica sordera ni parálisis del IV par." },
+        { t: "Hernia amigdalina por descenso de las amígdalas cerebelosas, con apnea y paro cardiorrespiratorio.", why: "La amigdalina comprime el bulbo y produce apnea y paro cardiorrespiratorio, no sordera ni IV par." },
+        { t: "Hernia transtentorial ascendente: el cerebelo asciende y comprime mesencéfalo y colículos inferiores.", why: "Correcta. En lesiones infratentoriales y tras drenar LCR de forma súbita, el cerebelo asciende por la tienda y comprime mesencéfalo y colículos inferiores." },
+        { t: "Hernia transtentorial central por lesiones supratentoriales bilaterales, con miosis y Cheyne-Stokes.", why: "La central es supratentorial y da miosis bilateral y Cheyne-Stokes; este caso nace en la fosa posterior." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "Lesión infratentorial + drenaje brusco de LCR + sordera o IV par = herniación ascendente."
     },
     {
-      stem: "Una mujer de 62 años con un hematoma subdural crónico es intervenida y, en el posoperatorio, presenta obstrucción parcial de la vía aérea que eleva la PaCO2 de 40 a 60 mmHg. Un residente debe predecir el efecto sobre el flujo cerebral y la presión intracraneal, usando la regla de que 1 mmHg de PaCO2 modifica 3-4% el flujo. ¿Cuál es la predicción?",
+      id: "33-9",
+      stem: "Una mujer de 62 años con un hematoma subdural crónico es intervenida y en el posoperatorio presenta obstrucción parcial de la vía aérea que eleva la PaCO2 de 40 a 60 mmHg. Con la regla de 3-4% por mmHg, ¿cuál es la predicción?",
       options: [
-        { t: "El flujo sube 60-80% (20 mmHg x 3-4%); más volumen sanguíneo eleva la PIC, así que la hipercapnia es una causa extracraneal de HIC", why: "Correcta. +20 mmHg x 3-4% = 60-80% más de flujo; la vasodilatación aumenta el volumen sanguíneo y, por Monro-Kellie, la PIC." },
-        { t: "El flujo baja 60-80% por vasoconstricción refleja; el volumen sanguíneo intracraneal cae y la PIC disminuye de forma proporcional", why: "La hipercapnia dilata y aumenta el flujo; la hipocapnia lo disminuye." },
-        { t: "El flujo sube solo 3-4% (valor por 1 mmHg); el volumen sanguíneo añadido es pequeño y no basta para modificar la PIC", why: "Esa cifra corresponde a 1 mmHg, no a un aumento de 20 mmHg." },
-        { t: "El flujo no cambia, porque la autorregulación con PAM de 50-150 mmHg neutraliza por completo el efecto de la PaCO2 sobre los vasos", why: "La autorregulación de presión no anula el efecto vasodilatador de la PaCO2." }
+        { t: "El flujo sube 60-80%; más volumen sanguíneo eleva la PIC por Monro-Kellie.", why: "Correcta. 20 mmHg x 3-4% = 60-80% más flujo; la vasodilatación aumenta el volumen sanguíneo y, por Monro-Kellie, la PIC." },
+        { t: "El flujo baja 60-80% por vasoconstricción refleja intensa y la PIC disminuye.", why: "La hipercapnia dilata los vasos y aumenta el flujo; la hipocapnia es la que lo disminuye." },
+        { t: "El flujo sube solo 3-4%; el volumen añadido no modifica la PIC.", why: "El 3-4% es el cambio por cada 1 mmHg de PaCO2, no por los 20 mmHg que subió en este paciente." },
+        { t: "El flujo no cambia porque la autorregulación neutraliza la PaCO2.", why: "La autorregulación de presión no anula el efecto vasodilatador de la PaCO2." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Subida de PaCO2 = vasodilatación, más volumen sanguíneo y más PIC; multiplica por 3-4% por cada mmHg."
     },
     {
+      id: "33-10",
       stem: "Un hombre de 35 años sufre un traumatismo grave y llega hipotenso, con presión arterial 80/50 mmHg. La PIC medida es de 28 mmHg. Un estudiante nota que la PAM está dentro del rango de autorregulación de 50-150 mmHg y concluye que el cerebro está bien perfundido. ¿Cuál es la respuesta correcta?",
       options: [
-        { t: "El estudiante tiene razón: con PAM de 60 mmHg, dentro de 50-150 mmHg, la perfusión es adecuada y la PIC no la modifica", why: "El rango describe autorregulación del flujo, pero la perfusión también depende de la PIC; y con HIC se pierde la autorregulación." },
-        { t: "La PPC es 88 mmHg (PAM + PIC), normal; la PIC elevada compensa la hipotensión al aumentar la presión de perfusión", why: "Se suma la PIC en vez de restarla; la PIC elevada reduce la perfusión." },
-        { t: "La PPC es 32 mmHg (PAM 60 - PIC 28); la PIC deja la perfusión muy por debajo de 70 mmHg, con riesgo de isquemia", why: "Correcta. PAM = (80 + 100) / 3 = 60; PPC = 60 - 28 = 32 mmHg. Hay riesgo de isquemia y, con HIC, la autorregulación está comprometida." },
-        { t: "La PPC es 22 mmHg (diastólica 50 - PIC 28); hay isquemia grave sin necesidad de calcular la PAM del paciente", why: "La PPC se calcula a partir de la PAM (60), no de la diastólica." }
+        { t: "Tiene razón: con PAM de 60 mmHg, dentro de 50-150, la perfusión es adecuada y la PIC no la modifica.", why: "El rango de 50-150 describe la autorregulación del flujo, pero la perfusión depende también de la PIC, y con HIC la autorregulación se pierde." },
+        { t: "La PPC es 88 mmHg (PAM + PIC), normal; la PIC elevada compensa la hipotensión.", why: "Suma la PIC donde debe restarla; una PIC elevada reduce la perfusión, no la compensa." },
+        { t: "La PPC es 32 mmHg (PAM 60 - PIC 28); la perfusión está muy por debajo de 70 y hay riesgo de isquemia.", why: "Correcta. PAM = (80 + 100) / 3 = 60; PPC = 60 - 28 = 32 mmHg, muy por debajo de 70, con riesgo de isquemia." },
+        { t: "La PPC es 22 mmHg (diastólica 50 - PIC 28); hay isquemia grave sin calcular la PAM.", why: "La PPC se calcula con la PAM del paciente (60 mmHg), no con la presión diastólica (50 mmHg)." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "Estar dentro de 50-150 no garantiza perfusión: calcula PPC = PAM - PIC y busca al menos 70 mmHg."
     },
     {
-      stem: "Una joven de 17 años consulta por cefalea diaria de 2 semanas con vómitos en proyectil matutinos, visión doble al mirar hacia el lado derecho y borrosidad visual transitoria. El fondo de ojo muestra edema bilateral de ambas papilas. No tiene fiebre ni rigidez de nuca. ¿Qué par craneal explica la diplopía y qué alteración explica el fondo de ojo?",
+      id: "33-11",
+      stem: "Una joven de 17 años consulta por cefalea diaria de 2 semanas con vómitos en proyectil matutinos, visión doble al mirar hacia el lado derecho y borrosidad visual transitoria. El fondo de ojo muestra edema bilateral de ambas papilas. ¿Qué par craneal explica la diplopía y qué alteración explica el fondo de ojo?",
       options: [
-        { t: "Parálisis del III par, con ptosis y midriasis; atrofia óptica secundaria a compresión crónica del nervio óptico", why: "La diplopía en HIC se atribuye principalmente al VI par, y el fondo de ojo muestra edema, no atrofia." },
-        { t: "Parálisis del IV par, por compresión del mesencéfalo; hemorragias retinianas por hipertensión venosa central", why: "El IV par se menciona en la herniación ascendente; el hallazgo descrito es edema de papila, no hemorragia." },
-        { t: "Parálisis del VII par, por compresión del puente; edema macular por trasudación de líquido retiniano focal", why: "El VII par no controla la motilidad ocular." },
-        { t: "Parálisis del VI par; papiledema por transmisión de la presión del LCR a la vaina del nervio óptico", why: "Correcta. Diplopía por parálisis unilateral o bilateral del VI par y papiledema por edema del nervio óptico." }
+        { t: "Parálisis del III par con ptosis y midriasis; atrofia óptica por compresión crónica.", why: "La diplopía en HIC se atribuye sobre todo al VI par; el fondo de ojo muestra edema de papila, no atrofia." },
+        { t: "Parálisis del IV par por compresión del mesencéfalo; hemorragias retinianas por hipertensión venosa.", why: "El IV par aparece en la herniación ascendente, y el hallazgo descrito es papiledema, no hemorragia retiniana." },
+        { t: "Parálisis del VII par por compresión del puente; edema macular por trasudación focal.", why: "El VII par no controla la motilidad ocular; no explica la visión doble." },
+        { t: "Parálisis del VI par; papiledema por transmisión de la presión del LCR a la vaina del nervio óptico.", why: "Correcta. La parálisis del VI par produce diplopía y el papiledema resulta de transmitir la presión del LCR a la vaina del nervio óptico." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Diplopía + papiledema en HIC: piensa en VI par para la diplopía y en transmisión de presión por la vaina óptica para el fondo de ojo."
     }
   ]
 }

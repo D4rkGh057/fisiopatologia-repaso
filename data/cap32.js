@@ -5,6 +5,51 @@ window.CHAPTERS.push(
   id: 32,
   weight: 4,
   title: "32. Estado de alerta",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>Estar despierto y consciente necesita dos cosas a la vez: una <b>corteza cerebral</b> que funcione y un sistema del tronco que la mantenga "encendida", el <b>SARA</b> (sistema activador reticular ascendente).</p>
+  <p>Si falla una de las dos, o si el problema es difuso (tóxico, metabólico, falta de sangre), aparece desde somnolencia hasta coma.</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <ol>
+    <li>El cerebro no guarda energía: depende de flujo sanguíneo, oxígeno y glucosa continuos.</li>
+    <li>El SARA sube desde el tronco hasta el <b>tálamo</b> (estación de relevo) y desde ahí se conecta con la corteza.</li>
+    <li>Esa conexión tálamo-cortical "enciende" la corteza: así hay vigilia y registro del entorno.</li>
+    <li>La vigilia la sostiene el <b>locus coeruleus</b> con noradrenalina; el sueño lo induce el <b>rafe dorsal</b> con serotonina.</li>
+    <li>Se pierde la conciencia cuando se dañan corteza y SARA a la vez, o cuando una causa difusa altera ambos.</li>
+    <li>Una lesión pequeña de un solo lado solo produce un déficit focal, no coma.</li>
+    <li>Si el daño avanza por el tronco, aparecen posturas y patrones respiratorios típicos en orden descendente.</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <p>Los grados van de menos a más: <b>somnolencia</b> (despierta fácil con cualquier estímulo), <b>obnubilación</b> (necesita estímulos repetidos y vigorosos), <b>estupor</b> (solo despierta con dolor y vuelve al estado previo) y <b>coma</b> (no responde a nada).</p>
+  <p>La <b>postura</b> orienta el nivel de la lesión. En la <b>decorticación</b> los brazos se flexionan y el motor vale 3; en la <b>descerebración</b> los brazos se extienden y el motor vale 2.</p>
+  <p>El deterioro rostro-caudal baja por fases: diencéfalo (pupilas mióticas, decorticación, Cheyne-Stokes), mesencéfalo (pupilas intermedias, hiperventilación, descerebración), protuberancia (flacidez, respiración superficial con apneas) y bulbo (Biot, hipotensión, midriasis).</p>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Te da un caso breve y te pide el mecanismo: "¿por qué la fiebre lo mantiene despierto?".</li>
+    <li>Te pide calcular o interpretar el Glasgow: "¿cuántos puntos y qué significa?".</li>
+    <li>Te describe una postura o unas pupilas y pregunta el nivel de lesión o la fase del deterioro.</li>
+    <li>Te pide decidir si ya puede declararse muerte cerebral y qué falta excluir.</li>
+    <li>Mini ejemplo en su voz: "Un paciente abre los ojos solo al dolor, emite sonidos incomprensibles y flexiona los brazos; ¿cuál es el puntaje y en qué estado queda?".</li>
+  </ul>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> confundir locus coeruleus (vigilia, noradrenalina) con rafe (sueño, serotonina), y decorticación (brazos en flexión, motor 3) con descerebración (brazos en extensión, motor 2). También: PAM &gt; 150 da hemorragia; PAM &lt; 50 da infarto.</div>
+
+  <h2>Números y cálculos</h2>
+  <p><b>Glasgow = ocular (1-4) + verbal (1-5) + motor (1-6)</b>; coma si es ≤ 8. Ejemplo: ocular al dolor 2 + sonidos 2 + flexión anormal 3 = 7, que es coma.</p>
+  <ul>
+    <li>Decorticación: motor 3 (total 5). Descerebración: motor 2 (total 4).</li>
+    <li>Autorregulación del flujo con PAM de <b>50 a 150</b> mmHg: debajo, infarto; encima, hemorragia.</li>
+    <li>1 mmHg de PaCO2 = <b>3-4%</b> de cambio del flujo cerebral.</li>
+    <li>Sin flujo, las reservas duran 3-5 min.</li>
+    <li>FOUR: 4 componentes de 0 a 4, máximo 16; no usa respuesta verbal (sirve en intubados).</li>
+    <li>Muerte cerebral: temperatura central no menor de 32 °C y sin fármacos que confundan.</li>
+  </ul>
+  <div class="note"><b>Alerta del libro:</b> el texto dice que el neurotransmisor más importante del SARA es la serotonina, pero describe la vigilia como dependiente de catecolaminas del locus coeruleus. Para el examen: vigilia = locus coeruleus/noradrenalina; sueño = rafe/serotonina.</div>
+  `,
   summary: `
   <h2>1. Fundamentos</h2>
   <p>La <b>conciencia</b> es el estado de estar despierto con registro de uno mismo y del entorno; su alteración extrema es el <b>coma</b>. Se logra en la <b>corteza cerebral</b> (telencéfalo) y exige que funcione el <b>sistema activador reticular ascendente (SARA)</b>, que va desde los tres primeros segmentos cervicales hasta el diencéfalo y el tálamo, y desde el tálamo se conecta con la corteza. Según el libro, <b>para perder la conciencia deben afectarse al mismo tiempo la corteza y el SARA</b>, o bien actuar causas extraneurológicas (metabólicas, tóxicas, depresores del SNC) que alteran ambos de forma difusa. Las conexiones tálamo-corticales, cortico-talámicas e intracorticales permiten la sincronización neuronal necesaria; si falla de forma difusa, hay desde somnolencia hasta coma.</p>
@@ -82,124 +127,148 @@ window.CHAPTERS.push(
   `,
   questions: [
     {
-      stem: "Un varón de 34 años con neumonía lleva dos noches con insomnio marcado: temperatura 39,2 °C, taquicardia y sensación de hipervigilia. Al explicar por qué la fiebre favorece que permanezca despierto, ¿qué estructura y qué mediador propone el capítulo?",
+      id: "32-0",
+      stem: "Un hombre de 34 años con neumonía tiene fiebre de 39 °C, insomnio y sensación de hipervigilia. ¿Cuál es el mecanismo que explica que la fiebre lo mantenga despierto?",
       options: [
-        { t: "Mayor actividad del rafe dorsal con liberación de serotonina, que sostiene la vigilia durante el estado febril", why: "El libro asigna a la fiebre el locus coeruleus (noradrenalina); el rafe dorsal se cita como inductor del sueño, y no es la estructura descrita para la hipervigilia febril." },
-        { t: "Mayor actividad metabólica del locus coeruleus con liberación aumentada de noradrenalina, que induce la vigilia", why: "Correcta. El libro indica que con la fiebre el locus coeruleus aumenta su actividad y libera más catecolaminas, sobre todo noradrenalina, que induce la vigilia." },
-        { t: "Mayor síntesis nocturna de melatonina en la glándula pineal, controlada por el núcleo supraquiasmático, que activa la corteza", why: "La melatonina se sintetiza de noche y favorece el sueño dentro del ritmo circadiano; no explica la hipervigilia febril." },
-        { t: "Mayor descarga del núcleo gigantocelular de la formación reticular con liberación de acetilcolina, que mantiene la vigilia", why: "Ese núcleo forma parte del sistema inductor del sueño según el libro, no del inductor de la vigilia." }
+        { t: "Mayor liberación de serotonina por el rafe dorsal.", why: "El rafe dorsal pertenece al sistema inductor del sueño: asumir que la fiebre lo activa invierte el efecto. El dato de insomnio e hipervigilia apunta al sistema de vigilia." },
+        { t: "Mayor actividad del locus coeruleus con liberación de noradrenalina.", why: "Correcta. La fiebre aumenta la actividad metabólica del locus coeruleus y la liberación de noradrenalina; esa catecolamina sostiene la vigilia y explica el insomnio." },
+        { t: "Mayor síntesis de melatonina por la glándula pineal.", why: "La melatonina la produce la pineal de noche y favorece el sueño; si estuviera alta, el paciente dormiría y no estaría hipervigil." },
+        { t: "Mayor liberación de acetilcolina por el núcleo gigantocelular de la formación reticular.", why: "El núcleo gigantocelular forma parte del sistema inductor del sueño; activarlo produciría somnolencia, no hipervigilia." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Si el caso es fiebre o hipervigilia, piensa en locus coeruleus y noradrenalina; el rafe y la serotonina son del sueño."
     },
     {
-      stem: "Un hombre de 52 años es traído tras una caída desde una escalera. Solo abre los ojos cuando se le aplica presión en el esternón, no emite palabras sino sonidos ininteligibles y, ante el dolor, flexiona de forma anormal ambos brazos sobre el tórax. ¿Cuál es su puntaje en la escala de Glasgow y cómo se interpreta con el criterio del capítulo?",
+      id: "32-1",
+      stem: "Un varón de 52 años sufre una caída. Abre los ojos solo ante el dolor, emite sonidos incomprensibles y flexiona de forma anormal los brazos. ¿Cuál es su puntaje en la escala de Glasgow y su interpretación?",
       options: [
-        { t: "9 puntos (ocular 2 + verbal 3 + motor 4); queda por encima del umbral de coma de 8", why: "Sumaría 9 solo si los sonidos fueran palabras inapropiadas (3) y la respuesta motora fuera retirada al dolor (4); aquí valen 2 y 3." },
-        { t: "8 puntos (ocular 2 + verbal 2 + motor 4); límite superior del rango de coma", why: "Resulta de tomar la flexión anormal como retirada al dolor (4); en realidad es reflejo flexor, que vale 3, y el total es 7." },
-        { t: "6 puntos (ocular 2 + verbal 2 + motor 2); coma con postura de descerebración", why: "El motor sería 2 solo con reflejo extensor (descerebración); la flexión anormal de brazos es decorticación y vale 3." },
-        { t: "7 puntos (ocular 2 + verbal 2 + motor 3); compatible con coma por ser ≤ 8", why: "Correcta. Ocular al dolor = 2, verbal sonidos incomprensibles = 2, motor reflejo flexor (decorticación) = 3; 2 + 2 + 3 = 7, y el libro asocia el coma a Glasgow ≤ 8." }
+        { t: "9 puntos; ya no cumple criterio de coma.", why: "Con un verbal de 2, llegar a 9 obligaría a un motor de 4 o más; el paciente tiene motor 3, así que suma 7, no 9. Además un 9 sigue siendo coma (≤8)." },
+        { t: "8 puntos; está en el límite del coma.", why: "El 8 aparece si se toma la flexión anormal como retirada al dolor (4); en realidad la flexión anormal es reflejo flexor y vale 3." },
+        { t: "7 puntos; corresponde a coma.", why: "Correcta. Ocular al dolor 2 + verbal con sonidos 2 + motor con flexión anormal 3 = 7; como es ≤ 8, corresponde a coma." },
+        { t: "6 puntos; indica descerebración.", why: "El 6 saldría con motor 2 (extensión, descerebración); este paciente flexiona los brazos, así que su motor es 3." }
       ],
-      correct: 3
+      correct: 2,
+      rule: "Suma ocular + verbal + motor y recuerda que flexión anormal vale 3; si el total es 8 o menos, es coma."
     },
     {
-      stem: "Tras un traumatismo craneoencefálico grave, una paciente de 27 años no abre los ojos ni emite sonidos. Ante un estímulo doloroso extiende ambos brazos en aducción con hiperpronación, aprieta los dientes y mantiene las piernas rígidas en extensión con flexión plantar. Glasgow 4. ¿Qué nivel lesional es más compatible según el capítulo?",
+      id: "32-2",
+      stem: "Una mujer de 27 años con traumatismo craneoencefálico grave extiende ambos brazos en aducción con hiperpronación, aprieta los dientes y mantiene las piernas rígidas en extensión, con Glasgow 4. ¿Qué nivel de lesión explica esta postura?",
       options: [
-        { t: "Mesencéfalo y protuberancia, con rigidez de descerebración (motor 2, total 4)", why: "Correcta. El libro asocia la descerebración (motor 2, total 4) con lesiones del mesencéfalo y la protuberancia." },
-        { t: "Diencéfalo, con rigidez de decorticación y flexión de brazos y muñecas (motor 3, total 5)", why: "La decorticación implica flexión de los brazos y Glasgow 5; la postura descrita es de extensión y el total es 4." },
-        { t: "Corteza frontal bilateral con tronco indemne, que libera la postura en extensión por pérdida del control cortical", why: "El libro liga la postura en extensión con hiperpronación a daño del tronco (mesencéfalo y protuberancia); una lesión cortical aislada no la explica." },
-        { t: "Bulbo raquídeo, con cuadriplejía flácida, respiración de Biot y pupilas midriáticas sin reflejos", why: "La afectación bulbar corresponde a flacidez, respiración de Biot e hipotensión, no a rigidez extensora con dientes apretados." }
+        { t: "Diencéfalo, por decorticación con flexión de brazos.", why: "El daño diencefálico produce decorticación, es decir flexión de brazos con motor 3 y Glasgow 5; aquí hay extensión." },
+        { t: "Bulbo raquídeo, por flacidez y respiración de Biot.", why: "La fase bulbar cursa con flacidez, hipotensión y respiración de Biot; no con rigidez extensora de brazos." },
+        { t: "Corteza bilateral, con tronco encefálico indemne.", why: "La postura en extensión con hiperpronación se liga al daño del tronco; una lesión cortical aislada no la produce." },
+        { t: "Mesencéfalo y protuberancia, por descerebración.", why: "Correcta. La extensión con hiperpronación y dientes apretados es descerebración: motor 2, Glasgow 4, lesión de mesencéfalo y protuberancia." }
       ],
-      correct: 0
+      correct: 3,
+      rule: "Brazos en flexión = decorticación/diencéfalo (motor 3); brazos en extensión e hiperpronación = descerebración/mesencéfalo-protuberancia (motor 2)."
     },
     {
-      stem: "Un varón de 61 años hipertenso, sin tratamiento, llega a urgencias con cefalea súbita intensa y somnolencia. Presión arterial 230/130 mmHg. Considere los límites de autorregulación cerebral que describe el capítulo. ¿Qué valor de PAM tiene y qué riesgo implica?",
+      id: "32-3",
+      stem: "Un hombre de 61 años, hipertenso sin tratamiento, presenta cefalea súbita intensa. Su presión arterial es 230/130 mmHg, con PAM estimada de 163 mmHg. ¿Cuál es el mecanismo que explica el riesgo de hemorragia cerebral?",
       options: [
-        { t: "PAM 120 mmHg ((230 + 130) / 3); dentro del rango de autorregulación, sin riesgo cerebral directo", why: "Divide la suma simple entre 3; la PAM ponderada es (230 + 2 x 130) / 3 = 163 mmHg, que sale del rango de 50-150 mmHg." },
-        { t: "PAM 180 mmHg (promedio simple de 230 y 130); por encima de 150 mmHg hay riesgo de hemorragia", why: "La PAM no es el promedio simple de sistólica y diastólica; con la fórmula ponderada es 163 mmHg." },
-        { t: "PAM 163 mmHg; sobre 150 mmHg aumenta el flujo y la presión en los vasos cerebrales, con riesgo de hemorragia", why: "Correcta. PAM = (230 + 2 x 130) / 3 = 163,3 mmHg. Sobre 150 mmHg se pierde la autorregulación y el libro describe aumento del flujo y hemorragias cerebrales." },
-        { t: "PAM 163 mmHg; por encima de 150 mmHg el flujo se interrumpe por vasoconstricción, con riesgo de infarto", why: "El valor es correcto, pero el libro asigna los infartos a PAM menor de 50 mmHg; sobre 150 mmHg el riesgo es hemorragia." }
+        { t: "PAM sobre 150 mmHg: más flujo y más presión en los vasos cerebrales.", why: "Correcta. Con PAM mayor de 150 mmHg se pierde el techo de la autorregulación: aumenta el flujo y la presión en los vasos, y el resultado es hemorragia." },
+        { t: "PAM menor de 50 mmHg con interrupción del flujo cerebral.", why: "Con PAM bajo 50 mmHg el flujo cae y aparecen infartos; este paciente está en el extremo opuesto, con PAM de 163." },
+        { t: "Autorregulación que mantiene el flujo constante pese a la PAM.", why: "La autorregulación solo cubre de 50 a 150 mmHg; aquí la PAM la supera y no protege." },
+        { t: "Hipocapnia con disminución del flujo y vasoconstricción.", why: "La hipocapnia reduce el flujo, no lo aumenta; además no hay dato de hiperventilación en el caso." }
       ],
-      correct: 2
+      correct: 0,
+      rule: "PAM menor de 50 → infarto; PAM mayor de 150 → hemorragia. La autorregulación solo protege dentro de 50-150 mmHg."
     },
     {
-      stem: "Una mujer de 24 años con crisis de ansiedad hiperventila durante 30 minutos. Su PaCO2 baja de 40 a 30 mmHg y refiere mareo intenso y casi desmayo. Con la relación que da el libro entre PaCO2 y flujo sanguíneo cerebral (1 mmHg = 3-4%), ¿cómo se explica la sintomatología?",
+      id: "32-4",
+      stem: "Una mujer de 24 años con crisis de ansiedad hiperventila y su PaCO2 baja de 40 a 30 mmHg. Refiere mareo intenso y sensación de desmayo. ¿Qué mecanismo explica los síntomas?",
       options: [
-        { t: "Aumento del flujo de 30-40% por vasodilatación secundaria a la caída de la PaCO2 y mayor aporte de sangre al encéfalo", why: "La hipocapnia disminuye el flujo; el signo del cambio está invertido." },
-        { t: "Disminución del flujo de 30-40% (10 mmHg x 3-4%) por vasoconstricción hipocápnica, que explica el mareo", why: "Correcta. Una caída de 10 mmHg de PaCO2 x 3-4% = 30-40% menos flujo; la hipoperfusión explica el mareo y la presíncope." },
-        { t: "Disminución del flujo de apenas 3-4% (cambio por 1 mmHg), insuficiente para explicar el mareo ni la sensación de desmayo", why: "El 3-4% corresponde a cada 1 mmHg, no al total; con 10 mmHg el cambio es diez veces mayor." },
-        { t: "Flujo sin cambios, porque la autorregulación con PAM de 50-150 mmHg lo protege por completo del efecto de la PaCO2 sobre el calibre vascular", why: "La autorregulación frente a la presión arterial no impide el efecto de la PaCO2, que es un determinante potente del calibre vascular." }
+        { t: "Aumento del flujo cerebral por la hipocapnia.", why: "Asumir que menos CO2 dilata los vasos es invertir el efecto: la hipocapnia produce vasoconstricción y baja el flujo." },
+        { t: "Caída de 30-40% del flujo cerebral por la hipocapnia.", why: "Correcta. Cada 1 mmHg de PaCO2 cambia el flujo 3-4%; una caída de 10 mmHg equivale a 30-40% menos flujo, y esa hipoperfusión da el mareo." },
+        { t: "Caída de solo 3-4% del flujo cerebral por la hipocapnia.", why: "El 3-4% es el cambio por cada 1 mmHg, no por los 10 mmHg que bajó la PaCO2 en este caso." },
+        { t: "Flujo sin cambios por la autorregulación cerebral.", why: "La autorregulación regula el flujo frente a cambios de presión arterial, no frente a cambios de PaCO2." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Multiplica el cambio de PaCO2 por 3-4%: si la PaCO2 baja, el flujo cerebral baja y el paciente se marea."
     },
     {
-      stem: "Un paciente de 70 años con diabetes e hipertensión es llevado por estupor progresivo con caída del nivel de conciencia de 4 horas. No hay traumatismo ni tóxicos. La RM muestra hemorragia en ganglios basales derechos con edema perilesional y desviación de la línea media de 5 mm. Glasgow 5 (ocular 1, verbal 1, motor 3) y postura de flexión anormal de brazos. ¿Qué enunciado es correcto?",
+      id: "32-5",
+      stem: "Un varón de 65 años hipertenso presenta somnolencia y luego Glasgow 5 (ocular 1, verbal 1, motor 3) con flexión anormal de los brazos. La RM muestra una hemorragia en ganglios basales con edema y desviación de la línea media. ¿Qué mecanismo explica el deterioro de la conciencia?",
       options: [
-        { t: "La pérdida de conciencia se explica por una lesión pequeña y unilateral de la corteza, sin participación del tronco ni del diencéfalo", why: "Según el libro la pérdida de conciencia requiere afectar corteza y SARA, o una disfunción difusa; aquí interviene el efecto de masa y el edema." },
-        { t: "La postura indica daño mesencefálico, porque el motor 3 equivale a descerebración y la rigidez orienta a lesión del tronco alto", why: "Motor 3 es reflejo flexor (decorticación); la descerebración corresponde a motor 2." },
-        { t: "El Glasgow de 5 es esperable a los 70 años con comorbilidad, pues responde al dolor y por ello no alcanza el rango de coma", why: "Un Glasgow de 5 indica deterioro grave, en rango de coma (≤ 8), sin ajuste por edad." },
-        { t: "El efecto de masa y el edema comprometen vías corticales y diencefálicas; la decorticación (motor 3, Glasgow 5) orienta a daño diencefálico", why: "Correcta. El libro explica que las causas estructurales producen efecto de masa, edema y aumento de la presión intracraneal, y asocia la decorticación (Glasgow 5) con daño diencefálico." }
+        { t: "Lesión pequeña y unilateral de la corteza cerebral.", why: "Una lesión pequeña y unilateral solo produce déficit focal; para el coma hay que afectar corteza y SARA a la vez." },
+        { t: "Hipoglucemia con disfunción neuronal difusa.", why: "Nada en la historia orienta a hipoglucemia, y en la imagen hay una lesión estructural con efecto de masa que explica por sí sola el cuadro; la glucosa no es la variable que decide." },
+        { t: "Efecto de masa y edema que comprometen vías corticales y diencefálicas.", why: "Correcta. La masa con edema eleva la PIC y comprime vías corticales y diencefálicas; la flexión anormal con Glasgow 5 corresponde a decorticación diencefálica." },
+        { t: "Daño del mesencéfalo con rigidez de descerebración.", why: "La descerebración es motor 2 y Glasgow 4; este paciente tiene motor 3, propio de decorticación." }
       ],
-      correct: 3
+      correct: 2,
+      rule: "Antes de culpar a una causa metabólica, busca en el caso el efecto de masa: edema, desviación de línea media o postura de decorticación."
     },
     {
-      stem: "Tras una intoxicación, un varón de 40 años presenta pupilas mióticas, rigidez de decorticación, signo de Babinski bilateral y respiración de Cheyne-Stokes. Dentro del síndrome central de deterioro rostro-caudal, ¿en qué fase se encuentra?",
+      id: "32-6",
+      stem: "Tras una intoxicación, un varón de 40 años presenta pupilas mióticas, postura de decorticación, signo de Babinski bilateral y respiración de Cheyne-Stokes. ¿En qué fase del deterioro rostro-caudal se encuentra?",
       options: [
-        { t: "Fase mesencefálica, con pupilas intermedias irregulares, hiperventilación y descerebración", why: "Esas son las características de la fase mesencefálica; aquí hay miosis, decorticación y Cheyne-Stokes, que son más rostrales." },
-        { t: "Fase bulbar, con respiración de Biot, hipotensión y paciente cuadripléjico y sin tono", why: "Es la última fase, con pupilas midriáticas sin reflejos y flacidez; el paciente descrito conserva tono flexor y pupilas mióticas." },
-        { t: "Fase diencefálica, la primera del deterioro, con pupilas pequeñas y postura flexora", why: "Correcta. Miosis, decorticación, Babinski bilateral y Cheyne-Stokes son el cuadro del libro para la fase diencefálica." },
-        { t: "Fase protuberancial, con paciente flácido, pupilas intermedias sin reflejos y apneas", why: "En esta fase el paciente está flácido, con pupilas intermedias sin reflejos y respiración superficial con apneas." }
+        { t: "Fase mesencefálica, con pupilas intermedias e hiperventilación.", why: "La fase mesencefálica da pupilas intermedias irregulares, hiperventilación y descerebración, no miosis con Cheyne-Stokes." },
+        { t: "Fase protuberancial, con flacidez y apneas.", why: "La protuberancial cursa con paciente flácido, pupilas intermedias sin reflejos y respiración superficial con apneas." },
+        { t: "Fase bulbar, con midriasis y respiración de Biot.", why: "La bulbar es la fase final: respiración de Biot, hipotensión, midriasis sin reflejos y flacidez." },
+        { t: "Fase diencefálica, la primera del deterioro.", why: "Correcta. Miosis, decorticación, Babinski bilateral y Cheyne-Stokes definen la fase diencefálica, la primera en el descenso." }
       ],
-      correct: 2
+      correct: 3,
+      rule: "Ordena el descenso: miosis y Cheyne-Stokes = diencéfalo; pupilas intermedias e hiperventilación = mesencéfalo; Biot y midriasis = bulbo."
     },
     {
-      stem: "Un hombre de 29 años sufre un traumatismo craneoencefálico y es llevado a UCI. A las 24 horas tiene Glasgow 3, pupilas sin reflejo, ausencia de reflejos oculocefálicos y oculovestibulares y apnea al probar desconexión del ventilador. La temperatura central es de 30,5 °C y el tamizaje toxicológico es positivo para benzodiazepinas. ¿Cuál es la conducta coherente con el capítulo?",
+      id: "32-7",
+      stem: "Un hombre de 29 años con traumatismo craneoencefálico tiene Glasgow 3, ausencia de reflejos pupilares, oculocefálicos y oculovestibulares, y apnea. Su temperatura central es 30,5 °C y el tamizaje es positivo para benzodiazepinas. ¿Qué conducta es coherente?",
       options: [
-        { t: "No declarar muerte cerebral aún: hay que recalentar hasta ≥ 32 °C y descartar el efecto de las benzodiazepinas antes de evaluar", why: "Correcta. El libro exige excluir drogas neurodepresoras y condiciones confusoras, y que la temperatura central no sea menor de 32 °C." },
-        { t: "Declarar muerte cerebral: coma, ausencia de reflejos del tallo y apnea son los tres datos cardinales y bastan para el diagnóstico", why: "Esos son los datos cardinales, pero el diagnóstico exige además excluir fármacos y que la temperatura sea ≥ 32 °C." },
-        { t: "Declarar muerte cerebral por el Glasgow 3 sostenido a las 24 horas; la hipotermia de 30,5 °C solo retrasa el trámite", why: "Glasgow 3 describe ausencia de respuesta, no establece muerte cerebral; y una temperatura menor de 32 °C impide hacer el diagnóstico." },
-        { t: "Descartar el diagnóstico de forma definitiva, pues la apnea no figura entre los datos cardinales ni los reflejos oculocefálicos cuentan", why: "La apnea y la ausencia de reflejos del tallo son dos de los tres datos cardinales de la muerte cerebral según el capítulo." }
+        { t: "No declarar muerte cerebral hasta corregir la temperatura y excluir el fármaco.", why: "Correcta. Antes de declararla hay que excluir causas confusoras: la temperatura debe ser de al menos 32 °C y no debe haber drogas neurodepresoras." },
+        { t: "Declarar muerte cerebral por coma, sin reflejos del tallo y apnea.", why: "Esos tres datos son cardinales, pero solo valen cuando ya se excluyeron hipotermia, tóxicos y alteraciones metabólicas." },
+        { t: "Declarar muerte cerebral por el Glasgow 3 sostenido.", why: "El Glasgow 3 solo describe ausencia de respuesta; no establece por sí solo muerte cerebral." },
+        { t: "Descartar muerte cerebral porque la apnea no es un dato cardinal.", why: "La apnea es uno de los tres datos cardinales, junto con el coma y la ausencia de reflejos del tallo." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Antes de firmar muerte cerebral: catástrofe compatible, sin tóxicos, temperatura ≥ 32 °C, sin reflejos del tallo y apnea."
     },
     {
-      stem: "Un paciente de 58 años es ingresado a UCI intubado, bajo sedación parcial, tras una hemorragia subaracnoidea. El equipo quiere seguir su estado neurológico día a día. ¿Qué escala es más apropiada y cuál es su estructura según el capítulo?",
+      id: "32-8",
+      stem: "Un paciente de 58 años está intubado y bajo sedación parcial tras una hemorragia subaracnoidea. ¿Qué escala permite valorar mejor su estado de conciencia y por qué?",
       options: [
-        { t: "Glasgow, porque evalúa ocular, motor, reflejos del tronco y patrón respiratorio sin necesitar respuesta verbal", why: "Glasgow solo evalúa apertura ocular, respuesta verbal y motora; no incluye el tronco ni la respiración y exige respuesta verbal." },
-        { t: "FOUR: cuatro componentes (ocular, motor, tronco y respiración), 0-4 cada uno, máximo 16; sin respuesta verbal", why: "Correcta. Al no requerir respuesta verbal sirve en intubados o sedados y valora mejor el tronco y el patrón respiratorio." },
-        { t: "FOUR: tres componentes (ocular, verbal y motor), 1-5 cada uno, máximo 15; requiere respuesta verbal conservada", why: "La escala FOUR tiene cuatro componentes calificados de 0 a 4, con máximo de 16, y no usa la respuesta verbal." },
-        { t: "Glasgow, asignando 0 a la respuesta verbal por la intubación y manteniendo el máximo de 15 de la escala", why: "Glasgow pierde utilidad al no poder valorar la respuesta verbal y su rango real empieza en 3; el libro propone FOUR como alternativa." }
+        { t: "Glasgow, porque no requiere respuesta verbal.", why: "El Glasgow sí incluye respuesta verbal; en un intubado ese componente no puede evaluarse." },
+        { t: "FOUR, porque no requiere respuesta verbal y evalúa tronco y respiración.", why: "Correcta. La FOUR tiene 4 componentes de 0 a 4 (máximo 16), no usa respuesta verbal y valora mejor el tronco y el patrón respiratorio." },
+        { t: "Glasgow, porque evalúa reflejos del tronco y respiración.", why: "El Glasgow solo valora apertura ocular, respuesta verbal y respuesta motora; no explora reflejos del tronco." },
+        { t: "FOUR, porque evalúa apertura ocular, verbal y motora.", why: "Ocular, verbal y motora son los componentes del Glasgow; la FOUR valora ocular, motor, reflejos del tronco y respiración." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Paciente intubado o sedado → FOUR, porque no necesita respuesta verbal; Glasgow necesita el verbal."
     },
     {
-      stem: "Un hombre de 66 años con un infarto cortical pequeño en el lóbulo frontal izquierdo presenta paresia del brazo derecho, pero está despierto, atento y orientado en persona, lugar y tiempo. Un residente pregunta por qué no entró en coma. ¿Cuál es la explicación más adecuada según el capítulo?",
+      id: "32-9",
+      stem: "Un hombre de 66 años con un pequeño infarto cortical frontal izquierdo presenta paresia del brazo derecho, pero está despierto, atento y orientado. ¿Qué mecanismo explica que no haya entrado en coma?",
       options: [
-        { t: "Porque el infarto cortical respeta el sistema activador reticular ascendente en cualquier localización, y ninguna lesión cortical altera la conciencia", why: "La generalización es incorrecta; el principio es que la pérdida de conciencia exige afectar corteza y SARA al mismo tiempo, o una disfunción difusa." },
-        { t: "Porque el coma requiere lesión hipotalámica, estructura que no se afectó en este paciente", why: "El libro no sostiene eso; menciona corteza, SARA, tálamo y conexiones tálamo-corticales." },
-        { t: "Porque la corteza frontal no participa en la conciencia, que depende solo del tálamo y del tronco", why: "La corteza es la sede de la conciencia; el punto es que una lesión limitada no basta si el SARA y el resto de la corteza funcionan." },
-        { t: "Porque la lesión es focal y unilateral: perder la conciencia exige afectar corteza y SARA a la vez, o una disfunción difusa tálamo-cortical", why: "Correcta. Con SARA, tálamo y el resto de la corteza indemnes, la vigilia y la conciencia se conservan y solo hay déficit focal." }
+        { t: "La conciencia depende solo del tálamo.", why: "El tálamo es una estación de relevo, pero la conciencia se logra en la corteza con el SARA; no depende solo del tálamo." },
+        { t: "El coma exige lesión del hipotálamo.", why: "El hipotálamo no es el sustrato que menciona el capítulo; lo relevante es corteza, SARA y sus conexiones con el tálamo." },
+        { t: "Se necesita afectar corteza y SARA a la vez.", why: "Correcta. Con el SARA y el resto de la corteza indemnes, una lesión focal solo da déficit; para el coma deben fallar corteza y SARA." },
+        { t: "La corteza frontal no participa en la conciencia.", why: "La corteza es la sede de la conciencia; lo que aquí falta es la afectación del SARA, no la participación frontal." }
       ],
-      correct: 3
+      correct: 2,
+      rule: "Lesión focal pequeña = déficit focal. Coma = corteza y SARA afectados, o causa difusa."
     },
     {
-      stem: "Un paciente de 45 años sufre un traumatismo craneoencefálico grave. Presión arterial 100/60 mmHg. Un monitor intraparenquimatoso marca una presión intracraneal de 40 mmHg y el paciente está en estupor. Con el valor normal de presión de perfusión cerebral del libro (70-100 mmHg), ¿cuál es su PPC y qué consecuencia tiene para la conciencia?",
+      id: "32-10",
+      stem: "Un hombre de 70 años con shock hemorrágico mantiene una PAM de 40 mmHg durante varias horas. La RM muestra infartos cerebrales. ¿Cuál es el mecanismo que los explica?",
       options: [
-        { t: "PPC 33 mmHg (PAM 73 - PIC 40); muy inferior a 70-100 mmHg: hipoperfusión, isquemia y descenso del nivel de alerta", why: "Correcta. PAM = (100 + 2 x 60) / 3 = 73,3; PPC = 73,3 - 40 = 33,3 mmHg, muy inferior a 70-100: hipoperfusión, isquemia y descenso del nivel de alerta." },
-        { t: "PPC 60 mmHg (presión sistólica - PIC); perfusión limítrofe que no alcanza a explicar el estupor del paciente", why: "Resta la PIC a la presión sistólica; la PPC se calcula con la PAM (73,3), no con la sistólica, y da 33 mmHg." },
-        { t: "PPC 113 mmHg (PAM 73 + PIC 40); sobreperfusión con hiperemia cerebral que explicaría el estupor", why: "Suma la PIC en lugar de restarla; la PPC es PAM - PIC." },
-        { t: "PPC 73 mmHg (PAM sin restar la PIC); perfusión normal, con estupor atribuido solo a edema citotóxico", why: "73 es la PAM, no la PPC; omite restar la PIC de 40 mmHg." }
+        { t: "PAM mayor de 150 mmHg con mayor presión en los vasos.", why: "La PAM alta produce hemorragias; este paciente está hipotenso, con 40 mmHg." },
+        { t: "Hipercapnia con vasodilatación y aumento del flujo.", why: "La hipercapnia aumenta el flujo; no explica infartos por hipoperfusión." },
+        { t: "Autorregulación eficaz que mantiene el flujo cerebral constante.", why: "La autorregulación solo funciona entre 50 y 150 mmHg; con 40 mmHg se pierde y el flujo cae." },
+        { t: "PAM menor de 50 mmHg con caída e interrupción del flujo.", why: "Correcta. Bajo 50 mmHg la autorregulación falla, el flujo cerebral se interrumpe y aparecen infartos." }
       ],
-      correct: 0
+      correct: 3,
+      rule: "PAM menor de 50 mmHg sostenida → riesgo de infarto; no la confundas con la hemorragia de la PAM mayor de 150."
     },
     {
-      stem: "Un joven de 22 años sufre un golpe en la región temporal derecha. Inicialmente lúcido, a las 3 horas se vuelve somnoliento y luego estuporoso. Presenta midriasis fija derecha, hemiplejia izquierda y, más tarde, rigidez de decorticación. Integrando estado de alerta e hipertensión intracraneal, ¿cuál es el mecanismo más probable?",
+      id: "32-11",
+      stem: "Una mujer de 72 años duerme y solo despierta ante estímulos dolorosos intensos; al cesar el estímulo vuelve al mismo estado, con respuestas verbales lentas e inadecuadas. ¿Cuál es el diagnóstico más probable?",
       options: [
-        { t: "Hernia subfalcina por desplazamiento de la línea media, con compresión de la arteria cerebral anterior y paresia crural contralateral de inicio progresivo", why: "Produce sobre todo paresia contralateral de miembros inferiores, sin midriasis por compromiso del III par." },
-        { t: "Hernia amigdalina con descenso de las amígdalas cerebelosas por el agujero magno y compresión del bulbo, con paro cardiorrespiratorio", why: "Se manifiesta con paro cardiorrespiratorio y muerte, no con midriasis unilateral progresiva ni hemiplejia." },
-        { t: "Hernia transtentorial uncal por hematoma de fosa media, que comprime el III par, con midriasis ipsilateral y hemiplejia contralateral", why: "Correcta. Las lesiones de la fosa media provocan hernia uncal con midriasis ipsilateral y hemiplejia contralateral; al progresar, el deterioro rostro-caudal lleva a decorticación y menor conciencia." },
-        { t: "Hernia transtentorial ascendente del cerebelo por lesión infratentorial, que comprime los colículos inferiores con sordera y parálisis del IV par", why: "Su causa son lesiones infratentoriales o drenaje súbito de LCR, y produce sordera y parálisis del IV par; aquí la lesión es supratentorial." }
+        { t: "Estupor.", why: "Correcta. En el estupor no hay respuesta a estímulos simples: despierta solo con dolor y vuelve al estado previo, con verbal lento e inadecuado." },
+        { t: "Somnolencia.", why: "En la somnolencia despierta con facilidad ante cualquier estímulo y atiende órdenes simples." },
+        { t: "Obnubilación.", why: "La obnubilación responde a estímulos repetidos y vigorosos, pero no necesita dolor para despertar." },
+        { t: "Estado de coma.", why: "En el coma no hay respuesta a ningún estímulo y suele haber Glasgow ≤ 8." }
       ],
-      correct: 2
+      correct: 0,
+      rule: "Somnolencia = despierta fácil; obnubilación = estímulo vigoroso; estupor = solo dolor; coma = nada."
     }
   ]
 }
