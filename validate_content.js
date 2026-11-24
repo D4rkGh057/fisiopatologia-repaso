@@ -160,6 +160,14 @@ chapters.forEach((ch) => {
   });
 });
 
+// The bank is not the only student-facing surface: the app shell and the page carry copy too.
+[["app.js", path.join(__dirname, "app.js")], ["index.html", path.join(__dirname, "index.html")]]
+  .forEach(([name, file]) => {
+    if (!fs.existsSync(file)) return;
+    const hit = voseoHit(fs.readFileSync(file, "utf8"));
+    if (hit) fail(name, "student-facing copy uses voseo: " + hit);
+  });
+
 const total = chapters.reduce((s, c) => s + (c.questions || []).length, 0);
 if (total < EXPECTED_IDS.length * QUESTIONS_PER_CHAPTER) {
   fail("bank", "expected at least " + EXPECTED_IDS.length * QUESTIONS_PER_CHAPTER + " questions, found " + total);

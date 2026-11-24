@@ -207,7 +207,7 @@ function renderSummary(chId) {
     <h2>${c.title}</h2>
     <p class="lead">Cómo leer esto: primero la idea en una frase. Después la cadena de causas, que es exactamente lo que te van a preguntar. Al final, cómo aparece en el examen. No memorices: cada paso explica al anterior.</p>
     ${c.easy ? `<section class="lesson">${c.easy}</section>
-    <details class="full"><summary>Resumen completo del libro (solo si querés el detalle)</summary>${c.summary}</details>` : c.summary}`;
+    <details class="full"><summary>Resumen completo del libro (solo si quieres el detalle)</summary>${c.summary}</details>` : c.summary}`;
 }
 
 function renderQuestion() {
