@@ -136,30 +136,35 @@ function renderHome() {
   const wrongCount = ALL.filter((q) => stats[q.id] && stats[q.id].lastOk === false).length;
   const tiles = CHAPTERS.map((c) => {
     const cs = chapterStats(c);
-    const progress = cs.n ? `Aciertos: ${pct(cs.ok, cs.n)}% (${cs.n} intentos)` : "Sin intentos";
+    const acc = cs.n ? pct(cs.ok, cs.n) : 0;
+    const progress = cs.n ? `Aciertos: ${acc}% (${cs.n} intentos)` : "Sin intentos";
     return `
     <div class="tile">
       <h3>${c.title}</h3>
       <div class="meta">${c.questions.length} preguntas · ${progress}</div>
+      <div class="progress" aria-hidden="true"><span style="width:${acc}%"></span></div>
       <div class="row">
+        <button class="btn primary" data-act="practice" data-ch="${c.id}">Practicar</button>
         <button class="btn" data-act="summary" data-ch="${c.id}">Resumen</button>
-        <button class="btn" data-act="practice" data-ch="${c.id}">Practicar</button>
       </div>
     </div>`;
   }).join("");
   view.innerHTML = `
+    <section class="hero">
+      <p class="eyebrow">Parcial del Dr. Vinueza</p>
+      <h2>Entrena con el formato del parcial</h2>
+      <p class="lede">Viñeta corta, una pregunta de mecanismo y cuatro opciones parecidas. El modo examen imita la prueba real: cuarenta preguntas, 0,25 puntos cada una y la corrección recién al final.</p>
+      <div class="actions">
+        <button class="btn big" data-act="exam"><span>Modo examen</span><small>${SIM_SIZE} preguntas · 0,25 c/u · sin corrección hasta el final</small></button>
+        <button class="btn" data-act="sim">Simulacro con explicación al instante</button>
+        <button class="btn" data-act="mixed" data-n="20">Mixto de 20</button>
+        <button class="btn" data-act="mixed" data-n="10">Mixto de 10</button>
+        <button class="btn" data-act="errors" ${wrongCount ? "" : "disabled"}>Repasar errores (${wrongCount})</button>
+      </div>
+    </section>
     <h2>Capítulos</h2>
-    <div class="grid">${tiles}</div>
-    <h2>Mezclar capítulos</h2>
     <p class="meta">Banco total: ${ALL.length} preguntas en ${CHAPTERS.length} capítulo(s). Las opciones se barajan cada vez. El mixto y el simulacro priorizan lo que fallaste o aún no viste.</p>
-    <div class="row">
-      <button class="btn" data-act="exam">Modo examen (${SIM_SIZE}, sin corrección hasta el final)</button>
-      <button class="btn" data-act="sim">Simulacro de ${SIM_SIZE} (con explicación al instante)</button>
-      <button class="btn" data-act="mixed" data-n="10">Mixto de 10</button>
-      <button class="btn" data-act="mixed" data-n="20">Mixto de 20</button>
-      <button class="btn" data-act="errors" ${wrongCount ? "" : "disabled"}>Repasar errores (${wrongCount})</button>
-    </div>
-    <div class="note">El modo examen imita el parcial del doctor: 40 preguntas, 0,25 puntos cada una, hoja de respuestas al final y nada de corrección mientras respondés. El simulacro es para entrenar con la explicación en el momento.</div>
+    <div class="grid">${tiles}</div>
     ${ALL.length < SIM_SIZE ? `<p class="meta">El simulacro usará todas las preguntas disponibles (${ALL.length}).</p>` : ""}
     <h2>Mi progreso</h2>
     <p class="meta">El historial se guarda solo en este navegador. Exporta los resultados para analizarlos o para no perderlos.</p>
@@ -187,9 +192,12 @@ function renderQuestion() {
   const exam = s.mode === "exam";
   const done = Math.round((s.i / s.items.length) * 100);
   view.innerHTML = `
-    <div class="row" style="margin:0 0 10px"><button class="btn" data-act="home">Salir</button></div>
+    <div class="qhead">
+      <button class="btn" data-act="home">Salir</button>
+      <p class="meta">${s.title} · pregunta ${s.i + 1} de ${s.items.length}${exam ? " · sin corrección hasta el final" : ""}</p>
+    </div>
     <div class="bar"><span style="width:${done}%"></span></div>
-    <p class="meta">${s.title} · pregunta ${s.i + 1} de ${s.items.length}${exam ? " · sin corrección hasta el final" : ""}</p>
+    <div class="qbody">
     <p class="stem">${q.stem}</p>
     ${exam ? `<p class="meta exam-hint">Elegí una sola respuesta. No se corrige y no podés volver atrás.</p>` : `<div class="conf" role="group" aria-label="Seguridad">
       <span>Antes de responder, ¿qué tan segura estás?</span>
@@ -198,7 +206,8 @@ function renderQuestion() {
     </div>`}
     <div>${q.options.map((o, i) => `<button class="opt" data-opt="${i}"><b>${LETTERS[i]})</b> ${o.t}</button>`).join("")}</div>
     <p class="warn" id="warn"></p>
-    <div id="after"></div>`;
+    <div id="after"></div>
+    </div>`;
 }
 
 // S3: the feedback names the student's error. A book citation is not an explanation.
@@ -226,9 +235,14 @@ function feedbackHtml(q, chosen, ok) {
 function renderExamResult() {
   const r = session.results;
   const hit = r.filter((x) => x.ok).length;
-  const nota = (hit / r.length * 10).toFixed(2).replace(".", ",");
+  const notaNum = (hit / r.length) * 10;
+  const nota = notaNum.toFixed(2).replace(".", ",");
+  const tone = notaNum >= 7 ? "is-pass" : notaNum >= 5 ? "is-mid" : "is-fail";
   const scale = r.length === SIM_SIZE ? " · 0,25 puntos por pregunta, como el parcial" : "";
   const missed = r.filter((x) => !x.ok).length;
+  // The answer sheet is the one bold element of the app: the professor's printed response
+  // grid, rebuilt from this run. Each cell opens its own explanation.
+  const sheet = r.map((x, n) => `<button class="sheet-cell ${x.ok ? "is-ok" : "is-bad"}" data-rev="${n}" title="Pregunta ${n + 1}: ${x.ok ? "correcta" : "incorrecta"}">${n + 1}</button>`).join("");
   const review = r.map((x, n) => {
     const q = x.item;
     const correctIndex = q.options.findIndex((o) => o.isCorrect);
@@ -244,9 +258,13 @@ function renderExamResult() {
     </details>`;
   }).join("");
   view.innerHTML = `
-    <h2>Nota: ${nota} / 10</h2>
+    <h2 class="score-h ${tone}">Nota: ${nota} / 10</h2>
     <p>${hit} de ${r.length} correctas${scale}. ${missed ? "Fallaste " + missed + "." : "No fallaste ninguna."}</p>
-    <div class="note">Esto es lo que vería el doctor: sin corrección durante la prueba. Leé la revisión de abajo y quedate con la regla de cada pregunta que fallaste.</div>
+    <h3>Hoja de respuestas</h3>
+    <p class="meta">Toca un número para leer la explicación de esa pregunta.</p>
+    <div class="sheet" role="group" aria-label="Hoja de respuestas">${sheet}</div>
+    <div class="sheet-key"><span><i class="k-ok"></i>correcta</span><span><i class="k-bad"></i>incorrecta</span></div>
+    <div class="note">Esto es lo que vería el doctor: sin corrección durante la prueba. Lee la revisión de abajo y quédate con la regla de cada pregunta que fallaste.</div>
     <h3>Revisión pregunta por pregunta</h3>
     ${review}
     <div class="row"><button class="primary" data-act="home">Volver al inicio</button></div>`;
@@ -349,6 +367,16 @@ view.addEventListener("click", (e) => {
       stats = {};
       try { localStorage.removeItem(KEY); localStorage.removeItem(OLD_KEY); } catch (err) { /* storage unavailable */ }
       renderHome();
+    }
+    return;
+  }
+
+  if (t.dataset.rev !== undefined) {
+    const detail = view.querySelectorAll("details.rev")[Number(t.dataset.rev)];
+    if (detail) {
+      detail.open = true;
+      const reduce = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      detail.scrollIntoView({ block: "start", behavior: reduce ? "auto" : "smooth" });
     }
     return;
   }
