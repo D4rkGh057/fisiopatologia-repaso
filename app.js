@@ -34,6 +34,30 @@ function saveStats() {
 }
 let stats = loadStats();
 
+// ---------- THEME ----------
+// The system preference is the default. The toggle overrides it and the choice is remembered.
+const THEME_KEY = "fisio-theme";
+let storedTheme = (() => {
+  try {
+    const v = localStorage.getItem(THEME_KEY);
+    return v === "light" || v === "dark" ? v : null;
+  } catch (e) { return null; }
+})();
+
+const systemTheme = () =>
+  window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  const btn = document.getElementById("theme-toggle");
+  if (!btn) return;
+  // The label names the action, not the current state.
+  btn.textContent = theme === "dark" ? "Modo claro" : "Modo oscuro";
+  btn.setAttribute("aria-pressed", String(theme === "light"));
+}
+
+applyTheme(storedTheme || systemTheme());
+
 // Leitner-style update: a wrong answer sends the question back to box 0; a correct answer
 // given with confidence moves it up; a correct but doubtful answer keeps its box.
 function record(id, ok, conf) {
@@ -336,6 +360,20 @@ function renderExport() {
 
 // ---------- EVENTS ----------
 document.getElementById("home-link").addEventListener("click", (e) => { e.preventDefault(); renderHome(); });
+
+document.getElementById("theme-toggle").addEventListener("click", () => {
+  const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  applyTheme(next);
+  storedTheme = next;
+  try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* storage unavailable */ }
+});
+
+// Follow the system while the user has not chosen a theme explicitly.
+if (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").addEventListener) {
+  window.matchMedia("(prefers-color-scheme: light)").addEventListener("change", () => {
+    if (!storedTheme) applyTheme(systemTheme());
+  });
+}
 
 view.addEventListener("click", (e) => {
   const t = e.target.closest("button");

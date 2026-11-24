@@ -29,24 +29,28 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-    --bg: #f7f8fa;
-    --surface: #ffffff;
-    --surface-2: #f1f3f7;
-    --line: #e3e6ec;
-    --line-strong: #cbd1db;
-    --text: #0a0a0a;
-    --muted: #5a6473;
-    --accent: #4353f3;
-    --accent-soft: #2f3fd8;
-    --accent-bg: #edeffe;
-    --amber: #a66300;
-    --ok: #0e7c4a;
-    --ok-bg: #e6f6ee;
-    --bad: #c02626;
-    --bad-bg: #fdecec;
-  }
+  :root { color-scheme: light; }
+}
+
+/* The toggle writes data-theme on <html>; without a stored choice the script applies
+   the system preference, so these two blocks are the only theme definitions. */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f7f8fa;
+  --surface: #ffffff;
+  --surface-2: #f1f3f7;
+  --line: #e3e6ec;
+  --line-strong: #cbd1db;
+  --text: #0a0a0a;
+  --muted: #5a6473;
+  --accent: #4353f3;
+  --accent-soft: #2f3fd8;
+  --accent-bg: #edeffe;
+  --amber: #a66300;
+  --ok: #0e7c4a;
+  --ok-bg: #e6f6ee;
+  --bad: #c02626;
+  --bad-bg: #fdecec;
 }
 
 * { box-sizing: border-box; }
@@ -60,6 +64,11 @@ body {
 }
 
 main { max-width: 1000px; margin: 0 auto; padding: 28px 20px 96px; }
+
+.topbar { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; }
+.topbar > div { min-width: 0; }
+.theme-toggle { flex: none; padding: 8px 14px; font-size: 0.88rem; color: var(--muted); }
+.theme-toggle:hover:not(:disabled) { color: var(--text); }
 
 a { color: var(--accent-soft); }
 
@@ -99,7 +108,7 @@ button { font: inherit; cursor: pointer; }
   padding: 11px 16px;
   border-radius: var(--r-sm);
   text-align: left;
-  transition: border-color 0.15s ease, background 0.15s ease;
+  transition: border-color 0.15s ease;
 }
 .btn:hover:not(:disabled) { border-color: var(--line-strong); background: var(--surface-2); }
 .btn:disabled { opacity: 0.45; cursor: not-allowed; }
@@ -208,7 +217,7 @@ button { font: inherit; cursor: pointer; }
   color: var(--text);
   border-radius: var(--r-sm);
   line-height: 1.5;
-  transition: border-color 0.15s ease, background 0.15s ease;
+  transition: border-color 0.15s ease;
 }
 .opt:hover:not(:disabled) { border-color: var(--accent); background: var(--surface-2); }
 .opt > b { font-family: var(--mono); font-weight: 600; color: var(--muted); font-size: 0.95rem; }
@@ -343,4 +352,5 @@ th { background: var(--surface-2); font-weight: 600; }
   .stem { font-size: 1.06rem; padding: 15px 16px; }
   .opt { padding: 12px 13px; grid-template-columns: 1.8rem 1fr; }
   .btn.big { max-width: none; width: 100%; }
+  .theme-toggle { padding: 7px 11px; font-size: 0.82rem; }
 }
