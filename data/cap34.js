@@ -5,6 +5,56 @@ window.CHAPTERS.push(
   id: 34,
   weight: 4,
   title: "34. Hiperexcitabilidad neuronal",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>Una crisis convulsiva es un grupo de neuronas que se dispara a la vez y sin freno. Ocurre porque sobra glutamato (el mensajero que excita) o falta GABA (el que inhibe).</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <p>Antes de seguir, dos palabras. Un <b>potencial de acción</b> es el impulso eléctrico con el que la neurona habla. La <b>despolarización</b> es perder carga negativa y acercarse al punto en que la neurona dispara.</p>
+  <ol>
+    <li>Se rompe el equilibrio: sube el glutamato, baja el GABA, o un canal de Na+, K+ o Ca2+ funciona mal.</li>
+    <li>Entra Ca2+ y la membrana queda despolarizada más tiempo de lo normal.</li>
+    <li>Esa despolarización sostenida abre canales de Na+ y aparecen impulsos repetidos muy rápidos.</li>
+    <li>Muchas neuronas disparan juntas: se llama <b>hipersincronización</b> y con ella ocurre la <b>iniciación</b> de la crisis.</li>
+    <li>Las descargas suben el K+ que queda fuera de la célula, y ese potasio despolariza a las neuronas vecinas.</li>
+    <li>Además se acumula Ca2+ en las terminaciones nerviosas y se activa el receptor NMDA, que deja entrar más calcio.</li>
+    <li>El anillo de neuronas GABA que frenaba la descarga no alcanza, y la crisis se extiende: es la <b>propagación</b>.</li>
+    <li>Si la descarga abarca los dos hemisferios, se pierde la conciencia y se gasta mucha energía.</li>
+    <li>Al final las neuronas quedan agotadas: viene el <b>periodo postictal</b>, con confusión y sueño.</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <p>Cada crisis tiene su forma, y la forma dice qué parte del cerebro se descargó.</p>
+  <ul>
+    <li><b>Ausencia típica:</b> el niño se queda con la mirada fija unos segundos y detiene lo que hacía, sin moverse y sin confusión después; es una descarga generalizada muy breve.</li>
+    <li><b>Ausencia atípica:</b> empieza despacio, dura más y el cuerpo se mueve más.</li>
+    <li><b>Mioclónica:</b> sacudidas bruscas y cortas; el paciente suelta lo que tiene en la mano y el electroencefalograma muestra puntas o polipuntas generalizadas.</li>
+    <li><b>Tónica:</b> contracción sostenida alrededor de un minuto; el espasmo de la laringe produce el grito y la apnea produce la cianosis.</li>
+    <li><b>Clónica:</b> sacudidas rítmicas e irregulares, con mordedura de lengua y sialorrea.</li>
+    <li><b>Tónico-clónica:</b> pérdida de conciencia, fase tónica y fase clónica, y postictal al final; si pasa de 5 minutos es <b>status epiléptico</b>.</li>
+    <li><b>Focal:</b> la descarga empieza en una zona y los síntomas dependen de esa zona; puede generalizarse después.</li>
+  </ul>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Te da una viñeta corta con la edad y un antecedente: trauma, encefalitis o familia. Luego te pide el mecanismo de la fase: iniciación o propagación.</li>
+    <li>Te pregunta el dato exacto: qué ion entra en la iniciación, qué pasa con el K+ extracelular al propagarse, qué canal explica la epilepsia grave.</li>
+    <li>Te pide interpretar un electroencefalograma o una tomografía por emisión de positrones: polipuntas generalizadas, descargas focales, hipometabolismo.</li>
+    <li>Te pide el diagnóstico más probable de la crisis: ausencia típica, mioclónica, tónica, atónica, focal.</li>
+    <li>Ejemplo de su estilo: «Joven de 19 años que tras una noche de alcohol y sin dormir suelta la taza por sacudidas breves de ambos brazos; en el electroencefalograma, ¿qué espera encontrar?».</li>
+  </ul>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> invertir la dirección de los datos. En la propagación el K+ extracelular <b>sube</b> (no baja) y el Ca2+ presináptico se <b>acumula</b>; la hiperpolarización por GABA <b>contiene</b> la descarga, no la provoca. Otra: confundir una ausencia típica (inicio y fin abruptos, sin movimientos, sin postictal) con una atípica (inicio lento, más duración, más movimiento).</div>
+
+  <h2>Números para memorizar</h2>
+  <ul>
+    <li>Potencial de acción: reposo -70 mV, umbral -55 mV, pico +40 mV.</li>
+    <li>Crisis tónico-clónica de más de 5 minutos = status epiléptico.</li>
+    <li>Fase tónica: 10 a 30 segundos; crisis tónica: alrededor de un minuto.</li>
+    <li>5 a 10 % de la población tendrá al menos una crisis; cerca de un tercio son idiopáticas.</li>
+  </ul>
+  `,
   summary: `
   <h2>1. Fundamentos</h2>
   <p>La <b>hiperexcitabilidad neuronal</b> es la capacidad anormal de grupos neuronales de generar descargas excesivas, repetitivas y sincronizadas que superan la inhibición normal; es la base de las crisis convulsivas y la epilepsia. Nace de un <b>desequilibrio entre neurotransmisión excitatoria (glutamato) e inhibitoria (GABA)</b> y de alteraciones de canales de Na+, K+ y Ca2+. Se puede tener una crisis sin tener epilepsia. Datos del libro: 5-10% de la población tendrá al menos una crisis; el lóbulo que origina más crisis es el <b>temporal, sobre todo el hipocampo</b>.</p>
@@ -62,124 +112,148 @@ window.CHAPTERS.push(
   `,
   questions: [
     {
-      stem: "Un paciente de 26 años con una cicatriz postraumática temporal derecha es monitorizado con EEG durante una crisis focal. El registro muestra, al inicio, descargas de alta frecuencia en una zona restringida. Según el capítulo, ¿cuál es el mecanismo celular que sostiene esta fase de iniciación?",
+      id: "34-0",
+      stem: "Un hombre de 26 años, con una cicatriz postraumática en el lóbulo temporal derecho, presenta una crisis focal. El electroencefalograma registra al inicio descargas de alta frecuencia en una zona restringida de la corteza. ¿Qué mecanismo celular explica la fase de iniciación?",
       options: [
-        { t: "Hiperpolarización GABAérgica reforzada por canales de Cl-, que contiene la descarga en la zona restringida", why: "La inhibición GABAérgica refuerza la contención; en la iniciación el libro describe despolarización con entrada de Ca2+ y apertura de Na+." },
-        { t: "Activación de interneuronas GABAérgicas vecinas, que generan inhibición circundante y sincronizan la descarga en la zona restringida", why: "Ese es el mecanismo normal que evita la propagación; su falla favorece la crisis." },
-        { t: "Salida masiva de K+ por canales rectificadores, con repolarización anormalmente rápida y disparo repetitivo", why: "La repolarización por K+ termina el potencial; no genera descargas repetitivas." },
-        { t: "Despolarización prolongada con entrada de Ca2+ que abre canales de Na+ y produce potenciales repetitivos con hipersincronización", why: "Correcta. Son los dos sucesos de la iniciación: descargas de alta frecuencia e hipersincronía." }
+        { t: "Hiperpolarización sostenida por GABA que impide la descarga repetitiva.", why: "Asumes que el freno GABA está reforzado; en la iniciación la hiperpolarización por GABA o por canales de K+ está alterada, y el trazado muestra descargas, no silencio." },
+        { t: "Despolarización prolongada por entrada de Ca2+ que abre canales de Na+.", why: "El Ca2+ extracelular que entra mantiene la despolarización; eso abre los canales de Na+ y genera potenciales repetitivos de alta frecuencia, los dos rasgos de la iniciación." },
+        { t: "Salida masiva de K+ que repolariza la membrana y acorta el potencial.", why: "Confundes el final del potencial de acción con su comienzo: el K+ que sale repolariza y apaga la descarga, mientras que iniciarla exige una membrana despolarizada." },
+        { t: "Activación de interneuronas GABAérgicas vecinas que sincronizan el foco.", why: "Esas interneuronas son el cerco que contiene la descarga; su falla pertenece a la propagación, no al disparo inicial del foco temporal." }
       ],
-      correct: 3
+      correct: 1,
+      rule: "Si preguntan iniciación, busca despolarización prolongada con entrada de Ca2+ y Na+; el freno GABA aparece en la propagación."
     },
     {
-      stem: "Un niño de 5 años con encefalitis presenta crisis que inician en un punto cortical y se extienden a regiones vecinas. Si el tejido normal contiene la descarga con una zona de células inhibidoras GABAérgicas, ¿qué eventos permiten que, en esta crisis, la descarga supere esa contención y se propague?",
+      id: "34-1",
+      stem: "Un niño de 5 años con encefalitis presenta crisis que comienzan en un punto cortical y avanzan a regiones vecinas. El anillo de neuronas GABAérgicas que rodea el foco no logra contener la descarga. ¿Qué mecanismo permite la propagación?",
       options: [
-        { t: "Aumento del K+ extracelular que despolariza neuronas vecinas, Ca2+ presináptico acumulado y receptores NMDA activados por glutamato", why: "Correcta. Son los tres eventos que el libro atribuye a las descargas repetitivas durante la propagación." },
-        { t: "Descenso del K+ extracelular por la bomba Na+/K+, acumulación presináptica de Ca2+ y bloqueo de receptores NMDA por magnesio", why: "Es lo contrario de lo que ocurre: el K+ extracelular sube y el NMDA se activa." },
-        { t: "Apertura de canales de K+ con hiperpolarización, menor entrada de Ca2+ y refuerzo de la inhibición GABAérgica circundante", why: "Esa hiperpolarización contiene la descarga; no la propaga." },
-        { t: "Reducción del Ca2+ presináptico con menor liberación de glutamato, y activación de receptores GABA-A en las neuronas vecinas", why: "Menos Ca2+ presináptico disminuiría la liberación; en la propagación el Ca2+ se acumula." }
+        { t: "Aumento del K+ extracelular, Ca2+ presináptico y activación de receptores NMDA.", why: "Las descargas repetitivas suben el K+ fuera de la célula y despolarizan a las vecinas, acumulan Ca2+ en las terminaciones y activan el NMDA del glutamato: la descarga avanza." },
+        { t: "Descenso del K+ extracelular, Ca2+ presináptico y bloqueo de receptores NMDA.", why: "Inviertes los tres datos a la vez: el K+ extracelular sube, el Ca2+ se acumula y el NMDA se activa; con tu versión la descarga se apagaría sola." },
+        { t: "Apertura de canales de K+ con hiperpolarización de las neuronas vecinas.", why: "Esa hiperpolarización es el mecanismo fisiológico que contiene la descarga; abrir canales de K+ aleja a la neurona vecina del umbral de disparo." },
+        { t: "Reducción del Ca2+ presináptico con menor liberación de glutamato.", why: "Al revés: menos Ca2+ presináptico liberaría menos glutamato y frenaría la propagación; para propagarse la crisis necesita más liberación, no menos." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Propagación = K+ extracelular alto, Ca2+ presináptico acumulado y NMDA activo. Si la opción apaga la descarga, está invertida."
     },
     {
-      stem: "Cuatro adultos presentan una crisis convulsiva horas después de comer mejillones contaminados con ácido domoico. Ninguno tiene antecedentes neurológicos ni alteración metabólica. En el esquema del capítulo sobre mecanismos de la excitabilidad, ¿cómo se clasifica este mecanismo?",
+      id: "34-2",
+      stem: "Cuatro adultos previamente sanos presentan crisis convulsivas generalizadas cuatro horas después de comer mejillones cultivados en una zona con ácido domoico. Ninguno tiene antecedentes neurológicos ni fiebre. ¿Qué mecanismo explica la hiperexcitabilidad?",
       options: [
-        { t: "Intrínseco: mutación que aumenta la conductancia de canales de Na+ neuronales y facilita la despolarización", why: "Los mecanismos intrínsecos son cambios en canales iónicos; aquí hay una toxina exógena." },
-        { t: "Genético: canalopatía hereditaria de K+ con pérdida del control de la repolarización", why: "No hay antecedente familiar ni genética implicada; el factor es ambiental." },
-        { t: "Extrínseco: sobreestimulación del sistema glutamatérgico, principal excitador del SNC, por una toxina ambiental", why: "Correcta. El libro usa el ácido domoico como ejemplo de aumento de la estimulación por glutamato." },
-        { t: "Extrínseco: pérdida de la inhibición GABAérgica por déficit del transportador GLUT1 en la barrera hematoencefálica", why: "El déficit de GLUT1 es una causa distinta, por alteración del transporte de glucosa; el ácido domoico actúa estimulando el glutamato." }
+        { t: "Aumento de la inhibición GABAérgica por bloqueo de la recaptación de GABA en la sinapsis cortical.", why: "Confundes excitación con inhibición: el GABA es el freno del sistema nervioso; una toxina que aumentara la inhibición produciría somnolencia, no crisis." },
+        { t: "Aumento de la entrada de Na+ por una mutación de los canales de sodio.", why: "Ese es un mecanismo intrínseco por canalopatía heredada; aquí cuatro personas sanas enfermaron tras la misma comida, lo que apunta a una toxina." },
+        { t: "Aumento de la liberación de acetilcolina en la placa motora.", why: "La acetilcolina actúa en la placa motora y en el sistema autónomo; la crisis nace en la corteza, donde el transmisor excitador principal es el glutamato." },
+        { t: "Aumento de la estimulación glutamatérgica, el principal excitador del sistema nervioso central.", why: "El ácido domoico de los moluscos estimula el glutamato; con más glutamato entra más Ca2+ por el receptor NMDA y la neurona descarga. Es el ejemplo de mecanismo extrínseco." }
       ],
-      correct: 2
+      correct: 3,
+      rule: "Toxina en la comida y varios pacientes a la vez = mecanismo extrínseco por glutamato, no canalopatía heredada."
     },
     {
-      stem: "Una familia presenta epilepsia con mutaciones en canales de sodio dependientes de voltaje. Un hijo tiene mutaciones que aumentan las corrientes de Na+, y otro hijo presenta un canal que pierde por completo su función. Otro familiar tiene una pérdida parcial de función. ¿Cuál es la relación entre el defecto del canal y la gravedad que describe el capítulo?",
+      id: "34-3",
+      stem: "En una familia con epilepsia por mutación de los canales de Na+, un hermano perdió toda la función del canal y el otro solo una parte. ¿Qué relación existe entre el grado de pérdida de función del canal y la gravedad de la epilepsia?",
       options: [
-        { t: "La pérdida completa produce epilepsia benigna y la parcial la grave, porque una neurona sin canal deja de excitarse", why: "Está invertido respecto a lo que describe el libro." },
-        { t: "La pérdida completa de función del canal produce epilepsia muy grave; la parcial suele cursar con epilepsia benigna", why: "Correcta. Además, el aumento de corrientes de Na+ eleva la excitabilidad neuronal." },
-        { t: "La ganancia de función es la única alteración que causa epilepsia; la pérdida del canal, completa o parcial, es silente", why: "El libro describe epilepsia grave cuando el canal pierde toda su función." },
-        { t: "La gravedad depende de la edad de inicio y no del grado de alteración del canal, sea por ganancia o por pérdida", why: "El capítulo relaciona la gravedad con el grado de pérdida de función del canal." }
+        { t: "La pérdida total produce epilepsia benigna y la parcial, epilepsia grave.", why: "Inviertes el gradiente: cuanto más completa es la pérdida de función del canal, peor es la epilepsia; parcial significa que queda función y el cuadro suele ser benigno." },
+        { t: "Solo la ganancia de función del canal produce epilepsia; la pérdida es silente.", why: "Confundes ganancia con pérdida: también la pérdida de función del canal de Na+ epileptiza, y de hecho la pérdida total es la forma más grave." },
+        { t: "La pérdida total produce epilepsia muy grave y la parcial suele ser benigna.", why: "Sin canales funcionales la membrana y la red quedan inestables, y la epilepsia es muy grave; con pérdida parcial queda corriente suficiente y el cuadro es benigno. La ganancia de corriente también excita." },
+        { t: "La gravedad depende solo de la edad de inicio y no del grado de pérdida.", why: "La edad no explica la diferencia entre los dos hermanos: lo que cambia entre ellos es cuánta función del canal de Na+ se perdió." }
       ],
-      correct: 1
+      correct: 2,
+      rule: "Canal de Na+: pérdida total de función = epilepsia muy grave; pérdida parcial = benigna. No es al revés."
     },
     {
-      stem: "Una niña de 4 años presenta crisis convulsivas recurrentes y retraso del desarrollo. La PET cerebral muestra hipometabolismo en la zona epileptogénica. Se diagnostica un déficit del transportador GLUT1 en la barrera hematoencefálica. ¿Cómo explica el capítulo la aparición de las crisis?",
+      id: "34-4",
+      stem: "Una niña de 4 años presenta crisis recurrentes y retraso del desarrollo. La tomografía por emisión de positrones muestra hipometabolismo en la zona epileptogénica y se confirma déficit del transportador GLUT-1 en la barrera hematoencefálica. ¿Qué mecanismo explica las crisis?",
       options: [
-        { t: "Sobreexpresión de acuaporina 4 en los astrocitos, con edema vasogénico que eleva el K+ extracelular", why: "La acuaporina 4 se relaciona con la amortiguación del K+ y el agua, no con el transportador de glucosa." },
-        { t: "Acúmulo de glucosa dentro de la neurona, con sobreactivación de receptores NMDA y entrada de Ca2+", why: "La alteración es una captación insuficiente de glucosa, no una acumulación." },
-        { t: "Exceso de GABA por la falta de glucosa, con inhibición de canales de K+ y despolarización neuronal", why: "El déficit de energía no se describe como exceso de GABA." },
-        { t: "Menor captación cerebral de glucosa con hipometabolismo, que compromete la energía neuronal y favorece las crisis convulsivas", why: "Correcta. El libro vincula la falta de GLUT1 con menor absorción de glucosa cerebral e hipometabolismo en la zona epileptogénica." }
+        { t: "Acúmulo de glucosa en la neurona con activación de receptores NMDA.", why: "Inviertes el sentido del transporte: GLUT-1 mete glucosa desde la sangre al cerebro; si falta, la neurona queda con menos energía, no con glucosa acumulada." },
+        { t: "Menor captación cerebral de glucosa con hipometabolismo neuronal.", why: "Sin GLUT-1 la glucosa no cruza desde la sangre, la zona epileptogénica cae en hipometabolismo y la falta de energía vuelve inestable la membrana; de ahí las crisis." },
+        { t: "Sobreexpresión de acuaporina 4 con aumento del K+ extracelular.", why: "La acuaporina 4 es un canal de agua astrocitario que ayuda a regular el K+; el defecto descrito aquí está en el transporte de glucosa de la barrera." },
+        { t: "Exceso de GABA por falta de glucosa con despolarización neuronal.", why: "La falta de energía no produce exceso de GABA; el GABA es el freno, y su aumento reduciría la excitabilidad en lugar de desencadenar crisis." }
       ],
-      correct: 3
+      correct: 1,
+      rule: "Hipometabolismo más GLUT-1 = la neurona no recibe glucosa. Falta de energía, nunca exceso de sustrato."
     },
     {
-      stem: "Se analiza tejido del lóbulo temporal resecado a un paciente con epilepsia farmacorresistente. Se observa esclerosis del hipocampo, acuaporina 4 alterada y disminución del canal de K+ rectificador hacia adentro Kir4.1 en los astrocitos. ¿Qué consecuencia fisiopatológica explica la hiperexcitabilidad?",
+      id: "34-5",
+      stem: "Se estudia el hipocampo resecado a una paciente con epilepsia farmacorresistente: esclerosis del hipocampo, acuaporina 4 mal localizada y expresión disminuida del canal Kir4.1 en los astrocitos. ¿Qué mecanismo explica la hiperexcitabilidad?",
       options: [
-        { t: "Recaptación excesiva de glutamato por los astrocitos, con activación de receptores GABA y entrada anómala de Na+ a la neurona", why: "No es el mecanismo descrito; Kir4.1 y acuaporina 4 se relacionan con el K+." },
-        { t: "Pérdida de la capacidad astrocitaria de regular el K+ extracelular y amortiguar el agua, que despolariza a las neuronas", why: "Correcta. La menor expresión de Kir4.1 y la alteración de AQP4 comprometen la amortiguación del K+ y favorecen la hiperexcitabilidad." },
-        { t: "Apertura constante de canales de Na+ neuronales por mutación, con corrientes persistentes que despolarizan la membrana", why: "No es la anomalía descrita en este tejido, que afecta a los astrocitos y no a canales neuronales." },
-        { t: "Aumento de la expresión de Kir4.1, con exceso de captación de K+ por el astrocito y menor K+ extracelular", why: "Invierte la dirección: aquí Kir4.1 está disminuido, lo que reduce la captación de K+ y lo deja acumularse fuera." }
+        { t: "Pérdida de la regulación astrocitaria del K+ extracelular.", why: "Kir4.1 y acuaporina 4 permiten al astrocito amortiguar el K+ que sale de las neuronas; al faltar, el K+ extracelular sube y despolariza a las células vecinas." },
+        { t: "Recaptación excesiva de glutamato por los astrocitos.", why: "El problema descrito es el K+, no el glutamato: el enunciado sitúa el defecto en Kir4.1 y acuaporina 4, un canal de potasio y un canal de agua." },
+        { t: "Apertura constante de canales de Na+ neuronales por mutación.", why: "Esa sería una canalopatía genética de la neurona; aquí el defecto está en el astrocito, la célula que debería limpiar el potasio del espacio extracelular." },
+        { t: "Aumento de la captación de K+ por mayor expresión de Kir4.1.", why: "Inviertes la dirección: Kir4.1 está disminuido, por eso el astrocito capta menos K+ y el potasio se acumula fuera de la célula." }
       ],
-      correct: 1
+      correct: 0,
+      rule: "Astrocito con menos Kir4.1 = K+ extracelular alto y neuronas vecinas despolarizadas. No es una canalopatía neuronal."
     },
     {
-      stem: "Un hombre de 40 años con encefalitis viral desarrolla crisis frecuentes. Se mide un aumento de interleucina 1 beta en el líquido cefalorraquídeo. Según el capítulo, ¿qué efecto celular de esta citocina contribuye a la hiperexcitabilidad?",
+      id: "34-6",
+      stem: "Un hombre de 40 años con encefalitis viral presenta crisis frecuentes y concentraciones altas de interleucina 1 beta en el líquido cefalorraquídeo. ¿Qué efecto de esa citocina explica la hiperexcitabilidad?",
       options: [
-        { t: "Potencia las corrientes mediadas por GABA y reduce la función del NMDA, con aumento de la inhibición sináptica", why: "Es lo contrario: la IL-1β inhibe las corrientes GABA y aumenta la función del NMDA." },
-        { t: "Disminuye la movilización intracelular de Ca2+ y la función de los receptores glutamatérgicos, con menor excitabilidad", why: "El libro indica que aumenta la movilización de calcio y la función del NMDA." },
-        { t: "Inhibe las corrientes mediadas por GABA, aumenta la función del NMDA y favorece la movilización intracelular de Ca2+", why: "Correcta. Reduce la inhibición y aumenta la excitación." },
-        { t: "Bloquea la entrada de Na+ y activa canales de K+, con hiperpolarización de la neurona", why: "Eso reduciría la excitabilidad; no es el efecto descrito." }
+        { t: "Potencia las corrientes GABA y reduce la función del receptor NMDA.", why: "Es exactamente lo contrario: la IL-1β quita el freno GABA y pisa el acelerador NMDA; tu versión apagaría la crisis en lugar de generarla." },
+        { t: "Reduce la movilización de Ca2+ intracelular y la transmisión glutamatérgica.", why: "Confundes el efecto sobre el calcio: la IL-1β aumenta la movilización intracelular de Ca2+ y la función del NMDA, no las reduce." },
+        { t: "Bloquea la entrada de Na+ y abre canales de K+ en la membrana.", why: "Ese efecto hiperpolarizaría la neurona y la protegería; en la encefalitis la citocina hace lo opuesto sobre la membrana." },
+        { t: "Inhibe las corrientes GABA y aumenta la función del NMDA y el Ca2+ intracelular.", why: "La IL-1β inhibe las corrientes GABA, potencia el NMDA y moviliza Ca2+ intracelular: baja la inhibición y sube la excitación al mismo tiempo." }
       ],
-      correct: 2
+      correct: 3,
+      rule: "Citocina inflamatoria = quita freno GABA y sube NMDA con calcio. Si la opción reduce la excitación, está invertida."
     },
     {
-      stem: "Una niña de 7 años es llevada por su maestra porque varias veces al día se queda con la mirada fija durante algunos segundos, interrumpe la actividad que estaba haciendo y no responde si se la llama. Termina de pronto y continúa como si nada. El comienzo y el fin son abruptos y no hay movimientos notorios. ¿Qué tipo de crisis es el más probable?",
+      id: "34-7",
+      stem: "Una niña de 7 años se queda varias veces al día con la mirada fija durante unos segundos, detiene lo que estaba haciendo y no responde al llamado; luego continúa sin movimientos notorios y sin confusión. ¿Cuál es el diagnóstico más probable?",
       options: [
-        { t: "Crisis tónico-clónica generalizada, con pérdida abrupta de conciencia, fases de contracción y sacudidas, y periodo postictal", why: "Implica pérdida abrupta de conciencia con fases de contracción y sacudidas, y periodo postictal; aquí no hay movimientos y retoma su actividad de inmediato." },
-        { t: "Ausencia típica, con episodios breves de alteración de la conciencia, mirada fija e inmovilidad en edad pediátrica", why: "Correcta. Episodios breves y repentinos de alteración de conciencia con mirada fija e inmovilidad, en edad pediátrica." },
-        { t: "Crisis atónica, con pérdida súbita del tono muscular y caída al suelo seguida de recuperación rápida", why: "Se manifiesta por pérdida abrupta del tono con caída, no por mirada fija." },
-        { t: "Ausencia atípica, con inicio y fin graduales, mayor duración y cambios de tono o automatismos más marcados", why: "Tiene comienzo más lento, mayor duración y actividad motora más notoria; el caso describe inicio y fin abruptos sin movimientos." }
+        { t: "Crisis tónico-clónica generalizada, con fase tónica y fase clónica.", why: "La tónico-clónica pierde la conciencia de forma abrupta, tiene contracciones y deja un periodo postictal; aquí no hay movimientos ni confusión posterior." },
+        { t: "Ausencia atípica, de comienzo lento y con actividad motora notoria.", why: "La atípica empieza despacio, dura más y mueve más el cuerpo; el enunciado describe segundos, sin movimientos y con corte limpio." },
+        { t: "Ausencia típica, de inicio y fin abruptos y sin actividad motora.", why: "Son episodios breves de desconexión con mirada fija e inmovilidad en edad pediátrica, de inicio y fin abruptos y sin confusión al volver." },
+        { t: "Crisis atónica, con pérdida abrupta del tono y caída al suelo.", why: "La atónica es una caída por pérdida del tono muscular; esta niña permanece de pie y solo se desconecta durante unos segundos." }
       ],
-      correct: 1
+      correct: 2,
+      rule: "Ausencia: segundos, mirada fija, sin caída y sin postictal. Si hay movimientos o confusión, busca otra crisis."
     },
     {
-      stem: "Una mujer de 18 años tiene una crisis tónico-clónica generalizada con pérdida de conciencia, cianosis y relajación de esfínteres. La crisis dura 7 minutos hasta que cede con tratamiento. Luego queda confusa y somnolienta durante una hora. ¿Qué enunciado es correcto?",
+      id: "34-8",
+      stem: "Una mujer de 18 años sufre una crisis tónico-clónica de 7 minutos, con cianosis y relajación de esfínteres; después queda confusa y somnolienta durante una hora. ¿Qué explica la confusión posterior?",
       options: [
-        { t: "Es status epiléptico por durar más de 5 minutos; el periodo postictal refleja el agotamiento energético tras la descarga", why: "Correcta. El libro define más de 5 minutos como status epiléptico y atribuye el postictal al gran consumo de energía." },
-        { t: "No es status epiléptico, que exige más de 30 minutos; el periodo postictal refleja agotamiento energético neuronal", why: "El capítulo establece el status epiléptico en más de 5 minutos; el segundo enunciado es correcto, el primero no." },
-        { t: "Es status epiléptico por durar más de 5 minutos; la confusión posterior indica una lesión estructural nueva que obliga a imágenes urgentes", why: "El postictal es un fenómeno esperable por agotamiento energético, sin que implique una lesión nueva." },
-        { t: "No es una crisis generalizada: la relajación de esfínteres indica una crisis focal simple con propagación", why: "La relajación de esfínteres aparece en las tónico-clónicas, sobre todo con trastornos metabólicos; no define una crisis focal." }
+        { t: "Exceso de inhibición GABAérgica que sigue a la descarga.", why: "Supones que el cerebro queda frenado por GABA; el postictal refleja neuronas agotadas por el gasto energético, y la flacidez acompaña ese agotamiento." },
+        { t: "Agotamiento neuronal por el gran consumo de energía de la crisis.", why: "Siete minutos de contracción y sacudidas gastan mucha energía, así que las neuronas se agotan y aparece confusión con somnolencia y flacidez. Además, siete minutos superan los cinco del status." },
+        { t: "Lesión estructural nueva de la corteza producida por los movimientos de la crisis.", why: "Una lesión nueva no depende de la duración de la crisis ni da un cuadro que se recupera en una hora sin déficit focal." },
+        { t: "Persistencia de la descarga focal en el lóbulo temporal.", why: "La crisis ya terminó: si la descarga focal persistiera habría signos focales en curso, no somnolencia difusa con flacidez." }
       ],
-      correct: 0
+      correct: 1,
+      rule: "Más de 5 minutos es status; la confusión que viene después es agotamiento energético, no una lesión nueva."
     },
     {
-      stem: "Un estudiante de 19 años, tras una noche de fiesta con alcohol y sin dormir, tiene sacudidas bruscas y breves de ambos brazos que le hacen soltar la taza de café, sin pérdida clara de conciencia. El EEG muestra puntas y polipuntas generalizadas y simétricas. ¿Qué tipo de crisis es y qué puede ocurrir si se repiten?",
+      id: "34-9",
+      stem: "Un estudiante de 19 años, tras una noche de alcohol y sin dormir, presenta sacudidas bruscas y breves de ambos brazos que le hacen soltar la taza. ¿Qué hallazgo espera encontrar en el electroencefalograma?",
       options: [
-        { t: "Atónica, con pérdida súbita del tono; si se repite puede evolucionar a atonía sostenida con caídas repetidas", why: "La atónica es pérdida del tono, no sacudidas bruscas." },
-        { t: "Tónica, con contracción sostenida de la musculatura axial; si se repite puede evolucionar a un status con rigidez", why: "La tónica es una contracción prolongada, no sacudidas breves." },
-        { t: "Focal motora, con descarga limitada a un grupo muscular; si se repite permanece restringida al foco epiléptico", why: "Las polipuntas son generalizadas y simétricas, no focales." },
-        { t: "Mioclónica, con sacudidas breves y polipuntas generalizadas; si se repiten pueden progresar a una crisis tónico-clónica", why: "Correcta. Son sacudidas bruscas con polipuntas y precipitantes como alcohol y privación de sueño." }
+        { t: "Ondas delta de 1 a 3 Hz propias del sueño profundo.", why: "Las delta son el ritmo del sueño profundo, no un patrón crítico; la privación de sueño favorece la crisis, pero no explica el trazado de la mioclonía." },
+        { t: "Ondas alfa de 8 a 13 Hz propias de la calma y la relajación.", why: "Las alfa aparecen en calma con ojos cerrados; no son descargas críticas y no corresponden a una sacudida mioclónica." },
+        { t: "Descargas limitadas a una zona restringida de la corteza.", why: "Eso correspondería a una crisis focal; la mioclónica es generalizada y el trazado lo muestra en los dos hemisferios a la vez." },
+        { t: "Puntas o polipuntas generalizadas y simétricas.", why: "La crisis mioclónica cursa con puntas o polipuntas generalizadas y simétricas, y es típica tras alcohol, estrés o privación de sueño." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Mioclonía con brazos que sueltan objetos = polipuntas generalizadas y simétricas, no ritmo de sueño."
     },
     {
-      stem: "Una mujer de 30 años con crisis tónico-clónica generalizada tiene sialorrea, cianosis y apnea durante la fase tónica; la crisis dura 6 minutos y mantiene la vía aérea obstruida. En la gasometría posterior la PaCO2 sube de 40 a 55 mmHg. Considere que 1 mmHg de PaCO2 cambia 3-4% el flujo cerebral y que en el capítulo del cráneo hipertensivo las convulsiones y la hipercapnia figuran entre las causas de HIC. ¿Qué predice?",
+      id: "34-10",
+      stem: "Un hombre de 30 años, en la fase tónica de una crisis tónico-clónica, emite un grito agudo, deja de respirar y se pone cianótico. ¿Qué explica la cianosis en ese momento?",
       options: [
-        { t: "El flujo sube 45-60% (15 mmHg x 3-4%); más volumen sanguíneo intracraneal puede elevar la PIC y agravar una HIC", why: "Correcta. +15 mmHg x 3-4% = 45-60%; por Monro-Kellie más sangre intracraneal eleva la PIC." },
-        { t: "El flujo baja 45-60% por vasoconstricción; el menor volumen sanguíneo intracraneal reduce la PIC de forma proporcional", why: "La hipercapnia aumenta el flujo, no lo reduce." },
-        { t: "El flujo sube apenas 3-4% (valor por 1 mmHg); el volumen sanguíneo añadido no basta para alterar la PIC", why: "Esa cifra es por cada mmHg; con 15 mmHg el cambio es mucho mayor." },
-        { t: "El flujo no cambia, porque la autorregulación con PAM de 50-150 mmHg lo protege de la PaCO2 y la PIC se mantiene estable", why: "La autorregulación frente a la presión no neutraliza el efecto de la PaCO2." }
+        { t: "Relajación de esfínteres por la flacidez muscular generalizada.", why: "La relajación de esfínteres aparece con la flacidez y se describe en la crisis, pero no cambia el oxígeno de la sangre ni tiñe de azul la piel." },
+        { t: "Taquicardia con hipertensión arterial durante la fase clónica.", why: "Taquicardia e hipertensión acompañan la fase clónica; aumentan el gasto cardiaco, no impiden la oxigenación de la sangre." },
+        { t: "Espasmo laríngeo con apnea u obstrucción de la vía aérea.", why: "El espasmo de la laringe y la apnea interrumpen la entrada de aire: la sangre se desatura y aparece cianosis mientras dura la contracción." },
+        { t: "Pérdida abrupta del tono muscular con caída al suelo.", why: "La caída por pérdida de tono es la crisis atónica; aquí el paciente está en contracción tónica, no flácido." }
       ],
-      correct: 0
+      correct: 2,
+      rule: "En la fase tónica, cianosis = espasmo laríngeo con apnea; el grito agudo sale de la laringe espasmódica."
     },
     {
-      stem: "Un varón de 33 años, sano, presenta una crisis tónico-clónica de 2 minutos. Después queda sin respuesta, con apertura ocular al dolor, sonidos incomprensibles y localización del dolor (Glasgow 9). Una hora después despierta confuso y se recupera por completo. La TAC y la RM son normales. Integrando este capítulo con el de estado de alerta, ¿cómo explica la pérdida transitoria de conciencia?",
+      id: "34-11",
+      stem: "Un hombre de 33 años, previamente sano, presenta una crisis tónico-clónica de 2 minutos y una hora después sigue confuso. La tomografía y la resonancia son normales y se recupera por completo. ¿Cómo se explica la pérdida de conciencia?",
       options: [
-        { t: "Lesión estructural pequeña de la corteza frontal izquierda, cuya disfunción focal basta para abolir la conciencia durante una hora", why: "Imágenes normales y recuperación completa no apoyan una lesión estructural; además una lesión pequeña unilateral no basta para perder la conciencia." },
-        { t: "Muerte cerebral transitoria, con apnea y ausencia de reflejos del tallo, que revierte al corregirse el agotamiento energético", why: "La muerte cerebral es irreversible por definición, y este paciente tiene respuestas motoras y oculares." },
-        { t: "Disfunción cortical difusa y transitoria: la descarga compromete ambos hemisferios y su conexión con el tálamo, con periodo postictal", why: "Correcta. El capítulo 34 atribuye el postictal al agotamiento energético; el 32 indica que la conciencia exige corteza y conexiones tálamo-corticales funcionales, y una disfunción difusa reversible las altera sin lesión estructural." },
-        { t: "Deterioro rostro-caudal en fase protuberancial por efecto de masa, con recuperación espontánea al resolverse el edema", why: "Esa fase cursa con flacidez, pupilas sin reflejos y apneas, y pronóstico grave, no con recuperación en una hora, y las imágenes no muestran masa." }
+        { t: "Disfunción cortical difusa transitoria con participación del tálamo.", why: "En la crisis generalizada la excitabilidad abarca toda la corteza y su interacción con el tálamo; de ahí la pérdida de conciencia y el postictal por gasto energético." },
+        { t: "Lesión estructural pequeña y no visible de la corteza frontal izquierda.", why: "Las imágenes normales y la recuperación completa descartan una lesión estructural, y una lesión frontal pequeña no borra la conciencia de forma difusa." },
+        { t: "Compresión del tallo encefálico durante la fase tónica.", why: "La compresión del tallo da deterioro rostrocaudal progresivo con signos de herniación; este paciente despierta solo y su imagen es normal." },
+        { t: "Hipoperfusión cerebral global durante la crisis.", why: "Una hipoperfusión global sostenida dejaría daño y no una recuperación completa en una hora; durante la crisis el problema es la descarga, no el flujo." }
       ],
-      correct: 2
+      correct: 0,
+      rule: "Crisis generalizada con imagen normal = disfunción cortical difusa con el tálamo; perder la conciencia no exige lesión."
     }
   ]
 }

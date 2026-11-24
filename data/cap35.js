@@ -5,6 +5,58 @@ window.CHAPTERS.push(
   id: 35,
   weight: 3,
   title: "35. Trastornos meníngeos",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>Una inflamación de las meninges cambia el líquido cefalorraquídeo (LCR, el líquido que baña el cerebro) y produce cefalea y rigidez de nuca. También aparecen los signos de Kernig y Brudzinski.</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <p>Primero, el vocabulario. Las <b>meninges</b> son tres capas que envuelven el cerebro: duramadre (externa y gruesa), aracnoides y piamadre. La <b>barrera hematoencefálica</b> es un filtro entre la sangre y el tejido nervioso. Un <b>signo meníngeo</b> es un hallazgo del examen que aparece cuando esas capas están irritadas.</p>
+  <ol>
+    <li>El germen (meningococo, neumococo, virus) llega desde la nasofaringe y se instala en las meninges.</li>
+    <li>Las células de defensa liberan citocinas (TNF-α, IL-1β, IL-6), que son señales químicas de inflamación.</li>
+    <li>Esas señales abren las uniones estrechas de la barrera hematoencefálica y la vuelven permeable.</li>
+    <li>Entran proteínas y leucocitos (glóbulos blancos) al LCR: suben las proteínas y las células del líquido.</li>
+    <li>Las meninges irritadas duelen: cefalea. La presión intracraneal sube y estimula el centro del vómito: vómito.</li>
+    <li>La inflamación limita el movimiento del cuello y aparece una contractura: rigidez de nuca y Brudzinski.</li>
+    <li>Las raíces nerviosas raquídeas inflamadas duelen al estirarse: Kernig.</li>
+    <li>Si hay hiperreflexia, plejías o convulsiones, el proceso ya llegó al parénquima: meningoencefalitis.</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <ul>
+    <li><b>Cefalea:</b> irritación directa de las meninges.</li>
+    <li><b>Vómito en proyectil:</b> presión intracraneal alta que estimula el centro del vómito.</li>
+    <li><b>Fotofobia:</b> vasoconstricción o vasodilatación meníngea a nivel del nervio óptico.</li>
+    <li><b>Rigidez de nuca y opistótonos:</b> contractura muscular refleja que empieza en el cuello y sigue en columna y extremidades.</li>
+    <li><b>Kernig:</b> la rodilla no se extiende o duele, por inflamación de las raíces raquídeas.</li>
+    <li><b>Brudzinski:</b> al flexionar el cuello hacia el esternón se flexionan caderas y rodillas, por la contractura cervical.</li>
+    <li><b>Niños:</b> fiebre y convulsiones. <b>Ancianos:</b> cefalea y rigidez sin fiebre, porque producen menos prostaglandinas y suelen estar inmunodeprimidos.</li>
+  </ul>
+  <p>El LCR cambia según el germen. En la bacteriana es turbio, con neutrófilos, glucosa baja y proteínas altas. En la viral es claro, con linfocitos y glucosa normal. En la tuberculosa es amarillento, con linfocitos, glucosa muy baja y proteínas muy altas.</p>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Viñeta con fiebre, cefalea y rigidez de nuca, y te pide el mecanismo de un signo concreto: Kernig, Brudzinski, vómito, fotofobia.</li>
+    <li>Datos de laboratorio y te pide el patrón esperado o el diagnóstico más probable: bacteriana, viral, tuberculosa o hemorragia meníngea.</li>
+    <li>Pregunta puntual de anatomía: qué espacio se sangra, por dónde circula el LCR, qué cavidad se dilata si se bloquea el acueducto.</li>
+    <li>Un cálculo corto con la velocidad de producción y el volumen que circula.</li>
+    <li>Ejemplo de su estilo: «Paciente de 82 años con cefalea y rigidez de nuca, afebril, ¿por qué no presenta fiebre?».</li>
+  </ul>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> invertir Kernig y Brudzinski (Brudzinski es el del cuello, Kernig el de la rodilla). Y confundir meningismo (LCR normal, sin infección) con reacción meníngea (LCR con alteraciones leves después de una punción).</div>
+
+  <h2>Números y cálculos</h2>
+  <p>Con la velocidad de producción que da el libro se calcula todo lo demás:</p>
+  <ul>
+    <li>0,35 mL/min × 60 = 21 mL por hora; 21 × 24 = 504 mL al día.</li>
+    <li>Circulan 150 mL: 150 / 21 ≈ 7,1 horas por recambio, que el libro redondea a unas 8 horas.</li>
+    <li>504 / 150 ≈ 3,4 renovaciones del volumen al día.</li>
+    <li>LCR normal: proteínas 15-45 mg/dL, glucosa 40-80 mg/dL, unas 4 células/mm³ con predominio de linfocitos.</li>
+    <li>Bacteriana: glucosa del LCR menor al 40 % de la plasmática, proteínas mayores a 1 g/L, neutrófilos.</li>
+    <li>Viral: proteínas 0,5-1 g/L, glucosa normal, linfocitos. Procalcitonina normal: menos de 0,5 ng/mL.</li>
+  </ul>
+  `,
   summary: `
   <h2>1. Fundamentos</h2>
   <p>El <b>síndrome meníngeo</b> es el conjunto de signos y síntomas por inflamación o irritación de las meninges. La <b>meningitis</b> es la inflamación de la leptomeninge y se diagnostica cuando el <b>líquido cefalorraquídeo (LCR) está alterado</b>. El libro la llama hoy <i>meningoencefalitis</i>: <b>primaria</b> (el agente ataca directamente las meninges) o <b>secundaria</b> (el mecanismo es inmunológico o alérgico, no infección directa).</p>
@@ -69,124 +121,148 @@ window.CHAPTERS.push(
   `,
   questions: [
     {
-      stem: "Un hombre de 72 años, con alcoholismo crónico, sufre una caída de su propia altura sin pérdida de conciencia. Tres semanas después presenta cefalea progresiva y somnolencia. La TC muestra una colección en semiluna entre la duramadre y la aracnoides. ¿En qué espacio se localiza y cuál es el origen habitual del sangrado según el libro?",
+      id: "35-0",
+      stem: "Un hombre de 72 años, alcohólico crónico, sufrió una caída hace tres semanas y ahora tiene cefalea progresiva y somnolencia. La tomografía muestra una colección en semiluna entre la duramadre y la aracnoides. ¿En qué espacio está y cuál es el origen habitual del sangrado?",
       options: [
-        { t: "Espacio epidural, entre periostio y duramadre; sangrado de origen arterial", why: "El espacio epidural está entre el hueso (periostio) y la duramadre; allí los hematomas son arteriales. La colección descrita está más profunda." },
-        { t: "Espacio subaracnoideo, entre aracnoides y piamadre; sangrado arterial por ruptura de un aneurisma", why: "El espacio subaracnoideo contiene LCR y queda por dentro de la aracnoides; la colección descrita está por fuera de ella." },
-        { t: "Espacio subdural, entre duramadre y aracnoides; sangrado de origen venoso", why: "Correcta. El espacio subdural queda entre duramadre y aracnoides y, según el libro, allí se forman hematomas de origen venoso." },
-        { t: "Espacio epidural, entre periostio y duramadre; sangrado venoso de un seno de la duramadre", why: "Combina el espacio equivocado con el origen que el libro asigna al subdural; los hematomas epidurales son de origen arterial." }
+        { t: "Espacio epidural, con sangrado de origen arterial.", why: "El epidural queda entre el periostio y la duramadre y sangra por vía arterial; la colección descrita está más adentro, entre duramadre y aracnoides." },
+        { t: "Espacio subaracnoideo, con ruptura de un aneurisma.", why: "El subaracnoideo está entre aracnoides y piamadre y contiene LCR; una ruptura aneurismática daría líquido sanguinolento, no una colección en semiluna." },
+        { t: "Espacio subdural, con sangrado de origen venoso.", why: "Entre duramadre y aracnoides está el espacio subdural, y sus hematomas son de origen venoso; por eso el cuadro es subagudo tras una caída antigua." },
+        { t: "Espacio epidural, con sangrado venoso de un seno dural.", why: "Mezcla dos datos: el epidural es arterial; el venoso es el subdural, que es justo el plano donde está la colección en semiluna." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "Semiluna entre duramadre y aracnoides = subdural venoso; el epidural es arterial y queda fuera de la duramadre."
     },
     {
-      stem: "Un niño de 7 años presenta cefalea matutina y vómitos. La resonancia muestra un tumor mesencefálico que ocluye por completo el acueducto cerebral (de Silvio). Los plexos coroideos siguen produciendo LCR. Siguiendo la circulación del LCR descrita en el libro, ¿qué cavidades se dilatarán por encima de la obstrucción?",
+      id: "35-1",
+      stem: "Un niño de 7 años tiene cefalea matutina y vómitos. La resonancia muestra un tumor que ocluye por completo el acueducto de Silvio, mientras los plexos coroideos siguen produciendo líquido cefalorraquídeo. ¿Qué cavidades se dilatan?",
       options: [
-        { t: "Los ventrículos laterales y el tercer ventrículo, comunicados por los agujeros de Monro, que quedan antes del acueducto", why: "Correcta. Ambos están aguas arriba del acueducto: el LCR pasa de los laterales al tercero por Monro y de allí al acueducto, donde se acumula." },
-        { t: "Solo el cuarto ventrículo, porque el LCR se acumula donde sus aberturas de Magendie y Luschka quedan bloqueadas", why: "El cuarto ventrículo queda después del acueducto y no recibe LCR nuevo; el bloqueo descrito está en el acueducto, no en Magendie y Luschka." },
-        { t: "El tercer y el cuarto ventrículo, porque el LCR queda retenido a ambos lados del acueducto ocluido", why: "Solo el tercero está antes de la obstrucción; el cuarto queda aguas abajo y no se dilata." },
-        { t: "Los ventrículos laterales y el espacio subaracnoideo, porque las granulaciones aracnoideas del tercer ventrículo se saturan", why: "Las granulaciones están en los senos venosos (sobre todo el sagital superior), no en el tercer ventrículo, y el subaracnoideo queda aguas abajo del acueducto." }
+        { t: "Los ventrículos laterales y el tercer ventrículo.", why: "El líquido de los laterales pasa al tercero por el agujero de Monro y queda retenido antes del acueducto; por eso se dilatan las dos cavidades de arriba." },
+        { t: "Solo el cuarto ventrículo, que recibe el líquido del acueducto.", why: "El cuarto ventrículo está después del acueducto y no recibe líquido nuevo; se queda sin afluente y no se dilata, aunque pueda colapsarse." },
+        { t: "El tercer ventrículo y el cuarto ventrículo.", why: "El cuarto queda aguas abajo del bloqueo; solo el tercero y los laterales están antes del acueducto y reciben líquido de los plexos." },
+        { t: "Los ventrículos laterales y el espacio subaracnoideo.", why: "El espacio subaracnoideo recibe el líquido por Magendie y Luschka, después del cuarto ventrículo; también está aguas abajo de la obstrucción." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Obstrucción en el acueducto: se dilata lo de arriba (laterales y tercero), no el cuarto ni el subaracnoideo."
     },
     {
-      stem: "Un adolescente de 16 años con fiebre de 39 °C, cefalea y rigidez de nuca tiene un LCR turbio con proteínas de 320 mg/dL (normal 15-45 mg/dL). La producción de LCR por los plexos coroideos es normal. ¿Qué mecanismo explica mejor la hiperproteinorraquia?",
+      id: "35-2",
+      stem: "Un adolescente de 16 años con fiebre, cefalea y rigidez de nuca tiene líquido cefalorraquídeo turbio con proteínas de 320 mg/dL (normal 15-45). La producción de líquido por los plexos coroideos es normal. ¿Qué mecanismo explica la hiperproteinorraquia?",
       options: [
-        { t: "Mayor producción de LCR por los plexos coroideos, que arrastra proteínas plasmáticas al espacio subaracnoideo", why: "La producción de LCR es constante (~0,35 mL/min) y el enunciado la da por normal; el exceso de proteínas viene del plasma por la BHE alterada." },
-        { t: "Hiperfunción del transportador GLUT-1 de la BHE, que introduce proteínas plasmáticas junto con la glucosa", why: "GLUT-1 es un transportador facilitado específico de glucosa; no transporta proteínas plasmáticas." },
-        { t: "Mayor reabsorción de LCR en las granulaciones aracnoideas, que concentra las proteínas dentro del espacio subaracnoideo", why: "La reabsorción hacia el seno sagital no introduce proteínas plasmáticas al LCR; el aumento lo explica la BHE más permeable." },
-        { t: "Citocinas (TNF-α, IL-1β, IL-6) que aumentan la permeabilidad de la BHE y permiten el paso de proteínas plasmáticas al LCR", why: "Correcta. En la inflamación (TNF-α, IL-1β, IL-6) aumenta la permeabilidad de la BHE; entran proteínas plasmáticas y leucocitos al LCR." }
+        { t: "Mayor producción de líquido por los plexos coroideos.", why: "La producción es constante y el enunciado la da por normal; las proteínas del líquido no vienen de los plexos, llegan desde la sangre." },
+        { t: "Transporte facilitado de proteínas hacia el LCR por el transportador de glucosa GLUT-1.", why: "GLUT-1 transporta glucosa de forma facilitada; no es una puerta para proteínas, que son moléculas mucho más grandes." },
+        { t: "Mayor reabsorción del líquido en las granulaciones aracnoideas.", why: "Reabsorber líquido hacia el seno sagital saca líquido del espacio subaracnoideo; no introduce proteínas plasmáticas en el LCR." },
+        { t: "Apertura de las uniones estrechas de la barrera hematoencefálica por citocinas.", why: "TNF-α, IL-1β e IL-6 abren la zona occludens del endotelio; con la barrera permeable pasan albúmina y leucocitos al líquido, y las proteínas suben." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Proteínas altas en LCR = barrera abierta por citocinas. Los plexos producen volumen, no proteínas."
     },
     {
-      stem: "Una mujer de 19 años con fiebre, cefalea y vómitos es examinada: al flexionar pasivamente su cuello hacia el esternón, flexiona involuntariamente rodillas y caderas; después, con la cadera flexionada, el intento de extender la rodilla le provoca dolor y no lo permite. ¿Qué signos describe y cuál es el mecanismo de cada uno según el libro?",
+      id: "35-3",
+      stem: "Una mujer de 19 años con fiebre y cefalea flexiona las rodillas y las caderas de forma involuntaria cuando se le flexiona el cuello hacia el esternón. Con la cadera flexionada, además, duele al extenderle la rodilla. ¿Qué signos presenta y por qué se producen?",
       options: [
-        { t: "Kernig por contractura de los músculos del cuello, y Brudzinski por inflamación de las raíces nerviosas raquídeas", why: "Invierte los mecanismos: la contractura cervical corresponde a Brudzinski y la inflamación radicular a Kernig." },
-        { t: "Brudzinski por contractura muscular cervical; Kernig por inflamación radicular de las meninges raquídeas", why: "Correcta. La flexión de rodillas y caderas al flexionar el cuello es Brudzinski; el dolor o la imposibilidad de extender la rodilla es Kernig." },
-        { t: "Ambos por lesión de la motoneurona superior, con liberación piramidal de los reflejos de flexión de rodillas y caderas", why: "Son signos de irritación meníngea; el piramidalismo es un hallazgo motor distinto (hiperreflexia, Babinski)." },
-        { t: "Ambos por aumento de la presión intracraneal, que contrae reflejamente los miembros inferiores y estimula el centro del vómito", why: "La ↑ PIC explica el vómito, no estos dos signos de irritación meníngea." }
+        { t: "Kernig por contractura cervical y Brudzinski por inflamación radicular.", why: "Inviertes los mecanismos: la contractura del cuello produce el Brudzinski, y la inflamación de las raíces raquídeas produce el dolor del Kernig." },
+        { t: "Brudzinski por contractura cervical y Kernig por inflamación radicular.", why: "Al flexionar el cuello, la contractura cervical arrastra caderas y rodillas (Brudzinski); al extender la rodilla se estiran raíces inflamadas y duele (Kernig)." },
+        { t: "Ambos por lesión de la motoneurona superior.", why: "La lesión de la motoneurona superior da hiperreflexia y Babinski; estos dos signos nacen de la irritación meníngea y de las raíces raquídeas." },
+        { t: "Ambos por aumento de la presión intracraneal.", why: "La presión intracraneal alta explica el vómito y la cefalea; no obliga a flexionar la rodilla ni provoca dolor radicular al extenderla." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Cuello que flexiona caderas = Brudzinski; rodilla que no se extiende sin dolor = Kernig, por inflamación radicular."
     },
     {
-      stem: "Un hombre de 40 años tiene fiebre y rigidez de nuca. El LCR es turbio, con presión de apertura elevada, 2300 células/mm³ (90 % neutrófilos) y proteínas de 280 mg/dL. La glucosa del LCR es 18 mg/dL y la glucosa plasmática simultánea es 110 mg/dL. ¿Cuál es la relación glucosa LCR/plasma y qué patrón sugiere según el libro?",
+      id: "35-4",
+      stem: "Un hombre de 40 años consulta por fiebre alta, cefalea y rigidez de nuca. La punción lumbar da un líquido turbio con presión de apertura elevada. ¿Qué patrón espera encontrar en el análisis si la meningitis es bacteriana?",
       options: [
-        { t: "0,16 (16 %); muy por debajo del 40 %, patrón de meningitis bacteriana", why: "Correcta. 18/110 = 0,164. Con turbidez, neutrofilia y proteínas altas, el conjunto es de meningitis bacteriana." },
-        { t: "6,1 (610 %); relación elevada, compatible con una meningitis viral de glucosa normal", why: "Resulta de dividir al revés (110/18). La relación se calcula LCR sobre plasma." },
-        { t: "0,84 (84 %); relación conservada, patrón de meningitis viral", why: "Resulta de restar (110 − 18)/110 en lugar de dividir 18/110. La relación real es 0,16, muy baja." },
-        { t: "0,20 (20 %); por debajo del 30 %, patrón de meningitis tuberculosa", why: "Resulta de dividir entre la diferencia plasma menos LCR (18/92). El cociente correcto es 0,16 y el LCR neutrofílico y turbio orienta a bacteriana, no a tuberculosa." }
+        { t: "Linfocitos, glucosa normal y proteínas de 0,5 a 1 g/L.", why: "Ese es el patrón viral: líquido claro, linfocitos y glucosa conservada; en la bacteriana la glucosa cae y predominan los neutrófilos." },
+        { t: "Neutrófilos, glucosa baja (&lt; 40 %) y proteínas &gt; 1 g/L.", why: "La bacteria consume glucosa y rompe la barrera: suben los neutrófilos, la glucosa queda bajo el 40 % del plasma y las proteínas pasan de 1 g/L." },
+        { t: "Linfocitos, glucosa &lt; 30 % y proteínas de 1 a 5 g/L.", why: "Ese patrón es el tuberculoso, con linfocitos y glucosa muy baja; aquí el líquido es turbio y el cuadro agudo, lo que orienta a bacterias." },
+        { t: "Neutrófilos, glucosa normal y proteínas normales, como en una meningitis viral.", why: "Glucosa y proteínas normales no caben en una meningitis: sin hipoglucorraquia ni hiperproteinorraquia no hay patrón bacteriano." }
       ],
-      correct: 0
+      correct: 1,
+      rule: "Bacteriana: turbio, neutrófilos, glucosa bajo 40 % del plasma y proteínas sobre 1 g/L. Viral: linfocitos y glucosa normal."
     },
     {
-      stem: "Un estudiante de 20 años consulta por 2 días de fiebre de 38 °C, cefalea y rigidez de nuca, tras un cuadro respiratorio alto. La punción lumbar muestra LCR claro con presión de apertura de 18 cm, 220 células/mm³ (90 % linfocitos), proteínas de 0,7 g/L y relación glucosa LCR/plasma de 0,62. La procalcitonina sérica es de 0,3 ng/mL. ¿Cuál es la interpretación más adecuada?",
+      id: "35-5",
+      stem: "Un estudiante de 20 años tiene dos días de fiebre de 38 °C, cefalea y rigidez de nuca. El líquido es claro, con 220 células (90 % linfocitos), proteínas de 0,7 g/L, relación glucosa líquido/plasma de 0,62 y procalcitonina de 0,3 ng/mL. ¿Cuál es el diagnóstico más probable?",
       options: [
-        { t: "Meningitis bacteriana: pleocitosis con proteínas aumentadas y neutrófilos, con procalcitonina por encima de 0,5 ng/mL", why: "En la bacteriana predominan neutrófilos, la glucosa baja (&lt; 40 %) y la procalcitonina se eleva; aquí hay linfocitos, relación de glucosa 0,62 y procalcitonina 0,3." },
-        { t: "Meningitis tuberculosa: LCR claro con linfocitos y proteínas de 1-5 g/L, con glucosa baja (&lt; 30 %) y evolución subaguda", why: "La tuberculosa cursa con glucosa muy baja y proteínas de 1-5 g/L; aquí la relación de glucosa es 0,62 y las proteínas 0,7 g/L." },
-        { t: "Hemorragia meníngea: LCR con células y proteínas aumentadas, de aspecto xantocrómico y con glucosa normal", why: "La hemorragia meníngea muestra LCR sanguinolento o xantocrómico; este es claro." },
-        { t: "Meningitis viral: LCR claro con pleocitosis linfocitaria, proteínas de 0,5-1 g/L, glucosa normal y procalcitonina normal", why: "Correcta. Es el patrón del libro: linfocitos 5-1000, proteínas 0,5-1 g/L, glucosa normal; procalcitonina normal (&lt; 0,5 ng/mL) apoya origen no bacteriano." }
+        { t: "Meningitis bacteriana, con hipoglucorraquia intensa y neutrofilia en el líquido.", why: "La bacteriana daría neutrófilos, glucosa bajo el 40 % del plasma y procalcitonina alta; aquí hay linfocitos, glucosa de 0,62 y procalcitonina normal." },
+        { t: "Meningitis tuberculosa, con glucosa muy baja y linfocitos.", why: "La tuberculosa baja la glucosa por debajo del 30 % y sube las proteínas a 1-5 g/L; aquí las proteínas son 0,7 g/L y la glucosa está conservada." },
+        { t: "Hemorragia meníngea, con líquido sanguinolento o xantocrómico.", why: "Exigiría líquido sanguinolento o amarillento; este líquido es claro y el cuadro es febril, con linfocitos en el recuento." },
+        { t: "Meningitis viral, con pleocitosis linfocitaria y glucosa normal.", why: "Líquido claro, linfocitos, proteínas entre 0,5 y 1 g/L, glucosa normal y procalcitonina bajo 0,5 ng/mL: el conjunto completo es viral." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Procalcitonina bajo 0,5 y glucosa conservada con linfocitos = viral; la bacteria gasta glucosa y sube la procalcitonina."
     },
     {
-      stem: "Una mujer de 82 años en tratamiento inmunosupresor consulta por 2 días de cefalea y rigidez de nuca, con confusión leve. Su temperatura es 36,8 °C. Un residente descarta meningitis porque \"no tiene fiebre\". ¿Cuál es la explicación que da el libro para la ausencia de fiebre en este grupo etario?",
+      id: "35-6",
+      stem: "Una mujer de 82 años, en tratamiento inmunosupresor, presenta cefalea, rigidez de nuca y confusión leve, con temperatura de 36,8 °C. ¿Qué explica la ausencia de fiebre en este grupo de edad?",
       options: [
-        { t: "La BHE del anciano se vuelve impermeable a las citocinas pirogénicas, que no alcanzan el centro termorregulador", why: "El libro no lo plantea así; en la infección la BHE aumenta su permeabilidad." },
-        { t: "Producen menos prostaglandinas y con frecuencia están inmunodeprimidos, por lo que la respuesta febril es débil", why: "Correcta. Por eso en la tercera edad el síndrome meníngeo puede presentarse solo con cefalea y rigidez nucal, sin fiebre." },
-        { t: "La rigidez de nuca del anciano corresponde a meningismo, un síndrome sin infección y sin alteración del LCR", why: "El meningismo no altera el LCR y la edad no lo vuelve la causa habitual; en un cuadro compatible hay que estudiar el LCR." },
-        { t: "La fiebre del síndrome meníngeo es propia de neonatos y niños con enterovirus, y no aparece en otras edades", why: "El libro describe fiebre y convulsiones en niños, pero la meningitis de otras edades también produce fiebre; la ausencia en el anciano tiene la causa indicada en la opción correcta." }
+        { t: "La barrera hematoencefálica impide el paso de las citocinas pirógenas.", why: "En la infección la barrera se abre y las citocinas circulan; el problema no es el paso de pirógenos, sino la respuesta del anciano." },
+        { t: "La presión intracraneal alta suprime la respuesta febril.", why: "La presión intracraneal alta explica los vómitos y la cefalea; no apaga el termostato del hipotálamo ni baja la temperatura." },
+        { t: "Producen menos prostaglandinas y suelen estar inmunodeprimidos.", why: "El anciano produce menos prostaglandinas, el mediador que sube la temperatura, y su inmunodepresión atenúa la respuesta: puede haber meningitis sin fiebre." },
+        { t: "Se trata de un meningismo, que no tiene infección.", why: "El meningismo no altera el líquido, pero un anciano con confusión y rigidez obliga a punción lumbar; suponerlo deja una meningitis sin diagnosticar." }
       ],
-      correct: 1
+      correct: 2,
+      rule: "Anciano con rigidez de nuca y sin fiebre sigue siendo meningitis: menos prostaglandinas e inmunodepresión."
     },
     {
-      stem: "Una investigadora quiere estimar la dinámica del LCR en un adulto sano a partir de la velocidad de producción de 0,35 mL/min y un volumen circulante constante de 150 mL (el libro habla de un recambio aproximado cada 8 horas). ¿Cuántos mililitros se producen al día y cuántas veces al día se renueva ese volumen?",
+      id: "35-7",
+      stem: "En un adulto sano el líquido cefalorraquídeo se produce a 0,35 mL/min y circulan 150 mL. ¿Cuántos mililitros se producen al día y cuántas veces se renueva ese volumen en 24 horas?",
       options: [
-        { t: "21 mL/día, que es el valor horario; 0,14 renovaciones diarias del volumen circulante", why: "21 mL es la producción por hora, no por día." },
-        { t: "252 mL/día, calculado con solo 12 horas de producción; 1,7 renovaciones diarias", why: "Usa 12 h en lugar de 24 h (0,35 × 60 × 24 = 504)." },
-        { t: "504 mL/día (0,35 × 60 × 24); aproximadamente 3,4 renovaciones diarias", why: "Correcta. 0,35 × 60 = 21 mL/h; 21 × 24 = 504 mL/día; 504/150 = 3,36, coherente con el recambio de unas 8 horas (3 veces al día) del libro." },
-        { t: "700 mL/día, el extremo superior del rango del libro; aproximadamente 4,7 renovaciones diarias", why: "700 mL es el extremo superior del rango que cita el libro (500-700), pero con 0,35 mL/min el resultado es 504 mL." }
+        { t: "504 mL/día y unas 3,4 renovaciones.", why: "0,35 × 60 = 21 mL por hora; 21 × 24 = 504 mL al día; 504 dividido para 150 da 3,4 renovaciones, cerca del recambio de unas ocho horas." },
+        { t: "21 mL/día y 0,14 renovaciones del volumen circulante.", why: "21 mL es lo que se produce en una hora, no en un día; falta multiplicar por las 24 horas para llegar al volumen diario." },
+        { t: "252 mL/día y 1,7 renovaciones.", why: "Calculaste la mitad: 252 mL corresponde a doce horas de producción, no al día completo de 24 horas." },
+        { t: "700 mL/día y 4,7 renovaciones.", why: "700 mL es el extremo alto del rango de 500-700 que cita el texto, pero con 0,35 mL/min el cálculo exacto da 504 mL." }
       ],
-      correct: 2
+      correct: 0,
+      rule: "0,35 mL/min = 21 mL/h = 504 mL/día; con 150 mL circulando, el volumen se renueva unas 3,4 veces al día."
     },
     {
-      stem: "Una mujer de 35 años, doce horas después de una punción lumbar diagnóstica por sospecha de cefalea secundaria, presenta cefalea leve y discreta rigidez cervical, sin fiebre. El LCR de control muestra un ligero aumento de proteínas y escasas células; los cultivos son negativos. ¿Qué término del libro describe mejor este cuadro?",
+      id: "35-8",
+      stem: "Una mujer de 35 años presenta, doce horas después de una punción lumbar, cefalea leve y discreta rigidez cervical sin fiebre. El líquido muestra ligero aumento de proteínas y escasas células, con cultivos negativos. ¿Cuál es el diagnóstico más probable?",
       options: [
-        { t: "Meningismo: síndrome meníngeo leve, casi asintomático, sin infección ni alteración del LCR", why: "El meningismo cursa sin alteraciones del LCR; aquí hay un ligero aumento de proteínas y células." },
-        { t: "Meningitis bacteriana: síndrome meníngeo infeccioso con LCR turbio, neutrófilos y glucosa baja", why: "Requeriría LCR francamente patológico y cultivos o signos de infección; aquí los cultivos son negativos y las alteraciones, ligeras." },
-        { t: "Hemorragia meníngea: síndrome meníngeo con LCR sanguinolento o xantocrómico por sangrado", why: "Requiere LCR con sangre o xantocrómico, que aquí no se describe." },
-        { t: "Reacción meníngea: síndrome aséptico tras una punción lumbar, con ligeras alteraciones del LCR", why: "Correcta. Es el síndrome meníngeo aséptico posterior a punción lumbar, con ligeras alteraciones del LCR." }
+        { t: "Meningismo, con líquido cefalorraquídeo normal.", why: "El meningismo cursa sin ninguna alteración del líquido; aquí hay proteínas algo altas y células, así que el líquido ya no es normal." },
+        { t: "Meningitis bacteriana, con pleocitosis neutrofílica.", why: "La bacteriana da líquido turbio, neutrófilos, glucosa baja y cultivo positivo; aquí los cambios son leves y los cultivos negativos." },
+        { t: "Hemorragia meníngea, con líquido xantocrómico.", why: "La hemorragia tiñe el líquido de sangre o de amarillo; no se describe xantocromía y el cuadro aparece justo después de una punción." },
+        { t: "Reacción meníngea, con alteraciones leves del líquido.", why: "El síndrome meníngeo aséptico posterior a la punción produce cambios leves y estériles; el antecedente inmediato de la punción es el dato que lo delata." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Síndrome meníngeo leve justo después de una punción y con cultivos negativos = reacción meníngea."
     },
     {
-      stem: "Un niño de 5 años con fiebre, cefalea intensa, fotofobia y vómitos en proyectil tiene signos meníngeos. Una estudiante intenta explicar cada síntoma con el mecanismo del libro. ¿Cuál de las siguientes explicaciones es la correcta?",
+      id: "35-9",
+      stem: "Un niño de 5 años con fiebre, cefalea intensa, fotofobia y vómitos en proyectil tiene signos meníngeos. ¿Qué mecanismo explica el vómito?",
       options: [
-        { t: "Cefalea por irritación de las meninges; vómito por aumento de la presión intracraneal que estimula el centro del vómito", why: "Correcta. Es la explicación de la Tabla 103; la fotofobia se atribuye a vasoconstricción o vasodilatación meníngea a nivel del nervio óptico." },
-        { t: "Cefalea por aumento de la presión intracraneal; vómito por irritación directa de las meninges", why: "Invierte los mecanismos del libro." },
-        { t: "Cefalea por hipoglucorraquia; vómito por irritación de los plexos coroideos que producen el LCR", why: "El libro no atribuye la cefalea a la glucosa del LCR ni el vómito a los plexos coroideos." },
-        { t: "Cefalea por vasoconstricción meníngea a nivel del nervio óptico; vómito por contractura de los músculos cervicales", why: "La vasoconstricción o vasodilatación meníngea explica la fotofobia, y la contractura cervical la rigidez de nuca y Brudzinski; ninguna explica estos síntomas." }
+        { t: "Irritación directa de las meninges por el proceso infeccioso.", why: "La irritación meníngea explica la cefalea y la rigidez, pero el vómito en proyectil aparece cuando sube la presión intracraneal y se estimula el centro del vómito." },
+        { t: "Aumento de la presión intracraneal con estimulación del centro del vómito.", why: "La inflamación eleva la presión intracraneal; esa presión estimula el centro del vómito en el bulbo y produce el vómito en proyectil, sin náusea previa." },
+        { t: "Vasodilatación meníngea a nivel del nervio óptico.", why: "Ese es el mecanismo de la fotofobia, que depende del nervio óptico; no activa el centro del vómito ni produce náusea." },
+        { t: "Contractura refleja de los músculos del cuello.", why: "La contractura cervical produce la rigidez de nuca y el Brudzinski; no llega al centro del vómito del bulbo." }
       ],
-      correct: 0
+      correct: 1,
+      rule: "Vómito en proyectil = presión intracraneal alta sobre el centro del vómito; la fotofobia va por otra vía."
     },
     {
-      stem: "Un hombre de 45 años con meningitis neumocócica en su tercer día de hospitalización tiene aumento de la presión intracraneal. De forma súbita desarrolla hemiparesia derecha. Su presión arterial media es 85 mmHg y su presión intracraneal 40 mmHg. La TC no muestra hemorragia pero sí un infarto en el territorio de la arteria cerebral media izquierda. ¿Cuál es la presión de perfusión cerebral y qué mecanismo del libro explica el infarto?",
+      id: "35-10",
+      stem: "Un hombre de 45 años con meningitis neumocócica y presión intracraneal elevada presenta hemiparesia derecha súbita. La tomografía descarta hemorragia y muestra un infarto en el territorio de la arteria cerebral media izquierda. ¿Qué mecanismo explica el infarto?",
       options: [
-        { t: "125 mmHg; émbolo de origen cardíaco que ocluye la arteria cerebral media izquierda", why: "125 resulta de sumar PAM y PIC; la PPC se calcula restando. El enunciado no sugiere fuente embólica." },
-        { t: "45 mmHg; espasmo inflamatorio de los vasos cerebrales que, con PIC alta, reduce la presión de perfusión y produce lesión isquémica", why: "Correcta. PPC = PAM − PIC = 85 − 40 = 45 mmHg. El libro describe que la inflamación puede acompañarse de espasmo vascular y afectar la presión de perfusión, con lesión irreversible." },
-        { t: "45 mmHg; ruptura de un seno venoso con hematoma subdural y compresión del hemisferio", why: "La TC descarta hemorragia; la ruptura de seno venoso produce hematoma subdural traumático." },
-        { t: "−45 mmHg; trombosis de una placa aterosclerótica favorecida por la hiperviscosidad de la infección", why: "−45 resulta de restar la PAM a la PIC (40 − 85), con los términos invertidos; el cuadro infeccioso no apunta a trombosis aterosclerótica." }
+        { t: "Espasmo de los vasos cerebrales que reduce la presión de perfusión.", why: "La inflamación meníngea se acompaña de espasmo de los vasos cerebrales; al caer la presión de perfusión el tejido queda isquémico y el daño puede ser irreversible." },
+        { t: "Émbolo de origen cardiaco que ocluye la arteria cerebral media.", why: "No hay dato de fuente embólica y el infarto aparece en pleno cuadro infeccioso; el espasmo inflamatorio explica mejor la isquemia de ese territorio." },
+        { t: "Ruptura de un seno venoso con hematoma subdural agudo y compresión.", why: "La tomografía descarta hemorragia, y un hematoma comprime el cerebro, no infarta el territorio completo de una arteria." },
+        { t: "Trombosis sobre una placa aterosclerótica de la carótida.", why: "La aterosclerosis es un proceso crónico y aquí el infarto coincide con la infección aguda; el dato que une ambos es la inflamación vascular." }
       ],
-      correct: 1
+      correct: 0,
+      rule: "Meningitis más infarto en un territorio arterial = espasmo inflamatorio con baja perfusión, no émbolo."
     },
     {
-      stem: "Un hombre de 33 años con meningoencefalitis bacteriana presenta fiebre, rigidez de nuca, Kernig y Brudzinski positivos, además de hiperreflexia generalizada (piramidalismo, según el libro lesión de las vías motoras) y una crisis tónico-clónica. ¿Qué indica ese piramidalismo en este contexto y por qué amplía el cuadro más allá de las meninges?",
+      id: "35-11",
+      stem: "Un hombre de 33 años con meningoencefalitis bacteriana tiene rigidez de nuca, Kernig y Brudzinski positivos, hiperreflexia generalizada y una crisis tónico-clónica. ¿Qué explica la hiperreflexia?",
       options: [
-        { t: "Signo de irritación radicular, igual que el Kernig: indica una meningitis pura, sin afectación del parénquima", why: "La irritación radicular explica Kernig; la hiperreflexia es signo de vía motora central." },
-        { t: "Signo de motoneurona inferior: la denervación del músculo exalta los reflejos de estiramiento y señala lesión de nervio periférico", why: "La lesión de motoneurona inferior produce hiporreflexia o arreflexia, no hiperreflexia." },
-        { t: "Signo de motoneurona superior (piramidalismo): indica afectación del parénquima y de las vías motoras, es decir, meningoencefalitis", why: "Correcta. Según el libro, el piramidalismo es lesión de las vías motoras y las crisis convulsivas se asocian a infección cerebral; ambos amplían el cuadro a meningoencefalitis." },
-        { t: "Signo de meningismo por contractura cervical refleja: descarta infección del parénquima y supone LCR normal", why: "El meningismo es casi asintomático y sin alteración del LCR; este paciente tiene meningitis con compromiso neurológico." }
+        { t: "Inflamación radicular de las meninges raquídeas.", why: "Eso produce el dolor del Kernig; la hiperreflexia junto con una crisis indica compromiso de la vía motora central, es decir meningoencefalitis." },
+        { t: "Lesión de la motoneurona inferior con denervación muscular.", why: "La lesión de la motoneurona inferior quita el reflejo y da hiporreflexia; la hiperreflexia es un signo de vía motora central." },
+        { t: "Lesión de las vías motoras por el proceso infeccioso.", why: "El piramidalismo nace de la lesión de las vías motoras por la infección; con crisis convulsiva, el proceso ya afectó el parénquima cerebral." },
+        { t: "Contractura muscular cervical refleja.", why: "La contractura cervical produce rigidez de nuca y Brudzinski; no cambia los reflejos osteotendinosos de las extremidades." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "Hiperreflexia y crisis en una meningitis = parénquima comprometido: meningoencefalitis, no solo irritación meníngea."
     }
   ]
 }
