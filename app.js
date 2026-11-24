@@ -105,10 +105,13 @@ function pickSimulacro(size) {
 }
 
 // Builds a playable question with shuffled options, keeping track of which one is correct.
+// `rule` is the one-line decision rule that keeps the mistake from happening again.
 function prepare(q) {
   const options = shuffle(q.options.map((o, i) => ({ ...o, isCorrect: i === q.correct })));
-  return { id: q.id, chapterId: q.chapterId, stem: q.stem, options };
+  return { id: q.id, chapterId: q.chapterId, stem: q.stem, rule: q.rule || "", options };
 }
+
+const LETTERS = ["A", "B", "C", "D", "E"];
 
 function chapterStats(ch) {
   let n = 0, ok = 0;
@@ -117,11 +120,13 @@ function chapterStats(ch) {
 }
 
 // ---------- STATE ----------
-let session = null; // { title, items[], i, results[], confidence }
+// mode: "practice" answers one question at a time and explains immediately.
+// mode: "exam" mimics the professor's partial: 40 questions, no feedback until the end.
+let session = null; // { title, items[], i, results[], confidence, mode }
 
-function startSession(title, questions) {
+function startSession(title, questions, mode = "practice") {
   if (!questions.length) return;
-  session = { title, items: questions.map(prepare), i: 0, results: [], confidence: null };
+  session = { title, items: questions.map(prepare), i: 0, results: [], confidence: null, mode };
   renderQuestion();
 }
 
@@ -148,11 +153,13 @@ function renderHome() {
     <h2>Mezclar capítulos</h2>
     <p class="meta">Banco total: ${ALL.length} preguntas en ${CHAPTERS.length} capítulo(s). Las opciones se barajan cada vez. El mixto y el simulacro priorizan lo que fallaste o aún no viste.</p>
     <div class="row">
+      <button class="btn" data-act="exam">Modo examen (${SIM_SIZE}, sin corrección hasta el final)</button>
+      <button class="btn" data-act="sim">Simulacro de ${SIM_SIZE} (con explicación al instante)</button>
       <button class="btn" data-act="mixed" data-n="10">Mixto de 10</button>
       <button class="btn" data-act="mixed" data-n="20">Mixto de 20</button>
-      <button class="btn" data-act="sim">Simulacro de ${SIM_SIZE}</button>
       <button class="btn" data-act="errors" ${wrongCount ? "" : "disabled"}>Repasar errores (${wrongCount})</button>
     </div>
+    <div class="note">El modo examen imita el parcial del doctor: 40 preguntas, 0,25 puntos cada una, hoja de respuestas al final y nada de corrección mientras respondés. El simulacro es para entrenar con la explicación en el momento.</div>
     ${ALL.length < SIM_SIZE ? `<p class="meta">El simulacro usará todas las preguntas disponibles (${ALL.length}).</p>` : ""}
     <h2>Mi progreso</h2>
     <p class="meta">El historial se guarda solo en este navegador. Exporta los resultados para analizarlos o para no perderlos.</p>
@@ -167,28 +174,82 @@ function renderSummary(chId) {
   view.innerHTML = `
     <div class="row"><button class="btn" data-act="home">← Volver</button>
     <button class="btn" data-act="practice" data-ch="${c.id}">Practicar este capítulo</button></div>
-    <h2>${c.title}</h2>${c.summary}`;
+    <h2>${c.title}</h2>
+    <p class="lead">Cómo leer esto: primero la idea en una frase. Después la cadena de causas, que es exactamente lo que te van a preguntar. Al final, cómo aparece en el examen. No memorices: cada paso explica al anterior.</p>
+    ${c.easy ? `<section class="lesson">${c.easy}</section>
+    <details class="full"><summary>Resumen completo del libro (solo si querés el detalle)</summary>${c.summary}</details>` : c.summary}`;
 }
 
 function renderQuestion() {
   const s = session;
-  if (s.i >= s.items.length) return renderResult();
+  if (s.i >= s.items.length) return s.mode === "exam" ? renderExamResult() : renderResult();
   const q = s.items[s.i];
-  const letters = ["A", "B", "C", "D", "E"];
+  const exam = s.mode === "exam";
   const done = Math.round((s.i / s.items.length) * 100);
   view.innerHTML = `
     <div class="row" style="margin:0 0 10px"><button class="btn" data-act="home">Salir</button></div>
     <div class="bar"><span style="width:${done}%"></span></div>
-    <p class="meta">${s.title} · pregunta ${s.i + 1} de ${s.items.length}</p>
-    <p>${q.stem}</p>
-    <div class="conf" role="group" aria-label="Seguridad">
+    <p class="meta">${s.title} · pregunta ${s.i + 1} de ${s.items.length}${exam ? " · sin corrección hasta el final" : ""}</p>
+    <p class="stem">${q.stem}</p>
+    ${exam ? `<p class="meta exam-hint">Elegí una sola respuesta. No se corrige y no podés volver atrás.</p>` : `<div class="conf" role="group" aria-label="Seguridad">
       <span>Antes de responder, ¿qué tan segura estás?</span>
       <button class="pill" data-conf="segura" aria-pressed="false">Segura</button>
       <button class="pill" data-conf="dudo" aria-pressed="false">Dudo</button>
-    </div>
-    <div>${q.options.map((o, i) => `<button class="opt" data-opt="${i}"><b>${letters[i]})</b> ${o.t}</button>`).join("")}</div>
+    </div>`}
+    <div>${q.options.map((o, i) => `<button class="opt" data-opt="${i}"><b>${LETTERS[i]})</b> ${o.t}</button>`).join("")}</div>
     <p class="warn" id="warn"></p>
     <div id="after"></div>`;
+}
+
+// S3: the feedback names the student's error. A book citation is not an explanation.
+function feedbackHtml(q, chosen, ok) {
+  const correctIndex = q.options.findIndex((o) => o.isCorrect);
+  const chosenIndex = q.options.indexOf(chosen);
+  const correct = q.options[correctIndex];
+  const rule = q.rule || "Fijate qué dato del enunciado descarta la opción que elegiste.";
+  if (ok) {
+    return `<div id="feedback" class="fb fb-ok">
+      <p class="fb-h">Correcto. Elegiste ${LETTERS[chosenIndex]})</p>
+      <p class="fb-l">Por qué está bien</p><p>${correct.why}</p>
+      <p class="fb-rule"><b>Regla:</b> ${rule}</p>
+    </div>`;
+  }
+  return `<div id="feedback" class="fb fb-bad">
+    <p class="fb-h">Incorrecto. Elegiste ${LETTERS[chosenIndex]})</p>
+    <p class="fb-l">Qué falló en tu elección</p><p>${chosen.why}</p>
+    <p class="fb-l">La correcta es ${LETTERS[correctIndex]})</p><p>${correct.why}</p>
+    <p class="fb-rule"><b>Regla:</b> ${rule}</p>
+  </div>`;
+}
+
+// S4: score with the professor's arithmetic and explain only at the end.
+function renderExamResult() {
+  const r = session.results;
+  const hit = r.filter((x) => x.ok).length;
+  const nota = (hit / r.length * 10).toFixed(2).replace(".", ",");
+  const scale = r.length === SIM_SIZE ? " · 0,25 puntos por pregunta, como el parcial" : "";
+  const missed = r.filter((x) => !x.ok).length;
+  const review = r.map((x, n) => {
+    const q = x.item;
+    const correctIndex = q.options.findIndex((o) => o.isCorrect);
+    const chosen = q.options[x.chosen];
+    return `<details class="rev ${x.ok ? "rev-ok" : "rev-bad"}">
+      <summary>${n + 1}. ${x.ok ? "✓" : "✗"} ${q.stem.slice(0, 90)}…</summary>
+      <p class="stem">${q.stem}</p>
+      <p class="${x.ok ? "ok-t" : "bad-t"}">Tu respuesta: ${LETTERS[x.chosen]}) ${chosen.t}</p>
+      ${x.ok ? "" : `<p class="fb-l">Qué falló en tu elección</p><p>${chosen.why}</p>`}
+      <p class="ok-t">Correcta: ${LETTERS[correctIndex]}) ${q.options[correctIndex].t}</p>
+      <p>${q.options[correctIndex].why}</p>
+      ${q.rule ? `<p class="fb-rule"><b>Regla:</b> ${q.rule}</p>` : ""}
+    </details>`;
+  }).join("");
+  view.innerHTML = `
+    <h2>Nota: ${nota} / 10</h2>
+    <p>${hit} de ${r.length} correctas${scale}. ${missed ? "Fallaste " + missed + "." : "No fallaste ninguna."}</p>
+    <div class="note">Esto es lo que vería el doctor: sin corrección durante la prueba. Leé la revisión de abajo y quedate con la regla de cada pregunta que fallaste.</div>
+    <h3>Revisión pregunta por pregunta</h3>
+    ${review}
+    <div class="row"><button class="primary" data-act="home">Volver al inicio</button></div>`;
 }
 
 function renderResult() {
@@ -271,6 +332,7 @@ view.addEventListener("click", (e) => {
   }
   if (act === "mixed") return startSession("Mixto", weightedSample(ALL, Number(t.dataset.n), questionWeight));
   if (act === "sim") return startSession("Simulacro", pickSimulacro(SIM_SIZE));
+  if (act === "exam") return startSession("Modo examen", pickSimulacro(SIM_SIZE), "exam");
   if (act === "errors") return startSession("Repaso de errores", shuffle(ALL.filter((q) => stats[q.id] && stats[q.id].lastOk === false)));
   if (act === "next") { session.i += 1; session.confidence = null; return renderQuestion(); }
   if (act === "export") return renderExport();
@@ -299,21 +361,32 @@ view.addEventListener("click", (e) => {
   }
 
   if (t.dataset.opt !== undefined) {
-    if (!session.confidence) { document.getElementById("warn").textContent = "Elige primero qué tan segura estás."; return; }
     const q = session.items[session.i];
     const chosen = Number(t.dataset.opt);
     const ok = q.options[chosen].isCorrect;
-    session.results.push({ ok, conf: session.confidence, chapterId: q.chapterId, stem: q.stem });
+
+    if (session.mode === "exam") {
+      session.results.push({ ok, chapterId: q.chapterId, stem: q.stem, chosen, item: q });
+      record(q.id, ok, "dudo");
+      session.i += 1;
+      return renderQuestion();
+    }
+
+    if (!session.confidence) { document.getElementById("warn").textContent = "Elige primero qué tan segura estás."; return; }
+    session.results.push({ ok, conf: session.confidence, chapterId: q.chapterId, stem: q.stem, chosen, item: q });
     record(q.id, ok, session.confidence);
+    // The chosen and the correct option are explained in the feedback block; the remaining
+    // distractors keep their own line so the four alternatives are still accounted for.
     view.querySelectorAll(".opt").forEach((b) => {
       const i = Number(b.dataset.opt);
       b.disabled = true;
       if (q.options[i].isCorrect) b.classList.add("ok");
       else if (i === chosen) b.classList.add("bad");
-      b.insertAdjacentHTML("beforeend", `<div class="why">${q.options[i].why}</div>`);
+      if (i !== chosen && !q.options[i].isCorrect) b.insertAdjacentHTML("beforeend", `<div class="why">${q.options[i].why}</div>`);
     });
     const last = session.i === session.items.length - 1;
-    document.getElementById("after").innerHTML = `<button class="primary" data-act="next">${last ? "Ver resultado" : "Siguiente"}</button>`;
+    document.getElementById("after").innerHTML = feedbackHtml(q, q.options[chosen], ok) +
+      `<button class="primary" data-act="next">${last ? "Ver resultado" : "Siguiente"}</button>`;
   }
 });
 
