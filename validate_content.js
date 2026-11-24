@@ -24,8 +24,19 @@ const REQUIRED_SECTIONS = [
   "números",
 ];
 
-// S3: a wrong answer has to name the error. These formulas make the book the argument
-// and are exactly what the student reported as useless ("así es la secuencia que dice el libro").
+// S6: the student-facing UI is neutral Spanish. Voseo forms and Rioplatense markers are
+// the easy accident when a rewrite is written quickly, so they are checked, not trusted.
+const VOSEO_WORDS = ["elegí", "elegís", "podés", "tenés", "sabés", "querés", "hacé", "hacés",
+  "volvé", "volvés", "mirá", "fijate", "acordate", "quedate", "andá", "decime", "pensá", "pensás",
+  "revisá", "practicá", "leé", "leés", "usá", "usás", "buscá", "tomá", "empezá", "anotá", "pasá",
+  "esperá", "dejá", "poné", "sacá", "sos", "acá", "vos"];
+
+// \b cannot bound an accented word in JavaScript (á is not a word character), so the
+// boundaries are explicit letter lookarounds.
+function voseoHit(text) {
+  const lower = String(text).toLowerCase();
+  return VOSEO_WORDS.find((w) => new RegExp("(^|[^\\p{L}])" + w + "(?![\\p{L}])", "u").test(lower)) || null;
+}
 const BANNED_PHRASES = [
   /seg[úu]n el libro/i,
   /lo que (dice|describe|menciona) el libro/i,
@@ -55,6 +66,10 @@ const len = (s) => (typeof s === "string" ? s.trim().length : 0);
 function checkSummary(ch) {
   const where = "cap " + ch.id;
   if (!ch.easy || len(ch.easy) < 400) return fail(where, "easy summary missing or too short");
+  const easyHit = voseoHit(ch.easy.replace(/<[^>]+>/g, " "));
+  if (easyHit) fail(where, "easy summary uses voseo: " + easyHit);
+  const summaryHit = voseoHit(ch.summary || "");
+  if (summaryHit) fail(where, "book summary uses voseo: " + summaryHit);
   const headings = [...ch.easy.matchAll(/<h2[^>]*>([\s\S]*?)<\/h2>/g)]
     .map((m) => m[1].replace(/<[^>]+>/g, "").trim().toLowerCase());
   REQUIRED_SECTIONS.forEach((section) => {
@@ -72,6 +87,9 @@ function checkQuestion(ch, q, i) {
     return;
   }
   if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct > 3) fail(where, "correct must be an integer 0-3");
+  const visible = [q.stem, q.rule].concat((q.options || []).map((o) => o.t + " " + o.why)).join(" ");
+  const voseo = voseoHit(visible);
+  if (voseo) fail(where, "student-facing text uses voseo: " + voseo);
   if (len(q.rule) < 20) fail(where, "missing decision rule (q.rule)");
   if (len(q.rule) > 220) fail(where, "rule too long (" + len(q.rule) + " chars)");
 

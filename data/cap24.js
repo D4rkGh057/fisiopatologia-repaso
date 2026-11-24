@@ -202,7 +202,7 @@ window.CHAPTERS.push(
       id: "24-6",
       stem: "Un hombre de 40 años nota aumento progresivo del hemiescroto derecho una semana después de un golpe en la zona, sin equimosis; el contenido es líquido claro y no hay fiebre ni síntomas urinarios. ¿Qué mecanismo explica la acumulación?",
       options: [
-        { t: "Acumulación de sangre en la misma cavidad por ruptura de vasos del trauma", why: "Un traumatismo puede producir un hematocele, pero ahí el contenido es sangre: se ve equimosis y el volumen sube rápido. Acá el líquido es claro y crece en semanas." },
+        { t: "Acumulación de sangre en la misma cavidad por ruptura de vasos del trauma", why: "Un traumatismo puede producir un hematocele, pero ahí el contenido es sangre: se ve equimosis y el volumen sube rápido. Aquí el líquido es claro y crece en semanas." },
         { t: "Dilatación del plexo pampiniforme por incompetencia de las válvulas venosas", why: "Ese es el varicocele: una masa de venas que cambia con la postura. No se palpa como una colección líquida y no depende de un golpe reciente." },
         { t: "Producción de líquido en la túnica vaginal que supera su reabsorción", why: "La túnica vaginal secreta líquido y los vasos venosos y linfáticos lo reabsorben; el traumatismo altera esa reabsorción y el líquido claro se acumula: es un hidrocele." },
         { t: "Quiste del conducto epididimario por obstrucción con espermatozoides y detritus", why: "El espermatocele es un quiste firme del epidídimo, de crecimiento lento y sin relación temporal con el traumatismo que refiere el paciente." }

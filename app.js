@@ -225,11 +225,11 @@ function renderQuestion() {
     <div class="bar"><span style="width:${done}%"></span></div>
     <div class="qbody">
     <p class="stem">${q.stem}</p>
-    ${exam ? `<p class="meta exam-hint">Elegí una sola respuesta. No se corrige y no podés volver atrás.</p>` : `<div class="conf" role="group" aria-label="Seguridad">
+    <div class="conf" role="group" aria-label="Seguridad">
       <span>Antes de responder, ¿qué tan segura estás?</span>
       <button class="pill" data-conf="segura" aria-pressed="false">Segura</button>
       <button class="pill" data-conf="dudo" aria-pressed="false">Dudo</button>
-    </div>`}
+    </div>
     <div>${q.options.map((o, i) => `<button class="opt" data-opt="${i}"><b>${LETTERS[i]})</b> ${o.t}</button>`).join("")}</div>
     <p class="warn" id="warn"></p>
     <div id="after"></div>
@@ -241,7 +241,7 @@ function feedbackHtml(q, chosen, ok) {
   const correctIndex = q.options.findIndex((o) => o.isCorrect);
   const chosenIndex = q.options.indexOf(chosen);
   const correct = q.options[correctIndex];
-  const rule = q.rule || "Fijate qué dato del enunciado descarta la opción que elegiste.";
+  const rule = q.rule || "Revisa qué dato del enunciado descarta la opción que elegiste.";
   if (ok) {
     return `<div id="feedback" class="fb fb-ok">
       <p class="fb-h">Correcto. Elegiste ${LETTERS[chosenIndex]})</p>
