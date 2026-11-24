@@ -150,7 +150,8 @@ let session = null; // { title, items[], i, results[], confidence, mode }
 
 function startSession(title, questions, mode = "practice") {
   if (!questions.length) return;
-  session = { title, items: questions.map(prepare), i: 0, results: [], confidence: null, mode };
+  session = { title, items: questions.map(prepare), i: 0, results: [], confidence: null, mode,
+    answers: mode === "exam" ? questions.map(() => null) : null };
   renderQuestion();
 }
 
@@ -214,6 +215,7 @@ function renderQuestion() {
   if (s.i >= s.items.length) return s.mode === "exam" ? renderExamResult() : renderResult();
   const q = s.items[s.i];
   const exam = s.mode === "exam";
+  if (exam) return renderExamQuestion();
   const done = Math.round((s.i / s.items.length) * 100);
   view.innerHTML = `
     <div class="qhead">
@@ -255,6 +257,54 @@ function feedbackHtml(q, chosen, ok) {
   </div>`;
 }
 
+// Exam mode: no correction, and the answer stays editable until the sheet is handed in,
+// like the paper response sheet of the professor's partial.
+function renderExamQuestion() {
+  const s = session;
+  const q = s.items[s.i];
+  const chosen = s.answers[s.i];
+  const answered = s.answers.filter((a) => a !== null).length;
+  const done = Math.round((answered / s.items.length) * 100);
+  const last = s.i === s.items.length - 1;
+  const cells = s.answers.map((a, n) => {
+    const cls = a === null ? "" : " is-done";
+    const current = n === s.i ? " is-current" : "";
+    const label = a === null ? ": sin responder" : ": respondida";
+    return `<button class="sheet-cell${cls}${current}" data-jump="${n}" title="Pregunta ${n + 1}${label}">${n + 1}</button>`;
+  }).join("");
+  view.innerHTML = `
+    <div class="qhead">
+      <button class="btn" data-act="home">Salir</button>
+      <p class="meta">${s.title} · pregunta ${s.i + 1} de ${s.items.length} · sin corrección hasta el final</p>
+    </div>
+    <div class="bar"><span style="width:${done}%"></span></div>
+    <div class="qbody">
+      <p class="stem">${q.stem}</p>
+      <div>${q.options.map((o, i) => `<button class="opt${i === chosen ? " sel" : ""}" data-opt="${i}"><b>${LETTERS[i]})</b> ${o.t}</button>`).join("")}</div>
+      <div class="exam-nav">
+        <button class="btn" data-act="exam-prev" ${s.i === 0 ? "disabled" : ""}>Anterior</button>
+        ${last ? "" : `<button class="btn" data-act="exam-next">Siguiente</button>`}
+        <span class="meta">${answered} de ${s.items.length} respondidas</span>
+        <button class="primary" data-act="exam-submit">Entregar</button>
+      </div>
+      <div class="sheet sheet-inline" role="group" aria-label="Hoja de respuestas">${cells}</div>
+    </div>`;
+}
+
+function submitExam() {
+  const s = session;
+  const pending = s.answers.filter((a) => a === null).length;
+  if (pending && !window.confirm(`Quedan ${pending} preguntas sin responder. ¿Entregar igual?`)) return;
+  const results = s.items.map((q, n) => {
+    const chosen = s.answers[n];
+    const ok = chosen !== null && q.options[chosen].isCorrect;
+    return { ok, chapterId: q.chapterId, stem: q.stem, chosen, item: q };
+  });
+  results.forEach((x, n) => record(s.items[n].id, x.ok, "dudo"));
+  s.results = results;
+  renderExamResult();
+}
+
 // S4: score with the professor's arithmetic and explain only at the end.
 function renderExamResult() {
   const r = session.results;
@@ -266,16 +316,20 @@ function renderExamResult() {
   const missed = r.filter((x) => !x.ok).length;
   // The answer sheet is the one bold element of the app: the professor's printed response
   // grid, rebuilt from this run. Each cell opens its own explanation.
-  const sheet = r.map((x, n) => `<button class="sheet-cell ${x.ok ? "is-ok" : "is-bad"}" data-rev="${n}" title="Pregunta ${n + 1}: ${x.ok ? "correcta" : "incorrecta"}">${n + 1}</button>`).join("");
+  const sheet = r.map((x, n) => {
+    const state = x.ok ? "is-ok" : x.chosen === null ? "is-blank" : "is-bad";
+    const label = x.ok ? "correcta" : x.chosen === null ? "sin responder" : "incorrecta";
+    return `<button class="sheet-cell ${state}" data-rev="${n}" title="Pregunta ${n + 1}: ${label}">${n + 1}</button>`;
+  }).join("");
   const review = r.map((x, n) => {
     const q = x.item;
     const correctIndex = q.options.findIndex((o) => o.isCorrect);
-    const chosen = q.options[x.chosen];
+    const chosen = x.chosen === null ? null : q.options[x.chosen];
     return `<details class="rev ${x.ok ? "rev-ok" : "rev-bad"}">
       <summary>${n + 1}. ${x.ok ? "✓" : "✗"} ${q.stem.slice(0, 90)}…</summary>
       <p class="stem">${q.stem}</p>
-      <p class="${x.ok ? "ok-t" : "bad-t"}">Tu respuesta: ${LETTERS[x.chosen]}) ${chosen.t}</p>
-      ${x.ok ? "" : `<p class="fb-l">Qué falló en tu elección</p><p>${chosen.why}</p>`}
+      <p class="${x.ok ? "ok-t" : "bad-t"}">Tu respuesta: ${chosen ? LETTERS[x.chosen] + ") " + chosen.t : "sin responder"}</p>
+      ${x.ok || !chosen ? "" : `<p class="fb-l">Qué falló en tu elección</p><p>${chosen.why}</p>`}
       <p class="ok-t">Correcta: ${LETTERS[correctIndex]}) ${q.options[correctIndex].t}</p>
       <p>${q.options[correctIndex].why}</p>
       ${q.rule ? `<p class="fb-rule"><b>Regla:</b> ${q.rule}</p>` : ""}
@@ -307,11 +361,37 @@ function renderResult() {
     if (x.ok) b.ok += 1;
   });
   const missed = r.filter((x) => !x.ok);
+  // The four cells separate a content problem from a confidence problem: that distinction is
+  // what decides the next step, and it is the one the student cannot make on her own.
+  const cell = (ok, conf) => r.filter((x) => x.ok === ok && x.conf === conf).length;
+  const sureOk = cell(true, "segura");
+  const doubtOk = cell(true, "dudo");
+  const sureBad = cell(false, "segura");
+  const doubtBad = cell(false, "dudo");
+  const confusedChapters = Object.keys(byChapter)
+    .filter((id) => r.some((x) => x.chapterId === Number(id) && !x.ok && x.conf === "segura"))
+    .map((id) => chapterById(Number(id)).title.replace(/^\d+\.\s*/, ""))
+    .slice(0, 3);
+  let prescription;
+  if (!sureBad && !doubtBad) {
+    prescription = doubtOk
+      ? `Acertaste ${doubtOk} dudando: el contenido lo tienes, lo que falla es el criterio bajo presión. Practica sin marcar la seguridad y quédate con tu primer razonamiento.`
+      : "Sesión limpia: todas correctas y con seguridad. Pasa al siguiente capítulo o sube la dificultad con el simulacro.";
+  } else if (sureBad >= doubtBad) {
+    prescription = `Confundiste el concepto en ${sureBad} ${sureBad === 1 ? "pregunta" : "preguntas"} estando segura: eso no se arregla practicando más, se arregla leyendo. Vuelve al resumen${confusedChapters.length ? " de " + confusedChapters.join(", ") : ""} y recién después repite esas preguntas.`;
+  } else {
+    prescription = `No sabías ${doubtBad} de las que dudaste: es contenido que todavía no tienes. Empieza por el resumen de esos capítulos antes de gastar tiempo en más preguntas.`;
+  }
   view.innerHTML = `
     <h2>Resultado: ${hit} de ${r.length}</h2>
-    <p>Respuestas "segura": ${sure.filter((x) => x.ok).length} correctas de ${sure.length}.<br>
-       Respuestas "dudo": ${doubt.filter((x) => x.ok).length} correctas de ${doubt.length}.</p>
-    <div class="note">Si marcaste "segura" y fallaste, es una confusión de concepto: repasa el resumen. Si marcaste "dudo" y acertaste, probablemente sabes más de lo que crees: confía en tu primer razonamiento.</div>
+    <h3>Diagnóstico</h3>
+    <div class="matrix" id="diagnosis">
+      <div class="mx mx-ok"><span class="mx-n">${sureOk}</span><p>Sabías, con seguridad</p></div>
+      <div class="mx mx-ok"><span class="mx-n">${doubtOk}</span><p>Sabías pero dudaste</p></div>
+      <div class="mx mx-bad"><span class="mx-n">${sureBad}</span><p>Confundiste el concepto</p></div>
+      <div class="mx mx-bad"><span class="mx-n">${doubtBad}</span><p>No lo sabías</p></div>
+    </div>
+    <p id="prescription">${prescription}</p>
     <h3>Por capítulo</h3>
     <table><tr><th>Capítulo</th><th>Aciertos</th></tr>
       ${Object.keys(byChapter).map((id) => `<tr><td>${chapterById(Number(id)).title}</td><td>${byChapter[id].ok} de ${byChapter[id].n}</td></tr>`).join("")}
@@ -390,6 +470,10 @@ view.addEventListener("click", (e) => {
   if (act === "sim") return startSession("Simulacro", pickSimulacro(SIM_SIZE));
   if (act === "exam") return startSession("Modo examen", pickSimulacro(SIM_SIZE), "exam");
   if (act === "errors") return startSession("Repaso de errores", shuffle(ALL.filter((q) => stats[q.id] && stats[q.id].lastOk === false)));
+  if (act === "exam-prev") { session.i = Math.max(0, session.i - 1); return renderExamQuestion(); }
+  if (act === "exam-next") { session.i = Math.min(session.items.length - 1, session.i + 1); return renderExamQuestion(); }
+  if (act === "exam-submit") return submitExam();
+  if (t.dataset.jump !== undefined) { session.i = Number(t.dataset.jump); return renderExamQuestion(); }
   if (act === "next") { session.i += 1; session.confidence = null; return renderQuestion(); }
   if (act === "export") return renderExport();
   if (act === "copy") {
@@ -432,10 +516,8 @@ view.addEventListener("click", (e) => {
     const ok = q.options[chosen].isCorrect;
 
     if (session.mode === "exam") {
-      session.results.push({ ok, chapterId: q.chapterId, stem: q.stem, chosen, item: q });
-      record(q.id, ok, "dudo");
-      session.i += 1;
-      return renderQuestion();
+      session.answers[session.i] = chosen;
+      return renderExamQuestion();
     }
 
     if (!session.confidence) { document.getElementById("warn").textContent = "Elige primero qué tan segura estás."; return; }

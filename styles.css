@@ -292,6 +292,26 @@ button { font: inherit; cursor: pointer; }
 .sheet-key .k-ok { background: var(--ok-bg); border-color: var(--ok); }
 .sheet-key .k-bad { background: var(--bad-bg); border-color: var(--bad); }
 
+/* ---------- Exam answer strip and navigation ---------- */
+.exam-nav { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin: 18px 0 4px; }
+.exam-nav .meta { margin-right: auto; }
+.opt.sel { border-color: var(--accent); background: var(--accent-bg); }
+.opt.sel > b { color: var(--accent-soft); }
+.sheet-inline { margin: 18px 0 0; }
+.sheet-inline .sheet-cell { height: 26px; font-size: 0.72rem; }
+.sheet-cell.is-done { background: var(--accent-bg); border-color: var(--accent); color: var(--accent-soft); }
+.sheet-cell.is-current { outline: 2px solid var(--accent-soft); outline-offset: 1px; }
+.sheet-cell.is-blank { background: var(--surface); border-style: dashed; color: var(--muted); }
+
+/* ---------- Diagnosis matrix ---------- */
+.matrix { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; margin: 14px 0 10px; }
+.mx { border: 1px solid var(--line); border-radius: var(--r-sm); padding: 12px 14px; background: var(--surface); }
+.mx-n { display: block; font: 700 1.65rem/1 var(--mono); margin-bottom: 8px; }
+.mx p { margin: 0; font-size: 0.85rem; color: var(--muted); line-height: 1.35; }
+.mx-ok .mx-n { color: var(--ok); }
+.mx-bad .mx-n { color: var(--bad); }
+#prescription { max-width: var(--read); }
+
 /* ---------- Review list ---------- */
 .rev { border: 1px solid var(--line); border-radius: var(--r-sm); padding: 10px 14px; margin: 8px 0; background: var(--surface); }
 .rev > summary { cursor: pointer; font-weight: 600; font-size: 0.95rem; }
@@ -353,4 +373,5 @@ th { background: var(--surface-2); font-weight: 600; }
   .opt { padding: 12px 13px; grid-template-columns: 1.8rem 1fr; }
   .btn.big { max-width: none; width: 100%; }
   .theme-toggle { padding: 7px 11px; font-size: 0.82rem; }
+  .matrix { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
