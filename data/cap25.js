@@ -5,6 +5,54 @@ window.CHAPTERS.push(
   id: 25,
   weight: 2,
   title: "25. Trastornos urogenitales femeninos",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>La vagina se defiende con ácido: los lactobacilos convierten el glucógeno en ácido láctico y mantienen el pH bajo. Casi todo el capítulo sale de que esa defensa se rompe o de que las hormonas y los tejidos del aparato genital fallan.</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <ol>
+    <li><b>Defensa normal:</b> el estrógeno hace que el epitelio vaginal guarde glucógeno (un azúcar de reserva). Los lactobacilos lo fermentan y producen <b>ácido láctico</b>, que deja el pH entre 3,8 y 4,2. Ese ácido frena a los gérmenes.</li>
+    <li><b>Vaginosis bacteriana:</b> una ducha vaginal o un antibiótico matan los lactobacilos. Baja el ácido láctico, el pH sube y crecen <i>Gardnerella</i>, <i>Mycoplasma</i> y <i>Bacteroides</i>. Esos gérmenes liberan poliaminas y ácidos orgánicos, que huelen mal.</li>
+    <li><b>Enfermedad inflamatoria pélvica (EIP):</b> una infección de transmisión sexual (ITS, como clamidia o gonorrea) rompe la barrera del cuello uterino y asciende. Llega al endometrio, al ovario y al peritoneo pélvico, y deja cicatrices en las trompas.</li>
+    <li><b>Trompa cicatrizada:</b> el óvulo y el espermatozoide no se encuentran (infertilidad) o pasan a medias y el embrión se implanta fuera del útero (embarazo ectópico).</li>
+    <li><b>Endometriosis:</b> tejido parecido al endometrio crece fuera del útero. Responde a las hormonas, sangra en cada menstruación e inflama los tejidos vecinos. La inflamación repetida produce fibrosis y adherencias, y con ellas dolor e infertilidad.</li>
+    <li><b>SOP (síndrome de ovario poliquístico):</b> hay inflamación crónica leve y resistencia a la insulina (la insulina no actúa bien). Esa inflamación estimula a las células de la teca, que fabrican andrógenos, y el ciclo deja de ovular.</li>
+    <li><b>Dismenorrea primaria:</b> el útero produce demasiadas prostaglandinas y leucotrienos. El miometrio se contrae de más, el flujo sanguíneo cae y el músculo se isquémico: duele.</li>
+    <li><b>Ovulación:</b> el pico de LH libera prostaglandinas y enzimas que rompen la pared del folículo, y sale el óvulo. Es una inflamación aguda, pero controlada.</li>
+    <li><b>Cistocele:</b> el suelo pélvico (los músculos que sostienen los órganos) se debilita por partos vaginales, menopausia u obesidad. La vejiga empuja la pared vaginal anterior y desciende.</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <ul>
+    <li><b>Flujo lechoso, homogéneo y de mal olor sin prurito intenso:</b> vaginosis. Las poliaminas de los gérmenes explican el olor y la falta de lactobacilos explica el pH alto.</li>
+    <li><b>Dolor pélvico bajo, fiebre y leucorrea purulenta:</b> EIP. La inflamación del endometrio y el peritoneo duele y produce exudado; la fiebre viene de las interleucinas.</li>
+    <li><b>Dolor que empeora con cada menstruación e infertilidad:</b> endometriosis. El tejido ectópico sangra cuando menstruo y esa sangre irrita y fibrosa.</li>
+    <li><b>Oligomenorrea, hirsutismo e infertilidad:</b> SOP con anovulación. Sin ovulación no hay cuerpo lúteo y el sangrado se vuelve irregular; los andrógenos explican el vello.</li>
+    <li><b>Cólico que empieza con la menstruación y examen normal:</b> dismenorrea primaria. No hay lesión: la isquemia por contracción excesiva produce el dolor.</li>
+    <li><b>Sensación de masa que sale por la vagina al pujar:</b> cistocele. La vejiga desciende tanto como el grado lo permita.</li>
+    <li><b>Prurito vulvar con pápulas satélites en una niña:</b> vulvovaginitis, muchas veces bacteriana. Antes de la pubertad falta estrógeno, hay menos glucógeno y menos lactobacilos protectores.</li>
+  </ul>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Vignette corta con edad, factor desencadenante (ducha, antibiótico, nueva pareja) o un dato de laboratorio, y una sola pregunta de mecanismo.</li>
+    <li>Secuencia del pH: "¿por qué el flujo se vuelve fétido y el pH sube?".</li>
+    <li>Dirección del cambio hormonal: "¿qué hormona rompe el folículo, FSH o LH?" y "¿el moco se vuelve más o menos viscoso?".</li>
+    <li>Diagnóstico por grado o por tipo: "según el grado del prolapso, ¿cuál es?" o "¿qué tipo de SOP tiene?".</li>
+    <li>Mini ejemplo en su voz: "Una mujer de 26 años con ducha vaginal diaria, antibiótico reciente y pH vaginal de 5,2. ¿Cuál es el mecanismo fisiopatológico del cuadro?".</li>
+  </ul>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> confundir FSH (hace crecer el folículo) con LH (lo rompe). Y confundir endometriosis (tejido ectópico que sangra con la regla) con SOP (andrógenos y anovulación): en la endometriosis los ciclos pueden ser regulares. Otra: olvidar que en el cistocele el grado III atraviesa el introito y solo el IV queda fuera en reposo.</div>
+
+  <h2>Números para memorizar</h2>
+  <ul>
+    <li>pH vaginal sano: 3,8-4,2 (ácido, menor de 4,5).</li>
+    <li>Cistocele: I no alcanza el introito, II lo alcanza, III lo atraviesa, IV queda fuera en reposo.</li>
+    <li>Ciclo menstrual: 24-38 días; menstruación de 4-8 días; pérdida de 44-75 cm³.</li>
+    <li>Frecuencia relativa de las infecciones: vaginosis bacteriana 34%, candidiasis 30%, tricomoniasis 7%.</li>
+  </ul>
+  `,
   summary: `
   <h2>1. Fundamentos</h2>
   <p>El aparato genital femenino cambia a lo largo de la vida (nacimiento, pubertad, edad reproductiva, menopausia) y cada etapa tiene sus trastornos típicos. Según el libro, las <b>infecciones</b> son la causa más frecuente de consulta ginecológica; en la edad reproductiva predominan las alteraciones menstruales de origen hormonal y hacia la menopausia las neoplásicas. La infección urinaria es la bacteriana más frecuente en la mujer (50-60% tendrá al menos un episodio; cerca de 25% recurre en 6 meses).</p>
@@ -88,270 +136,150 @@ window.CHAPTERS.push(
   </ul>
   `,
   questions: [
-      {
-          "stem": "Una mujer de 26 años consulta por flujo vaginal abundante, lechoso, homogéneo y de mal olor, sin prurito intenso. Refiere ducha vaginal diaria desde hace 2 meses y un ciclo reciente de antibióticos por una faringitis. El pH vaginal medido es 5,2. ¿Qué secuencia explica mejor su cuadro?",
-          "options": [
-              {
-                  "t": "Aumento del glucógeno epitelial por estrógeno, mayor producción de ácido láctico y sobrecrecimiento de Candida con pH ácido persistente",
-                  "why": "Más glucógeno y más ácido láctico acidificarían el medio y favorecerían a los lactobacilos; el pH medido de 5,2 y el flujo lechoso sin prurito indican lo contrario."
-              },
-              {
-                  "t": "Hiperestrogenismo que engrosa el epitelio y reduce la actividad de los lactobacilos, con pH vaginal de 4,0 y flujo grumoso blanquecino",
-                  "why": "El hiperestrogenismo figura como factor de riesgo, pero un pH de 4,0 y un flujo grumoso no corresponden al caso (pH 5,2, flujo homogéneo); los desencadenantes claros son ducha y antibiótico."
-              },
-              {
-                  "t": "Caída de lactobacilos, menos ácido láctico, alcalinización y sobrecrecimiento de Gardnerella, Mycoplasma y Bacteroides con liberación de poliaminas",
-                  "why": "Correcta. Ducha y antibiótico reducen los lactobacilos; el pH sube y los microorganismos liberan ácidos orgánicos y poliaminas que dan el flujo lechoso y fétido."
-              },
-              {
-                  "t": "Ascenso de Chlamydia por el cuello con ruptura de la barrera endocervical e infección del endometrio, con leucorrea purulenta y dolor pélvico",
-                  "why": "Eso describe la EIP, con dolor pélvico y fiebre; no explica un flujo homogéneo con pH alcalino ni el antecedente de ducha y antibiótico."
-              }
-          ],
-          "correct": 2
-      },
-      {
-          "stem": "Una niña de 4 años presenta prurito vulvar de varios días. En el examen hay eritema de labios mayores y menores, excoriaciones por rascado y pápulas eritematosas satélites en el periné, sin flujo. El test de Graham es negativo, el Gram vaginal no muestra leucocitos y hay escasa flora mixta, el cultivo para Candida es negativo y se aísla abundante Streptococcus pyogenes. ¿Cuál es la interpretación correcta?",
-          "options": [
-              {
-                  "t": "Vulvovaginitis bacteriana aguda por estreptococo β-hemolítico del grupo A, con cultivo positivo y sin evidencia de parásitos ni hongos",
-                  "why": "Correcta. El germen aislado es S. pyogenes, se descartaron parásitos (Graham) y Candida, y el libro la trata con penicilina V."
-              },
-              {
-                  "t": "Vulvovaginitis micótica por Candida, porque las pápulas satélites perineales y el prurito intenso son características de esa infección",
-                  "why": "Las pápulas satélites sugieren Candida, pero el estudio para Candida fue negativo y se aisló S. pyogenes."
-              },
-              {
-                  "t": "Vulvitis irritativa sin infección, porque el Gram no muestra leucocitos y la flora mixta escasa indica ausencia de patógeno",
-                  "why": "Con aislamiento abundante de S. pyogenes ya no es una vulvitis sin infección; la ausencia de leucocitos en el Gram no la descarta."
-              },
-              {
-                  "t": "Oxiuriasis perianal, porque el prurito de predominio nocturno en prepúberes se confirma con la cinta adhesiva de Graham",
-                  "why": "El test de Graham fue negativo, que es justamente la prueba para ese diagnóstico, y se aisló un germen bacteriano."
-              }
-          ],
-          "correct": 0
-      },
-      {
-          "stem": "Una mujer de 22 años con nueva pareja sexual consulta por dolor pélvico bajo, fiebre de 38,4 °C y leucorrea purulenta de una semana. A la exploración hay dolor al movilizar el cuello. Se sospecha enfermedad inflamatoria pélvica por Chlamydia trachomatis. ¿Qué mecanismo explica que la infección comprometa el tracto genital superior?",
-          "options": [
-              {
-                  "t": "Diseminación hematógena desde un foco urinario hacia el ovario, con formación posterior de absceso tuboovárico sin pasar por el cuello",
-                  "why": "El libro describe un ascenso desde la vagina a través del cuello, no una vía hematógena desde el tracto urinario."
-              },
-              {
-                  "t": "Hipoestrogenismo que adelgaza la mucosa uterina y favorece la invasión bacteriana desde la vulva hacia el endometrio",
-                  "why": "No es el mecanismo descrito; la EIP aparece en edad reproductiva por ITS que superan la barrera endocervical."
-              },
-              {
-                  "t": "Reflujo de orina infectada desde la vejiga hacia las trompas por debilidad del suelo pélvico y vaciado incompleto",
-                  "why": "El prolapso o cistocele afecta la vejiga, pero no es una vía de infección hacia las trompas."
-              },
-              {
-                  "t": "Ruptura de la barrera endocervical por una ITS, con ascenso desde la vagina hacia endometrio, ovario y peritoneo pélvico",
-                  "why": "Correcta. Así lo describe el libro: la infección asciende desde la vagina a través del cuello."
-              }
-          ],
-          "correct": 3
-      },
-      {
-          "stem": "Una mujer de 31 años tuvo hace 6 años un cuadro de dolor pélvico, fiebre y leucorrea que no recibió tratamiento (se atribuyó a Chlamydia). Hoy consulta por infertilidad de 2 años y tuvo un embarazo ectópico el año pasado. Tiene ciclos regulares y ovulatorios. ¿Qué alteración explica mejor su infertilidad y el embarazo ectópico?",
-          "options": [
-              {
-                  "t": "Anovulación por exceso de andrógenos de las células de la teca, con inflamación crónica de bajo grado y resistencia a la insulina",
-                  "why": "Sus ciclos son ovulatorios; esto describe el SOP, que no explica una secuela tubárica ni el ectópico."
-              },
-              {
-                  "t": "Cicatrices y adherencias tubáricas tras la inflamación previa, que impiden el transporte normal del ovocito o del embrión",
-                  "why": "Correcta. El libro vincula la EIP con cicatrices y adherencias en las trompas que causan infertilidad y embarazos ectópicos."
-              },
-              {
-                  "t": "Alcalinización persistente del pH vaginal por pérdida de lactobacilos, que inmoviliza los espermatozoides y desvía el embrión hacia la trompa",
-                  "why": "Es el mecanismo de la vaginosis; no se describe como secuela de la EIP ni explica el embarazo ectópico."
-              },
-              {
-                  "t": "Hiperplasia endometrial por hiperestrogenismo crónico, que impide la implantación uterina y empuja el embrión hacia la trompa",
-                  "why": "No es la secuela que describe el libro para la EIP; la lesión descrita es cicatricial en las trompas."
-              }
-          ],
-          "correct": 1
-      },
-      {
-          "stem": "Una mujer de 31 años, con ciclos regulares, consulta por dolor pélvico crónico que empeora cada menstruación e infertilidad de 3 años. En la laparoscopia se observan focos de tejido similar al endometrio sobre el peritoneo pélvico y el ovario, con adherencias. ¿Qué mecanismo explica la infertilidad y el dolor?",
-          "options": [
-              {
-                  "t": "El tejido ectópico es inactivo y solo ocupa espacio, de modo que la infertilidad se debe a compresión mecánica de la trompa",
-                  "why": "El libro lo describe como funcionalmente activo (responde a hormonas y sangra), no como masa inerte."
-              },
-              {
-                  "t": "Sobreproducción de andrógenos tecales con anovulación crónica, resistencia a la insulina y morfología ovárica poliquística",
-                  "why": "Es el mecanismo del SOP; aquí los ciclos son regulares y los focos son de tejido endometrial."
-              },
-              {
-                  "t": "El tejido ectópico responde a estrógenos y progesterona, sangra con la menstruación y causa inflamación, fibrosis y adherencias",
-                  "why": "Correcta. Es la secuencia del libro: sangrado cíclico, inflamación de estructuras vecinas, fibrosis, cicatrices e infertilidad."
-              },
-              {
-                  "t": "Descenso de la pared vaginal anterior con herniación de la vejiga, que provoca presión pélvica, dispareunia y vaciado incompleto",
-                  "why": "Corresponde al cistocele, un trastorno del suelo pélvico, no a focos endometriales ectópicos."
-              }
-          ],
-          "correct": 2
-      },
-      {
-          "stem": "Una mujer de 26 años consulta por oligomenorrea de 4 años, hirsutismo e infertilidad. Tiene IMC 31 kg/m², glucemia en ayunas 108 mg/dL y proteína C reactiva elevada. La ecografía muestra ovarios de morfología poliquística. Según el libro, ¿qué mecanismo une la alteración metabólica con la hormonal?",
-          "options": [
-              {
-                  "t": "Inflamación crónica de bajo grado con resistencia a la insulina, ↑ PCR y especies reactivas de oxígeno que estimulan a la teca a producir andrógenos",
-                  "why": "Correcta. Ese estado inflamatorio une la alteración metabólica con la hormonal y perpetúa el exceso de andrógenos y la anovulación."
-              },
-              {
-                  "t": "Déficit hipotalámico de GnRH con FSH baja que impide el desarrollo folicular y reduce la síntesis ovárica de estrógenos",
-                  "why": "El libro no atribuye el SOP a un déficit central de GnRH o FSH; el eje es la inflamación crónica con hiperandrogenismo."
-              },
-              {
-                  "t": "Hiperprolactinemia con supresión pulsátil de GnRH que bloquea la ovulación y produce hirsutismo por andrógenos suprarrenales",
-                  "why": "El libro no plantea este mecanismo para el SOP; los andrógenos provienen de la teca estimulada por la inflamación."
-              },
-              {
-                  "t": "Pérdida de lactobacilos con alcalinización vaginal y sobrecrecimiento anaerobio que perpetúa una inflamación pélvica ascendente",
-                  "why": "Es el mecanismo de la vaginosis y la EIP, no del SOP."
-              }
-          ],
-          "correct": 0
-      },
-      {
-          "stem": "Dos pacientes con anovulación e hiperandrogenismo clínico. La paciente A tiene además ovarios de morfología poliquística en la ecografía; la paciente B tiene ovarios de aspecto normal. Según la clasificación del libro, ¿cuál afirmación es correcta?",
-          "options": [
-              {
-                  "t": "B corresponde al tipo 3, que se diferencia del tipo 1 por carecer de morfología poliquística, con hiperandrogenismo y anovulación",
-                  "why": "El tipo 3 se diferencia del 1 por no tener anovulación; B sí tiene anovulación."
-              },
-              {
-                  "t": "Ambas son tipo 1, porque la morfología ovárica no modifica el tipo cuando coexisten hiperandrogenismo y anovulación",
-                  "why": "El tipo 1 exige los tres componentes, incluida la morfología poliquística; B no la tiene."
-              },
-              {
-                  "t": "B corresponde al tipo 4, definido por oligomenorrea con ovarios de morfología normal y sin hiperandrogenismo",
-                  "why": "El tipo 4 del libro incluye morfología poliquística, no ovarios normales."
-              },
-              {
-                  "t": "B es tipo 2, que difiere del tipo 1 por no tener morfología poliquística; A (tipo 1) tiene mayor riesgo metabólico",
-                  "why": "Correcta. Así define el libro el tipo 2 y señala al tipo 1 clásico con mayor riesgo metabólico."
-              }
-          ],
-          "correct": 3
-      },
-      {
-          "stem": "Una adolescente de 17 años presenta dolor cólico suprapúbico intenso que comienza con la menstruación y dura 2 días, con náuseas. Menarquia a los 13 años, ciclos regulares. El examen pélvico y la ecografía son normales. ¿Qué mecanismo explica su dolor?",
-          "options": [
-              {
-                  "t": "Focos de tejido endometrial ectópico que sangran con cada ciclo y generan inflamación peritoneal, fibrosis y adherencias pélvicas",
-                  "why": "Eso explicaría una dismenorrea secundaria; aquí el examen pélvico y la ecografía son normales."
-              },
-              {
-                  "t": "Exceso de prostaglandinas y leucotrienos con hipercontractilidad miometrial, isquemia e hipoxia del músculo uterino",
-                  "why": "Correcta. Es el mecanismo de la dismenorrea primaria, que ocurre sin alteración pélvica subyacente."
-              },
-              {
-                  "t": "Alcalinización vaginal por pérdida de lactobacilos, con irritación mucosa y dolor referido al hipogastrio durante la menstruación",
-                  "why": "La vaginosis causa flujo, no cólico menstrual con examen normal."
-              },
-              {
-                  "t": "Descenso de la pared vaginal anterior por debilidad del suelo pélvico, con tracción ligamentaria y dolor suprapúbico cíclico",
-                  "why": "Corresponde a un prolapso, improbable a esta edad y sin relación cíclica con la menstruación."
-              }
-          ],
-          "correct": 1
-      },
-      {
-          "stem": "Una mujer de 64 años, obesa, con 4 partos vaginales, posmenopáusica y en tratamiento con diuréticos, refiere presión pélvica, polaquiuria y disuria. Al pujar, la pared vaginal anterior y la vejiga atraviesan el introito y la paciente nota una masa en la vagina; no permanecen fuera en reposo. ¿Cuál es el diagnóstico y el grado según el libro?",
-          "options": [
-              {
-                  "t": "Cistocele grado III, porque la vejiga atraviesa el introito al pujar y se percibe como una masa en la vagina sin quedar fuera en reposo",
-                  "why": "Correcta. Coincide con el grado III del libro; edad, menopausia, partos, obesidad y diuréticos son los factores que cita."
-              },
-              {
-                  "t": "Cistocele grado II, porque la vejiga desciende hasta alcanzar el introito sin atravesarlo y produce presión pélvica",
-                  "why": "En el grado II la vejiga alcanza el introito pero no lo atraviesa; aquí lo atraviesa."
-              },
-              {
-                  "t": "Cistocele grado IV, porque la vejiga permanece fuera del introito incluso en reposo y dificulta la micción",
-                  "why": "El grado IV exige que la vejiga permanezca fuera incluso en reposo; aquí no lo hace."
-              },
-              {
-                  "t": "Cistocele grado I, porque la vejiga desciende hacia el introito sin alcanzarlo y causa síntomas urinarios leves",
-                  "why": "En el grado I la vejiga no alcanza el introito; aquí lo atraviesa."
-              }
-          ],
-          "correct": 0
-      },
-      {
-          "stem": "Una mujer de 29 años con ciclos de 28 días se hace seguimiento ecográfico. En el día 14 se documenta rotura del folículo dominante con liberación del ovocito; el moco cervical en esos días se describe como fluido y filante. ¿Qué evento hormonal desencadena esa rotura y cómo cambia el moco?",
-          "options": [
-              {
-                  "t": "Pico de FSH, que impulsa la rotura folicular mediante proteasas; el moco se vuelve más viscoso y ácido, formando un tapón cervical",
-                  "why": "La FSH impulsa el desarrollo folicular de la fase folicular; la ovulación la desencadena la LH, y el moco se vuelve menos viscoso."
-              },
-              {
-                  "t": "Aumento de progesterona del cuerpo lúteo, que rompe el folículo dominante; el moco se vuelve más espeso e impermeable",
-                  "why": "El cuerpo lúteo se forma después de la ovulación, no la causa, y en la ovulación el moco es menos viscoso."
-              },
-              {
-                  "t": "Acción directa de la GnRH sobre el folículo dominante, que lo rompe; el moco cervical se mantiene sin cambios",
-                  "why": "La GnRH actúa sobre la hipófisis para liberar FSH y LH, no sobre el ovario, y el moco sí cambia."
-              },
-              {
-                  "t": "Pico de LH, con liberación de prostaglandinas, citocinas y enzimas proteolíticas; el moco se vuelve menos viscoso y más alcalino",
-                  "why": "Correcta. Es la reacción inflamatoria controlada de la ovulación, y el moco facilita el paso de los espermatozoides."
-              }
-          ],
-          "correct": 3
-      },
-      {
-          "stem": "Una mujer de 28 años con síndrome nefrótico por glomerulopatía membranosa (proteinuria 6 g/24 h, albúmina 2,1 g/dL) consulta porque los labios mayores están tumefactos desde hace una semana, junto a edema de párpados y piernas. No hay prurito, dolor, eritema ni flujo. Integrando este capítulo con el síndrome nefrótico, ¿cuál es la mejor explicación de la tumefacción vulvar?",
-          "options": [
-              {
-                  "t": "Vulvitis infecciosa por Candida albicans, con tumefacción inflamatoria de los labios mayores y buena respuesta a antifúngicos",
-                  "why": "Una vulvitis infecciosa cursaría con prurito, eritema o flujo, que aquí están ausentes."
-              },
-              {
-                  "t": "Edema por caída de la presión oncótica secundaria a hipoalbuminemia, con pérdida del equilibrio de Starling, igual que en párpados y piernas",
-                  "why": "Correcta. Es edema generalizado nefrótico; no hay datos de inflamación local como eritema, dolor o prurito."
-              },
-              {
-                  "t": "Bartolinitis con absceso por obstrucción del conducto de la glándula, con tumefacción unilateral y dolor intenso",
-                  "why": "Sería unilateral y muy dolorosa; esta paciente tiene tumefacción bilateral indolora."
-              },
-              {
-                  "t": "Dermatitis de contacto por irritantes de la ropa interior sintética, con tumefacción local, eritema y prurito en la zona de contacto",
-                  "why": "Cursa con inflamación local y prurito; no explica el edema palpebral ni el de las piernas."
-              }
-          ],
-          "correct": 1
-      },
-      {
-          "stem": "Una niña de 5 años con síndrome nefrótico (cambios mínimos, proteinuria masiva y albúmina de 1,8 g/dL) presenta prurito vulvar, eritema labial y flujo. El cultivo vaginal aísla Streptococcus pyogenes. Integrando este capítulo con el síndrome nefrótico, ¿qué combinación explica mejor su susceptibilidad?",
-          "options": [
-              {
-                  "t": "La hipoalbuminemia reduce la producción de ácido láctico por los lactobacilos vaginales y deja el pH por encima de 4,5",
-                  "why": "No hay relación descrita; el ácido láctico depende del glucógeno y los lactobacilos, no de la albúmina."
-              },
-              {
-                  "t": "El edema nefrótico alcaliniza el pH vaginal por dilución del glucógeno epitelial y favorece el crecimiento de estreptococos",
-                  "why": "El libro no atribuye alcalinización al edema; el pH vaginal depende de lactobacilos y estrógeno."
-              },
-              {
-                  "t": "Pérdida urinaria de IgG y complemento, sumada a la falta prepuberal de estrógeno con glucógeno y lactobacilos protectores",
-                  "why": "Correcta. El libro asocia el síndrome nefrótico con infecciones por pérdida de IgG y complemento, y los lactobacilos dependen del estrógeno puberal."
-              },
-              {
-                  "t": "La proteinuria satura megalina y cubilina, con pérdida de la defensa local vulvar frente a bacterias grampositivas",
-                  "why": "Ese mecanismo explica el daño tubular renal, no la defensa vulvovaginal."
-              }
-          ],
-          "correct": 2
-      }
+    {
+      id: "25-0",
+      stem: "Una mujer de 26 años consulta por flujo vaginal abundante, lechoso, homogéneo y de mal olor, sin prurito intenso. Refiere ducha vaginal diaria y un ciclo reciente de antibióticos. El pH vaginal es 5,2. ¿Cuál es el mecanismo fisiopatológico que explica el cuadro?",
+      options: [
+        { t: "Aumento del glucógeno epitelial con exceso de ácido láctico y sobrecrecimiento de Candida", why: "Más glucógeno y más ácido láctico acidificarían el medio; el pH de 5,2 y el flujo lechoso sin prurito intenso indican justamente lo contrario." },
+        { t: "Hiperestrogenismo que reduce los lactobacilos y mantiene el pH vaginal en 4,0", why: "El hiperestrogenismo es un factor de riesgo porque cambia la flora, pero un pH de 4,0 seguiría siendo ácido; aquí el pH es 5,2 y hay ducha y antibiótico recientes." },
+        { t: "Pérdida de lactobacilos, menos ácido láctico y sobrecrecimiento de Gardnerella", why: "La ducha y el antibiótico eliminan los lactobacilos, cae el ácido láctico y el pH sube; en ese medio alcalino crecen Gardnerella, Mycoplasma y Bacteroides y producen el flujo fétido." },
+        { t: "Ascenso de Chlamydia por el cuello con ruptura de la barrera endocervical", why: "Eso describe la EIP, que da dolor pélvico y fiebre; no explica un flujo homogéneo con pH alcalino ni los desencadenantes que la paciente refiere." }
+      ],
+      correct: 2,
+      rule: "Si el pH sube y el flujo es lechoso y fétido sin prurito, pienso en pérdida de lactobacilos y no en un hongo."
+    },
+    {
+      id: "25-1",
+      stem: "Una niña de 4 años presenta prurito vulvar, eritema, excoriaciones y pápulas satélites perineales, sin flujo. El test de Graham es negativo, el cultivo para Candida es negativo y se aísla abundante Streptococcus pyogenes. ¿Cuál es el diagnóstico más probable?",
+      options: [
+        { t: "Vulvovaginitis bacteriana aguda por estreptococo del grupo A", why: "El germen aislado es S. pyogenes, los parásitos y Candida se descartaron y el cuadro es agudo con pápulas satélites: coincide con la vulvovaginitis bacteriana por estreptococo β-hemolítico." },
+        { t: "Vulvovaginitis micótica por Candida albicans con pápulas satélites", why: "Las pápulas satélites y el prurito sugieren Candida, pero el cultivo para hongo fue negativo y el único germen aislado fue S. pyogenes." },
+        { t: "Vulvitis irritativa sin infección bacteriana", why: "Una vulvitis irritativa no daría un cultivo con abundante S. pyogenes; la irritación produce eritema sin un germen dominante que explique el cuadro agudo." },
+        { t: "Oxiuriasis perianal con contaminación vulvar", why: "El test de Graham es precisamente la prueba del oxiuro y salió negativo; además el oxiuro da prurito anal nocturno, no pápulas satélites perineales." }
+      ],
+      correct: 0,
+      rule: "En una niña con prurito vulvar leo el cultivo: si aísla un germen y Candida es negativa, es vulvovaginitis bacteriana."
+    },
+    {
+      id: "25-2",
+      stem: "Una mujer de 22 años, con nueva pareja sexual, consulta por dolor pélvico bajo, fiebre de 38,4 °C y leucorrea purulenta. Se sospecha enfermedad inflamatoria pélvica por Chlamydia trachomatis. ¿Qué mecanismo explica que la infección llegue al tracto genital superior?",
+      options: [
+        { t: "Diseminación hematógena desde un foco urinario hacia el ovario y la trompa", why: "El ascenso es por contigüidad desde la vagina, no por la sangre; una diseminación hematógena no explicaría el dolor pélvico bajo con leucorrea después de una nueva pareja." },
+        { t: "Hipoestrogenismo que adelgaza la mucosa uterina y facilita la invasión", why: "El hipoestrogenismo atrofia la mucosa, pero no es el mecanismo de la EIP; esta aparece en edad reproductiva cuando una ITS rompe la barrera del cuello." },
+        { t: "Reflujo de orina infectada desde la vejiga hacia las trompas", why: "El reflujo de orina infectada produce cistitis, no salpingitis; además la EIP asciende a través del cuello uterino, no por la vía urinaria." },
+        { t: "Ruptura de la barrera endocervical con ascenso hacia endometrio y ovario", why: "La infección sube desde la vagina, rompe la barrera del cuello y alcanza endometrio, ovario y peritoneo pélvico; esa vía explica el dolor bajo y la fiebre." }
+      ],
+      correct: 3,
+      rule: "EIP sube, no viaja por sangre: pienso en ascenso por el cuello cuando hay dolor pélvico, fiebre y leucorrea."
+    },
+    {
+      id: "25-3",
+      stem: "Una mujer de 31 años con ciclos regulares y ovulatorios consulta por infertilidad de 2 años y antecedente de un embarazo ectópico. Hace 6 años tuvo dolor pélvico, fiebre y leucorrea sin tratamiento. ¿Qué alteración explica mejor la infertilidad y el ectópico?",
+      options: [
+        { t: "Anovulación por exceso de andrógenos de las células de la teca", why: "Sus ciclos son ovulatorios, así que la anovulación por andrógenos no explica el problema; además ese mecanismo no deja una secuela tubárica ni un ectópico previo." },
+        { t: "Cicatrices y adherencias en las trompas por la inflamación previa", why: "La infección previa dejó cicatrices en las trompas: la obstrucción impide el encuentro del óvulo con el espermatozoide y, si el paso es parcial, el embrión se implanta fuera del útero." },
+        { t: "Alcalinización persistente del pH vaginal por pérdida de lactobacilos", why: "La alcalinización vaginal da flujo y mal olor, no adherencias; no explica un embarazo ectópico previo ni la infertilidad de dos años." },
+        { t: "Hiperplasia endometrial por hiperestrogenismo crónico", why: "El hiperestrogenismo engruesa el endometrio y da sangrados, pero no cicatriza las trompas ni justifica el antecedente de embarazo ectópico." }
+      ],
+      correct: 1,
+      rule: "Antecedente de dolor pélvico febril más infertilidad o ectópico es secuela tubárica de EIP: reviso las trompas, no los ovarios."
+    },
+    {
+      id: "25-4",
+      stem: "Una mujer de 31 años, con ciclos regulares, consulta por dolor pélvico crónico que empeora con cada menstruación e infertilidad de 3 años. En la laparoscopia hay focos de tejido similar al endometrio en el peritoneo pélvico y el ovario, con adherencias. ¿Qué mecanismo explica la infertilidad y el dolor?",
+      options: [
+        { t: "Tejido ectópico inactivo que comprime mecánicamente la trompa y el peritoneo", why: "El tejido endometrial ectópico es funcionalmente activo: responde a estrógenos y progesterona; una masa inerte no explicaría el dolor que empeora con cada menstruación." },
+        { t: "Anovulación por andrógenos tecales con resistencia a la insulina", why: "Ese es el mecanismo del SOP, en el que los ciclos dejan de ser ovulatorios; aquí los ciclos son regulares y la laparoscopia mostró focos endometriales con adherencias." },
+        { t: "Tejido ectópico que sangra con la menstruación y produce fibrosis y adherencias", why: "Los focos responden a las hormonas y sangran en cada regla; la sangre irrita el peritoneo, produce inflamación, fibrosis y adherencias, y eso da dolor cíclico e infertilidad." },
+        { t: "Herniación de la vejiga por la pared vaginal anterior", why: "El cistocele es la vejiga herniada por la pared vaginal anterior; no forma focos en el peritoneo ni adherencias entre la trompa y el ovario." }
+      ],
+      correct: 2,
+      rule: "Dolor que empeora con la regla y adherencias en la laparoscopia es endometriosis: el tejido ectópico sangra y fibrosa."
+    },
+    {
+      id: "25-5",
+      stem: "Una mujer de 26 años con oligomenorrea, hirsutismo e infertilidad tiene IMC de 31 kg/m², glucemia en ayunas de 108 mg/dL, proteína C reactiva elevada y ovarios de morfología poliquística. ¿Cuál es el mecanismo que une la alteración metabólica con la hormonal?",
+      options: [
+        { t: "Inflamación crónica de bajo grado que estimula a la teca a producir andrógenos", why: "La inflamación crónica de bajo grado, con resistencia a la insulina, PCR y radicales libres elevados, estimula a las células de la teca a producir andrógenos y perpetúa la anovulación." },
+        { t: "Déficit hipotalámico de GnRH con FSH baja, atrofia ovárica y amenorrea central", why: "Un déficit de GnRH daría hipogonadismo con FSH baja y atrofia ovárica, no hiperandrogenismo con ovarios poliquísticos y resistencia a la insulina." },
+        { t: "Hiperprolactinemia con supresión de la GnRH y amenorrea", why: "La hiperprolactinemia suprime la GnRH y da amenorrea con prolactina alta; aquí el dato metabólico es la glucemia con PCR elevada, no la prolactina." },
+        { t: "Pérdida de lactobacilos con alcalinización del pH vaginal", why: "La pérdida de lactobacilos explica la vaginosis, un cuadro de flujo vaginal; no interviene en la producción ovárica de andrógenos ni en la ovulación." }
+      ],
+      correct: 0,
+      rule: "En el SOP la pregunta siempre es cómo se unen insulina e inflamación: la respuesta pasa por la teca y los andrógenos."
+    },
+    {
+      id: "25-6",
+      stem: "Una mujer de 24 años tiene anovulación e hiperandrogenismo clínico, pero la ecografía muestra ovarios de aspecto normal. Según la clasificación del capítulo, ¿a qué tipo de síndrome de ovario poliquístico corresponde?",
+      options: [
+        { t: "Tipo 1, clásico, con morfología poliquística ovárica", why: "El tipo 1 exige los tres componentes, incluida la morfología ovárica poliquística; esta paciente tiene anovulación e hiperandrogenismo, pero ovarios de aspecto normal." },
+        { t: "Tipo 3, sin anovulación, con morfología poliquística", why: "El tipo 3 es justamente el que no tiene anovulación, y ella sí la tiene; confundir el tipo 2 con el 3 es el error clásico de esta clasificación." },
+        { t: "Tipo 4, oligomenorrea con morfología poliquística", why: "El tipo 4 combina oligomenorrea con morfología ovárica poliquística y aquí la ecografía es normal, así que ese componente falta." },
+        { t: "Tipo 2, sin morfología poliquística en la ecografía", why: "El tipo 2 tiene hiperandrogenismo y anovulación como el clásico, pero sin morfología ovárica poliquística; eso es exactamente lo que muestra la ecografía normal." }
+      ],
+      correct: 3,
+      rule: "Clasifico el SOP por lo que falta: sin morfología poliquística es tipo 2 y sin anovulación es tipo 3."
+    },
+    {
+      id: "25-7",
+      stem: "Una adolescente de 17 años presenta dolor cólico suprapúbico intenso que comienza con la menstruación y dura 2 días. Los ciclos son regulares y el examen pélvico y la ecografía son normales. ¿Cuál es el mecanismo fisiopatológico que explica su dolor?",
+      options: [
+        { t: "Tejido endometrial ectópico que sangra y genera adherencias pélvicas", why: "Eso sería una dismenorrea secundaria, y aquí tanto el examen pélvico como la ecografía son normales: no hay focos ni adherencias visibles." },
+        { t: "Exceso de prostaglandinas y leucotrienos con isquemia del miometrio", why: "El exceso de prostaglandinas y leucotrienos hipercontrae el miometrio; la contracción sostenida reduce el flujo, el músculo se isquémico y aparece el cólico que empieza con la regla." },
+        { t: "Alcalinización vaginal con irritación de la mucosa", why: "La alcalinización vaginal produce flujo y mal olor, no un cólico que sigue al sangrado menstrual con exploración normal." },
+        { t: "Descenso de la pared vaginal anterior con tracción ligamentaria", why: "Un prolapso da sensación de masa y síntomas urinarios; a los 17 años es improbable y no explica un dolor cíclico de 2 días con la regla." }
+      ],
+      correct: 1,
+      rule: "Dismenorrea con examen y ecografía normales es primaria: el culpable es la contracción por prostaglandinas, no una lesión."
+    },
+    {
+      id: "25-8",
+      stem: "Una mujer de 64 años, obesa, con 4 partos vaginales y en tratamiento con diuréticos, refiere presión pélvica y polaquiuria. Al pujar, la vejiga atraviesa el introito vaginal y nota una masa en la vagina; no permanece fuera en reposo. ¿Cuál es el diagnóstico más probable?",
+      options: [
+        { t: "Cistocele grado III, que atraviesa el introito", why: "En el grado III la vejiga atraviesa el introito y la paciente siente una masa en la vagina; el grado IV es el que permanece fuera incluso en reposo, y aquí eso no ocurre." },
+        { t: "Cistocele grado II, que alcanza el introito", why: "En el grado II la vejiga alcanza el introito pero no lo atraviesa; esta paciente describe que la masa sale al pujar, así que el descenso es mayor." },
+        { t: "Cistocele grado IV, que permanece fuera en reposo", why: "El grado IV exige que la vejiga permanezca fuera incluso en reposo, y aquí vuelve a entrar cuando deja de pujar." },
+        { t: "Cistocele grado I, que no alcanza el introito", why: "En el grado I la vejiga desciende hacia el introito sin alcanzarlo, así que no habría una masa que atraviesa y se ve al pujar." }
+      ],
+      correct: 0,
+      rule: "Gradúo el prolapso por dónde llega: I no alcanza, II alcanza, III atraviesa y solo el IV queda fuera en reposo."
+    },
+    {
+      id: "25-9",
+      stem: "Una mujer de 29 años con ciclos de 28 días presenta, en el día 14, rotura del folículo dominante con liberación del ovocito, y el moco cervical se vuelve fluido y alcalino. ¿Qué mecanismo hormonal desencadena la rotura folicular?",
+      options: [
+        { t: "Pico de FSH que activa proteasas dentro del folículo", why: "La FSH hace crecer el folículo durante la fase folicular; el pico que rompe la pared es de LH, y confundir ambas hormonas es el error más común del ciclo." },
+        { t: "Aumento de progesterona producida por el cuerpo lúteo", why: "La progesterona sube después, cuando el cuerpo lúteo ya se formó; no puede ser la causa de la rotura que ocurre antes." },
+        { t: "Acción directa de la GnRH sobre el ovario y el folículo", why: "La GnRH actúa sobre la hipófisis para liberar FSH y LH; el ovario no recibe GnRH directamente, así que no puede romper el folículo." },
+        { t: "Pico de LH con prostaglandinas y enzimas proteolíticas", why: "El pico de LH activa prostaglandinas y enzimas proteolíticas que digieren la pared folicular; es una inflamación aguda controlada y el moco se vuelve menos viscoso y alcalino." }
+      ],
+      correct: 3,
+      rule: "FSH crece el folículo y LH lo rompe: si la pregunta es la rotura ovulatoria, la respuesta empieza con LH."
+    },
+    {
+      id: "25-10",
+      stem: "Una mujer de 28 años con síndrome nefrótico (proteinuria 6 g/24 h, albúmina 2,1 g/dL) presenta tumefacción bilateral indolora de los labios mayores, además de edema palpebral y de miembros inferiores. No hay prurito, eritema ni flujo. ¿Qué mecanismo explica la tumefacción vulvar?",
+      options: [
+        { t: "Aumento de la permeabilidad capilar por inflamación local de Candida", why: "Una vulvitis por Candida daría prurito, eritema y flujo; la tumefacción aquí es indolora, bilateral y coincide con el edema de párpados y de piernas." },
+        { t: "Disminución de la presión oncótica por la hipoalbuminemia", why: "La albúmina baja reduce la presión oncótica, el líquido sale al intersticio y se acumula donde el tejido es laxo; por eso hay edema palpebral, de piernas y de labios mayores." },
+        { t: "Obstrucción del conducto de la glándula de Bartolino", why: "La obstrucción del conducto de Bartolino produce un quiste o un absceso unilateral y muy doloroso, no una tumefacción bilateral indolora." },
+        { t: "Irritación por contacto con ropa interior sintética", why: "La ropa sintética irrita con eritema y prurito locales, pero no explica el edema palpebral ni el de los miembros inferiores que presenta la paciente." }
+      ],
+      correct: 1,
+      rule: "Edema bilateral indoloro en varios territorios es oncótico: busco la albúmina antes de pensar en una infección local."
+    },
+    {
+      id: "25-11",
+      stem: "Una niña de 5 años con síndrome nefrótico (proteinuria masiva, albúmina 1,8 g/dL) presenta prurito vulvar, eritema labial y flujo; el cultivo aísla Streptococcus pyogenes. ¿Qué mecanismo explica mejor su susceptibilidad a la infección?",
+      options: [
+        { t: "Hipoalbuminemia que reduce el ácido láctico de los lactobacilos", why: "El ácido láctico depende del glucógeno y de los lactobacilos, no de la albúmina; esa relación no existe y no explicaría el cultivo positivo." },
+        { t: "Edema que alcaliniza el pH vaginal por dilución del glucógeno", why: "El pH depende de los lactobacilos y del estrógeno, no de una dilución por edema; además hay un germen aislado que pide un mecanismo de defensa." },
+        { t: "Pérdida urinaria de IgG y complemento más falta prepuberal de estrógeno", why: "La proteinuria masiva hace perder IgG y complemento, y antes de la pubertad falta el estrógeno que mantiene el glucógeno y los lactobacilos: caen dos defensas a la vez." },
+        { t: "Saturación de megalina y cubilina por la proteinuria filtrada en el túbulo", why: "La saturación de megalina y cubilina explica el daño tubular renal por proteínas filtradas, no la susceptibilidad vulvovaginal a una infección bacteriana." }
+      ],
+      correct: 2,
+      rule: "Ante infecciones repetidas en un nefrótico reviso la pérdida de IgG y complemento, no el pH vaginal."
+    }
   ]
 }
 );

@@ -5,6 +5,60 @@ window.CHAPTERS.push(
   id: 24,
   weight: 3,
   title: "24. Trastornos urogenitales masculinos",
+  easy: `
+  <h2>La idea en una frase</h2>
+  <p>En el varón casi todo falla por un problema de forma: algo no se cerró, no bajó, se torció, se tapó, se llenó de cicatriz o creció. Si identificas qué estructura cambió, deduces el síntoma sin memorizar listas.</p>
+
+  <h2>Por qué pasa (paso a paso)</h2>
+  <ol>
+    <li><b>Hipospadias:</b> el pene se arma cuando los pliegues uretrales (los bordes que forman el tubo de la uretra) se cierran en la línea media. Si no se cierran, el meato (la salida de la orina) queda en la cara de abajo o ventral.</li>
+    <li><b>Epispadias:</b> la uretra no se forma como tubo completo y el meato queda en la cara de arriba o dorsal; se relaciona con un desarrollo inadecuado del pubis.</li>
+    <li><b>Criptorquidia:</b> el testículo no baja al escroto. Queda a temperatura del abdomen y el calor daña las células que producen espermatozoides.</li>
+    <li><b>Temperatura:</b> el escroto está fuera del cuerpo porque necesita menos calor: unos 35 °C frente a 37 °C del abdomen. Por eso un testículo que no baja se atrofia.</li>
+    <li><b>Torsión:</b> si el cordón espermático tiene una fijación angosta, el espasmo del cremáster (el músculo que sube el testículo) lo gira. Primero se tapa la vena, que es blanda; después la arteria. A las 6 horas el testículo se necrosa.</li>
+    <li><b>Hidrocele:</b> la túnica vaginal (la bolsa que rodea el testículo) produce líquido y los vasos linfáticos y venosos lo reabsorben. Si se produce más de lo que se reabsorbe, se acumula líquido; si el líquido es sangre, se llama hematocele.</li>
+    <li><b>Varicocele:</b> las válvulas de las venas del testículo se dañan y la sangre refluye. Entonces se dilata el plexo pampiniforme, la red de venas que rodea el testículo. El peso de la sangre se nota de pie y al final del día.</li>
+    <li><b>Espermatocele:</b> el conducto del epidídimo se obstruye con espermatozoides y restos, y forma un quiste.</li>
+    <li><b>Priapismo isquémico:</b> el músculo liso del pene no se relaja y las venas quedan comprimidas. Entra sangre que no puede salir, la erección duele y pasa de 4 horas.</li>
+    <li><b>Peyronie:</b> la túnica albugínea (la capa fibrosa que envuelve los cuerpos cavernosos) se lesiona de forma repetida y cicatriza de manera desordenada; la placa no se estira y curva el pene.</li>
+    <li><b>HPB:</b> los andrógenos alteran el equilibrio entre células que nacen y células que mueren, y la próstata crece. La uretra pasa por dentro de la próstata: se comprime, la vejiga no vacía del todo y queda orina de residuo. Esa vejiga llena pide orinar muchas veces, también de noche.</li>
+    <li><b>Cáncer de próstata:</b> el tumor crece e invade el epitelio prostático y la uretra; esa superficie sangra y aparecen hematuria y hemospermia, además de elevar el PSA y la fosfatasa ácida.</li>
+  </ol>
+
+  <h2>Qué se ve en la clínica y por qué</h2>
+  <ul>
+    <li><b>Meato ventral + curvatura:</b> el chorro se desvía y la curvatura se acentúa en la erección, porque el lado que no se formó no acompaña el estiramiento.</li>
+    <li><b>Escroto vacío:</b> el testículo está en la ingle o en el abdomen. El riesgo es infertilidad por calor, sobre todo si persiste más de 2 años.</li>
+    <li><b>Dolor escrotal súbito y paroxístico:</b> torsión. El edema venoso hincha y duele, y la isquemia arterial posterior agrava el dolor.</li>
+    <li><b>Erección dolorosa sin deseo de más de 4 horas:</b> priapismo isquémico. Es emergencia porque la sangre atrapada no lleva oxígeno.</li>
+    <li><b>Erección sin dolor de alto flujo:</b> el problema es arterial y entra más sangre; no suele ser emergencia, pero puede dejar disfunción eréctil.</li>
+    <li><b>Pene curvo con placa palpable:</b> Peyronie. La placa actúa como cuerpo extraño y la curvatura apunta hacia donde está la fibrosis.</li>
+    <li><b>Masa escrotal blanda que aumenta de pie:</b> varicocele. El dolor mejora acostado porque la sangre deja de pesar.</li>
+    <li><b>Fiebre y dolor testicular 3-4 días después de paperas:</b> orquitis, una complicación inflamatoria de una enfermedad sistémica, no una infección urinaria.</li>
+    <li><b>Fiebre, dolor sacro y disuria con urocultivo positivo:</b> prostatitis aguda bacteriana; la fiebre sale de las interleucinas.</li>
+    <li><b>Chorro débil, goteo y nicturia en el anciano:</b> HPB. Si hay residuo y la creatinina sube, la obstrucción ya dañó el riñón (falla posrenal).</li>
+  </ul>
+
+  <h2>Cómo te lo va a preguntar el doctor</h2>
+  <ul>
+    <li>Vignette corta con edad, síntoma súbito y un dato de laboratorio o imagen, y una sola pregunta de mecanismo: "¿qué explica el hallazgo?".</li>
+    <li>Secuencia: "¿la obstrucción es venosa o arterial primero?" y "¿en cuántas horas hay necrosis?".</li>
+    <li>Dirección del cambio: meato ventral o dorsal, priapismo de bajo o alto flujo, hidrocele o hematocele.</li>
+    <li>Dato exacto que quiere recordado: corte de PSA por edad, 6 horas de torsión, 4 horas de priapismo, 2 años de criptorquidia.</li>
+    <li>Mini ejemplo en su voz: "Un hombre de 68 años con chorro débil, residuo de 100 cc y creatinina de 1,9 mg/dL. ¿Cuál es el mecanismo que explica la polaquiuria y el deterioro renal?".</li>
+  </ul>
+
+  <h2>Trampa típica</h2>
+  <div class="trap"><b>Trampa típica:</b> invertir hipospadias (ventral, pliegues uretrales) con epispadias (dorsal, pubis), o invertir la torsión creyendo que primero se tapa la arteria. Otra: confundir priapismo (erección sin estímulo que no baja) con Peyronie (curvatura por placa) y con disfunción eréctil (no se logra la erección).</div>
+
+  <h2>Números para memorizar</h2>
+  <ul>
+    <li>Torsión: necrosis si no se resuelve en 6 h. Priapismo isquémico: más de 4 h.</li>
+    <li>Escroto ≈ 35 °C; abdomen ≈ 37 °C. Criptorquidia: riesgo si persiste más de 2 años.</li>
+    <li>PSA total: normal &lt; 4 ng/mL; más de 10 es anormal. Por edad: 40-49 &lt; 2,5; 50-59 &lt; 3,5; 60-69 &lt; 4,5; 70-79 &lt; 6,5.</li>
+    <li>Familiar de primer grado con HPB: hasta 4 veces más riesgo.</li>
+  </ul>
+  `,
   summary: `
   <h2>1. Fundamentos</h2>
   <p>El capítulo reúne patologías del pene, el escroto, el testículo, el epidídimo y la próstata. Dos ideas de anatomía y fisiología sostienen buena parte de la fisiopatología:</p>
@@ -73,124 +127,149 @@ window.CHAPTERS.push(
   `,
   questions: [
     {
-      stem: "Un recién nacido a término presenta el meato uretral en la cara inferior del pene, con curvatura ventral evidente al estirar el pene. No hay antecedente familiar de malformaciones. ¿Qué alteración del desarrollo explica mejor el hallazgo, según el capítulo?",
+      id: "24-0",
+      stem: "Un recién nacido de 2 días presenta el meato uretral en la cara inferior del pene, con curvatura del cuerpo hacia abajo al estirarlo; la madre refiere que el chorro de orina sale desviado. ¿Qué alteración del desarrollo embrionario explica el hallazgo?",
       options: [
-        { t: "Desarrollo inadecuado del pubis con cierre incompleto de la uretra en su cara dorsal, y meato dorsal", why: "Es el mecanismo propuesto para el epispadias, con meato dorsal; aquí el meato es ventral." },
-        { t: "Falta de cierre de los pliegues uretrales en el feto, con meato ventral y posible déficit de andrógenos", why: "Correcta. El hipospadias es la apertura ventral del meato por falta de cierre de los pliegues uretrales; se asocia a factores genéticos, ambientales y hormonales." },
-        { t: "Estrechamiento del anillo prepucial que impide retraer la piel sobre el glande, con irritación recurrente", why: "Describe la fimosis, que afecta al prepucio y no a la posición del meato." },
-        { t: "Fibrosis de la túnica albugínea por lesiones coitales repetidas, que curva el pene al erectarse", why: "Es el mecanismo de la enfermedad de Peyronie, adquirida en el adulto; no explica un meato ventral congénito." }
+        { t: "Desarrollo inadecuado del pubis que deja la uretra abierta en la cara dorsal", why: "Asumes que el defecto es dorsal y que el pubis no se desarrolló: eso describe el epispadias, con pene corto y ancho; aquí el meato está en la cara de abajo." },
+        { t: "Falta de cierre de los pliegues uretrales con el meato en la cara ventral", why: "Los pliegues uretrales no se fusionan en la línea media, la uretra queda abierta por abajo y el chorro se desvía; la curvatura ventral se acentúa en la erección." },
+        { t: "Proliferación del prepucio con un anillo estrecho que no permite retraerlo", why: "Confundes el defecto uretral con la fimosis: ahí el problema es el anillo del prepucio, el meato sigue en su sitio y no hay curvatura del cuerpo del pene." },
+        { t: "Fibrosis adquirida de la túnica albugínea por microtraumatismos repetidos", why: "Ese es el mecanismo de la enfermedad de Peyronie en el adulto: una placa cicatricial que curva el pene. No explica un meato ventral presente al nacer." }
       ],
-      correct: 1
+      correct: 1,
+      rule: "Antes de elegir reviso la cara del meato: ventral es hipospadias (pliegues uretrales) y dorsal es epispadias (pubis)."
     },
     {
-      stem: "Un niño de 3 años es llevado a consulta porque el escroto derecho siempre ha estado vacío. A la palpación el testículo se encuentra en la región inguinal. Los padres piensan esperar \"a ver si baja solo\". ¿Cuál es la consecuencia fisiopatológica de no corregirlo con el tiempo, según el libro?",
+      id: "24-1",
+      stem: "Un niño de 3 años tiene el escroto derecho vacío y el testículo se palpa en la región inguinal. Los padres preguntan por la fertilidad futura. ¿Qué mecanismo explica el daño del testículo si permanece fuera del escroto?",
       options: [
-        { t: "Atrofia y pérdida funcional por mayor temperatura que la escrotal (≈37 °C abdominal), con riesgo de infertilidad", why: "Correcta. La temperatura abdominal (37 °C) supera a la escrotal (35 °C) y, pasados los 2 años, el daño térmico puede llevar a infertilidad." },
-        { t: "Torsión del cordón espermático por distensión del plexo pampiniforme, con necrosis testicular a las 6 horas", why: "La torsión se explica por la fijación angosta del cordón y el espasmo del cremáster; el libro no la presenta como consecuencia de la criptorquidia." },
-        { t: "Hidrocele obligatorio por falta de cierre de la túnica vaginal, con líquido que supera la reabsorción linfática", why: "El hidrocele congénito se debe a un cierre incompleto de la túnica vaginal, pero no es la consecuencia que el libro vincula con permanecer fuera del escroto." },
-        { t: "Hiperfunción de las células de Leydig por el calor abdominal, con exceso de testosterona y maduración sexual precoz", why: "El libro describe pérdida funcional por el calor, no hiperfunción hormonal." }
+        { t: "Atrofia y pérdida funcional por el gradiente térmico entre el abdomen y el escroto", why: "El testículo necesita unos 35 °C; a 37 °C las células germinales se dañan, el testículo se atrofia y la producción de espermatozoides falla, sobre todo pasados los 2 años." },
+        { t: "Isquemia por torsión del cordón sobre una fijación angosta con espasmo del cremáster", why: "Sospechas una urgencia por dolor súbito: la torsión duele de forma paroxística, y este niño tiene un testículo indoloro en la ingle desde el nacimiento." },
+        { t: "Hiperplasia de las células de Leydig con exceso de testosterona y retroalimentación", why: "El calor no hiperestimula el testículo: reduce la espermatogénesis. El exceso de andrógenos no es el mecanismo de la criptorquidia." },
+        { t: "Acúmulo de líquido en la túnica vaginal que comprime el parénquima testicular", why: "Eso es el hidrocele: aumenta el volumen del escroto, pero el testículo sí está dentro. Aquí nunca descendió, y el dato clave es la temperatura." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Criptorquidia = temperatura. Pregunto si el testículo bajó antes de los 2 años, porque después el daño ya es funcional."
     },
     {
-      stem: "Un adolescente de 14 años despierta con dolor escrotal izquierdo súbito, intenso y paroxístico, irradiado hacia la pared abdominal, con testículo aumentado de volumen. Llega a urgencias 3 horas después. Con base en la fisiopatología, ¿qué ocurre en el cordón espermático y por qué es urgente actuar?",
+      id: "24-2",
+      stem: "Un adolescente de 14 años despierta con dolor escrotal derecho súbito e intenso, con náuseas, y refiere que el testículo se le subió. Llega a urgencias a las 4 horas. ¿Qué secuencia fisiopatológica explica el cuadro y su urgencia quirúrgica?",
       options: [
-        { t: "Infección que asciende por los linfáticos del cordón hasta el epidídimo, con calor, rubor y disuria en pocos días", why: "Es el mecanismo de la epididimitis, que cursa con disuria y tenesmo y no con un dolor súbito paroxístico al despertar." },
-        { t: "Obstrucción arterial inicial y venosa después por giro del cordón; el testículo se necrosa si pasan 24 horas", why: "Invierte la secuencia y el tiempo: el libro describe obstrucción venosa primero y arterial después, con necrosis si no se resuelve en 6 horas." },
-        { t: "Incompetencia valvular de las venas testiculares con dilatación del plexo pampiniforme que mejora al acostarse", why: "Corresponde al varicocele, de evolución crónica y que mejora en decúbito; no es un dolor súbito." },
-        { t: "Giro del cordón que obstruye primero las venas (edema, hemorragia) y luego las arterias; necrosis a las 6 horas", why: "Correcta. La fijación angosta del cordón y el espasmo del cremáster permiten el giro; el edema venoso precede a la isquemia arterial y por eso urge actuar." }
+        { t: "Obstrucción arterial inicial, con isquemia inmediata y necrosis en 24 horas", why: "Inviertes el orden y el tiempo: el giro tapa primero la vena, de pared delgada; la arteria resiste más y la necrosis aparece alrededor de las 6 horas, no en 24." },
+        { t: "Infección que asciende por los linfáticos del cordón hasta el epidídimo", why: "Eso es la epididimitis: da disuria, fiebre y dolor progresivo. No produce un dolor súbito que despierta al paciente ni una urgencia de horas." },
+        { t: "Incompetencia valvular de las venas espermáticas con dilatación del plexo", why: "El varicocele es crónico: pesadez al final del día, venas dilatadas visibles y dolor que mejora acostado. No da dolor agudo paroxístico." },
+        { t: "Giro del cordón con obstrucción venosa y luego arterial, con necrosis a las 6 horas", why: "La fijación angosta y el espasmo del cremáster giran el testículo; el edema venoso sube la presión, cae la perfusión arterial y a las 6 horas el parénquima se necrosa." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Dolor escrotal súbito es torsión hasta probar lo contrario: vena primero, arteria después, y 6 horas para salvar el testículo."
     },
     {
-      stem: "Un joven de 22 años con enfermedad de células falciformes acude con una erección dolorosa de 6 horas de evolución, sin deseo ni estimulación sexual. El pene está enrojecido, caliente y tenso. ¿Cuál es el mecanismo y la conducta correspondiente según el capítulo?",
+      id: "24-3",
+      stem: "Un hombre de 22 años con anemia falciforme presenta una erección dolorosa de 6 horas sin estímulo sexual; el pene está rígido, caliente y enrojecido, y la gasometría del cuerpo cavernoso muestra hipoxia. ¿Cuál es el mecanismo que explica el cuadro?",
       options: [
-        { t: "Priapismo no isquémico por flujo arterial excesivo hacia los cuerpos cavernosos; sin dolor, sin urgencia, con riesgo de disfunción eréctil", why: "El no isquémico es de alto flujo e indoloro; aquí hay dolor intenso, calor y más de 4 horas de evolución." },
-        { t: "Enfermedad de Peyronie en fase inflamatoria, con placa de la túnica albugínea que impide la detumescencia; requiere solo analgesia", why: "Peyronie produce curvatura y dolor al erectarse por una placa fibrosa, no una erección persistente sin estímulo." },
-        { t: "Priapismo isquémico de bajo flujo por falla del drenaje venoso y del músculo liso, con sangre atrapada; emergencia médica", why: "Correcta. Sangre atrapada (bajo flujo), erección &gt; 4 h, dolor e inflamación; la anemia falciforme es una causa reconocida." },
-        { t: "Disfunción eréctil vascular por insuficiencia arterial de la anemia falciforme, con manejo ambulatorio y control de la anemia", why: "La disfunción eréctil es la incapacidad de lograr o mantener la erección, lo contrario de este cuadro." }
+        { t: "Aumento del flujo arterial peniano por disfunción de las arterias cavernosas", why: "Eso es el priapismo de alto flujo: entra más sangre de la normal, no duele y la gasometría no está hipóxica. Aquí hay dolor intenso y 6 horas de evolución." },
+        { t: "Falla del drenaje venoso por disfunción del músculo liso, con sangre atrapada", why: "El músculo liso cavernoso no se relaja, las venas quedan comprimidas y la sangre no puede salir: por eso hay hipoxia, dolor y riesgo de disfunción eréctil permanente." },
+        { t: "Placa fibrosa en la túnica albugínea que acorta la cara dorsal del pene", why: "La placa de Peyronie curva el pene y duele durante la erección, pero no sostiene una erección de 6 horas sin estímulo ni produce hipoxia cavernosa." },
+        { t: "Falla de la relajación del músculo liso por falta de la señal nerviosa central", why: "Ese es el mecanismo de la disfunción eréctil: no se logra la erección. Aquí ocurre lo contrario, una erección mantenida y dolorosa." }
       ],
-      correct: 2
+      correct: 1,
+      rule: "Priapismo que duele y pasa de 4 horas es isquémico, de bajo flujo. Si no duele, pienso en alto flujo arterial."
     },
     {
-      stem: "Un hombre de 52 años consulta porque desde hace meses su pene se curva hacia un lado durante la erección, con dolor. A la palpación se identifica una zona indurada en el cuerpo del pene. Refiere práctica deportiva intensa y relaciones sexuales con posibles microtraumatismos, aunque no recuerda un trauma específico. ¿Qué mecanismo explica mejor la curvatura y el dolor?",
+      id: "24-4",
+      stem: "Un hombre de 52 años nota desde hace 8 meses que el pene se curva hacia arriba y duele durante la erección; se palpa una zona indurada en la cara dorsal del cuerpo del pene. ¿Qué mecanismo explica la curvatura y el dolor?",
       options: [
-        { t: "Cicatrización desorganizada de la túnica albugínea tras daño repetido, con placa fibrosa que actúa como cuerpo extraño", why: "Correcta. La reparación produce tejido cicatricial desorganizado; la placa se comporta como cuerpo extraño y su localización determina la dirección de la curvatura." },
-        { t: "Obstrucción del drenaje venoso de los cuerpos cavernosos por disfunción del músculo liso, con sangre atrapada y dolor isquémico", why: "Es el mecanismo del priapismo isquémico, que da erección persistente sin estímulo y no una placa palpable." },
-        { t: "Balanitis por proliferación bacteriana en el glande e higiene deficiente, con induración del prepucio y curvatura", why: "La balanitis es inflamación del glande por higiene deficiente o irritación; no forma placa palpable ni curva el pene." },
-        { t: "Malformación congénita con falta de cierre dorsal de la uretra y pubis mal desarrollado, que curva el pene desde la infancia", why: "Es el epispadias, malformación congénita que se manifiesta desde la infancia; aquí el cuadro es adquirido y con placa." }
+        { t: "Cicatriz desorganizada de la túnica albugínea tras lesiones repetidas", why: "La túnica albugínea lesionada se repara con colágeno desordenado; la placa no se estira como el resto y tira de la cara donde está, por eso curva y duele en la erección." },
+        { t: "Obstrucción del drenaje venoso por disfunción del músculo liso cavernoso", why: "Es el priapismo isquémico: erección mantenida sin estímulo. No forma una placa palpable ni produce curvatura fija del cuerpo del pene." },
+        { t: "Inflamación crónica del glande por higiene deficiente e irritación del prepucio", why: "La balanitis inflama el glande por mala higiene, con dolor y secreción; no genera una zona indurada en el cuerpo del pene ni curvatura en la erección." },
+        { t: "Falta de cierre de los pliegues uretrales con fibrosis de la cara ventral", why: "Mezclas un defecto congénito con un cuadro adquirido del adulto: en el hipospadias el meato es ventral y no hay placa palpable que cambie con el tiempo." }
       ],
-      correct: 0
+      correct: 0,
+      rule: "Placa palpable más curvatura en la erección en un adulto es Peyronie; pregunto por relaciones que lesionaron la albugínea."
     },
     {
-      stem: "Un hombre de 29 años consulta por infertilidad tras dos años de intentos. Refiere sensación de peso en el escroto izquierdo que aumenta al final de la jornada. A la palpación de pie se aprecia una masa de venas dilatadas encima del testículo. ¿Qué proceso fisiopatológico explica el cuadro?",
+      id: "24-5",
+      stem: "Un hombre de 29 años consulta por infertilidad; refiere pesadez y dolor sordo en el hemiescroto izquierdo, que empeora al estar de pie todo el día y mejora acostado. Se palpa una masa de venas dilatadas sobre el testículo. ¿Cuál es el mecanismo?",
       options: [
-        { t: "Líquido en la túnica vaginal que supera la reabsorción venosa y linfática, con aumento de volumen escrotal y pesadez", why: "Es el hidrocele: hay líquido en la túnica vaginal y no venas dilatadas." },
-        { t: "Quiste del conducto epididimario por obstrucción con espermatozoides y detritus, con masa dolorosa que no cambia con la postura", why: "Corresponde al espermatocele, un quiste, no un conglomerado venoso que empeora de pie." },
-        { t: "Torsión intermitente del cordón con obstrucción venosa transitoria, que causa dolor paroxístico y atrofia gradual del testículo", why: "La torsión causa dolor súbito y paroxístico, no un cuadro crónico con venas dilatadas visibles." },
-        { t: "Daño valvular de las venas del testículo con dilatación del plexo pampiniforme, que explica el peso y la infertilidad", why: "Correcta. El varicocele puede ser asintomático y descubrirse al estudiar infertilidad; el dolor aumenta de pie y al final del día." }
+        { t: "Líquido en la túnica vaginal que supera la capacidad de reabsorción linfática", why: "Al hidrocele le falta el dato postural: es líquido, no cambia con estar de pie y no se palpan venas dilatadas que se vacían al acostarse." },
+        { t: "Quiste por obstrucción del conducto epididimario con espermatozoides y restos", why: "El espermatocele es un quiste duro del epidídimo, de evolución lenta, sin relación con la postura ni con el esfuerzo del día." },
+        { t: "Torsión intermitente del cordón con isquemia transitoria del parénquima", why: "La torsión da dolor agudo y paroxístico, no una pesadez de meses; además no deja venas dilatadas visibles sobre el testículo." },
+        { t: "Daño valvular de las venas testiculares con dilatación del plexo pampiniforme", why: "Las válvulas incompetentes dejan refluir sangre al plexo; la columna pesa cuando está de pie y el calor venoso eleva la temperatura escrotal, lo que daña la espermatogénesis." }
       ],
-      correct: 3
+      correct: 3,
+      rule: "Varón joven infértil con masa que crece de pie y se vacía acostado tiene varicocele; busco primero del lado izquierdo."
     },
     {
-      stem: "Un adulto con síndrome nefrótico (albúmina 1,8 g/dL, edema periférico generalizado) consulta por aumento del volumen escrotal derecho tras un traumatismo leve hace una semana. Se diagnostica hidrocele. El residente propone que el aumento de volumen escrotal es simplemente parte de su edema nefrótico. ¿Qué diferencia fisiopatológica es correcta según los capítulos 20 y 24?",
+      id: "24-6",
+      stem: "Un hombre de 40 años nota aumento progresivo del hemiescroto derecho una semana después de un golpe en la zona, sin equimosis; el contenido es líquido claro y no hay fiebre ni síntomas urinarios. ¿Qué mecanismo explica la acumulación?",
       options: [
-        { t: "Ambos dependen de la hipoalbuminemia, que baja la presión oncótica también dentro de la túnica vaginal y reduce la reabsorción local", why: "En el libro, el hidrocele se explica por una reabsorción venosa y linfática superada y no por la caída de la presión oncótica." },
-        { t: "El edema nefrótico, por caída de la presión oncótica (Starling); el hidrocele, porque la producción de la túnica vaginal supera su reabsorción", why: "Correcta. Son dos mecanismos distintos y el trauma es una causa reconocida de hidrocele adquirido." },
-        { t: "El edema nefrótico, por mayor permeabilidad capilar sistémica; el hidrocele, por falta de cierre de la túnica vaginal desde el nacimiento", why: "El edema nefrótico no se debe a mayor permeabilidad sistémica, y la falta de cierre explica solo el hidrocele congénito, no el adquirido tras trauma." },
-        { t: "Ambos ocurren por hipervolemia con activación del péptido natriurético, que desplaza líquido hacia los espacios serosos y el escroto", why: "En el nefrótico hay hipovolemia relativa con activación del eje RAA y ADH; esto no explica el hidrocele." }
+        { t: "Acumulación de sangre en la misma cavidad por ruptura de vasos del trauma", why: "Un traumatismo puede producir un hematocele, pero ahí el contenido es sangre: se ve equimosis y el volumen sube rápido. Acá el líquido es claro y crece en semanas." },
+        { t: "Dilatación del plexo pampiniforme por incompetencia de las válvulas venosas", why: "Ese es el varicocele: una masa de venas que cambia con la postura. No se palpa como una colección líquida y no depende de un golpe reciente." },
+        { t: "Producción de líquido en la túnica vaginal que supera su reabsorción", why: "La túnica vaginal secreta líquido y los vasos venosos y linfáticos lo reabsorben; el traumatismo altera esa reabsorción y el líquido claro se acumula: es un hidrocele." },
+        { t: "Quiste del conducto epididimario por obstrucción con espermatozoides y detritus", why: "El espermatocele es un quiste firme del epidídimo, de crecimiento lento y sin relación temporal con el traumatismo que refiere el paciente." }
       ],
-      correct: 1
+      correct: 2,
+      rule: "Tras un trauma escrotal pregunto qué se acumuló: líquido claro es hidrocele y sangre es hematocele; la equimosis me orienta."
     },
     {
-      stem: "Un niño de 9 años con parotiditis desde hace 4 días presenta fiebre y dolor, con aumento de volumen del testículo izquierdo. No tiene síntomas urinarios. Otro paciente de 30 años consulta por dolor posterior al testículo con disuria y tenesmo, sin enfermedad sistémica previa. ¿Cuál es el diagnóstico y el mecanismo más probable de cada uno?",
+      id: "24-7",
+      stem: "Un niño de 9 años con parotiditis desde hace 4 días presenta fiebre y dolor con aumento de volumen del testículo izquierdo, sin disuria ni secreción uretral. ¿Cuál es el diagnóstico más probable y por qué aparece en este momento?",
       options: [
-        { t: "El primero, epididimitis por infección que sube por los linfáticos del cordón; el segundo, orquitis como complicación sistémica", why: "Invierte los diagnósticos: la parotiditis se asocia a orquitis y la epididimitis llega por linfáticos del cordón." },
-        { t: "El primero, torsión testicular con obstrucción venosa; el segundo, hidrocele infeccioso por superar la reabsorción de la vaginal", why: "La torsión es de inicio súbito sin enfermedad previa, y el hidrocele no explica disuria ni tenesmo." },
-        { t: "El primero, orquitis como complicación de la parotiditis; el segundo, epididimitis por infección que llega por los linfáticos del cordón", why: "Correcta. La orquitis por parotiditis aparece 3-4 días después del inicio del cuadro; la epididimitis cursa con disuria y tenesmo." },
-        { t: "Ambos tienen espermatocele por obstrucción del conducto epididimario, con dolor y aumento de volumen de evolución lenta", why: "El espermatocele es un quiste de evolución lenta; el libro solo lo vincula con parotiditis como antecedente, y no explica fiebre ni disuria." }
+        { t: "Epididimitis por ascenso de bacterias a través de los linfáticos del cordón", why: "Confundes la vía y la causa: la epididimitis sube por los linfáticos del cordón y cursa con disuria y tenesmo, que este niño no tiene." },
+        { t: "Torsión testicular favorecida por el espasmo del cremáster durante la fiebre", why: "La torsión no necesita una enfermedad viral previa ni da fiebre; produce dolor súbito y paroxístico con el testículo alto, no un aumento de volumen de 4 días." },
+        { t: "Orquitis por inflamación inmune como complicación de la enfermedad sistémica", why: "Las paperas son una infección sistémica que se complica con inflamación testicular inmune 3 a 4 días después del inicio: fiebre y aumento de volumen sin síntomas urinarios." },
+        { t: "Absceso prostático por diseminación hematógena del virus de la parotiditis", why: "Estás cambiando de órgano: la parotiditis complica con orquitis, y un absceso prostático daría dolor perineal, disuria y retención, ausentes aquí." }
       ],
-      correct: 2
+      correct: 2,
+      rule: "Parotiditis con testículo inflamado a los 3-4 días es orquitis; si hay disuria y tenesmo, pienso en epididimitis."
     },
     {
-      stem: "Un hombre de 46 años presenta fiebre de 39 °C, dolor sacro y suprapúbico y ardor al orinar desde hace 2 días. El urocultivo resulta positivo. ¿Cuál es el agente más probable y qué explica la fiebre, según el capítulo?",
+      id: "24-8",
+      stem: "Un hombre de 58 años con diabetes de 12 años e hipertensión refiere que desde hace un año no logra mantener la erección; el deseo sexual y la eyaculación son normales y la testosterona es normal. ¿Qué componente de la erección falla con más probabilidad?",
       options: [
-        { t: "Un bacilo gramnegativo como E. coli; la fiebre por liberación de interleucinas ante la infección", why: "Correcta. La prostatitis bacteriana aguda es sobre todo por gramnegativos (E. coli, Pseudomonas) y la fiebre se explica por interleucinas." },
-        { t: "Enterococcus por invasión retrógrada tras mala higiene; la fiebre por compresión de fibras nerviosas prostáticas", why: "Enterococcus se menciona en la forma crónica y la compresión nerviosa explicaría el dolor, no la fiebre." },
-        { t: "Un coco grampositivo, el grupo más frecuente en la forma aguda; la fiebre por hipovolemia y retención urinaria", why: "En la forma aguda predominan los gramnegativos; los grampositivos son menos frecuentes, y la fiebre no se explica por hipovolemia." },
-        { t: "El virus de la parotiditis por diseminación sistémica; la fiebre por viremia y respuesta inmune testicular", why: "La parotiditis causa orquitis, no prostatitis bacteriana con urocultivo positivo." }
+        { t: "La señal nerviosa cerebral que inicia la erección ante el estímulo", why: "El deseo está conservado, así que la señal cerebral inicial funciona. La diabetes y la hipertensión de larga data apuntan al componente vascular y muscular." },
+        { t: "La producción de andrógenos por las células de Leydig del testículo", why: "La testosterona es normal, así que la célula de Leydig trabaja; además un origen hormonal reduciría el deseo, que aquí está intacto." },
+        { t: "La relajación del músculo liso y el flujo de los cuerpos cavernosos", why: "La erección exige que el músculo liso se relaje y entre sangre; la diabetes y la hipertensión dañan esos vasos y esa respuesta, por eso falla aunque el deseo sea normal." },
+        { t: "La contracción del esfínter uretral externo durante la eyaculación", why: "Ese esfínter participa en la continencia y la eyaculación, no en producir ni mantener la erección; además la eyaculación del paciente es normal." }
       ],
-      correct: 0
+      correct: 2,
+      rule: "Disfunción eréctil con deseo y testosterona normales es vascular o del músculo liso: reviso diabetes, hipertensión y tabaco."
     },
     {
-      stem: "Un hombre de 68 años con padre y hermano operados de la próstata refiere chorro débil, sensación de vaciamiento incompleto, micciones cada 1-2 horas durante el día y 4 veces por noche. El tacto muestra próstata aumentada de tamaño y de consistencia regular, y el PSA es 3,8 ng/mL. ¿Qué explica mejor la polaquiuria y la nicturia?",
+      id: "24-9",
+      stem: "Un hombre de 46 años consulta por fiebre de 39 °C, dolor sacro y suprapúbico y ardor al orinar desde hace 2 días. El urocultivo es positivo para E. coli. ¿Cuál es el agente más probable y qué explica la fiebre?",
       options: [
-        { t: "Prostatitis aguda con liberación de interleucinas, que inflama y irrita la pared vesical y causa urgencia con fiebre", why: "Corresponde a la prostatitis aguda con fiebre y disuria, no a este cuadro crónico sin fiebre." },
-        { t: "Obstrucción uretral por crecimiento prostático dependiente de andrógenos, que deja la vejiga parcialmente llena tras cada micción", why: "Correcta. Es hiperplasia prostática benigna con antecedente familiar de primer grado; la vejiga relativamente llena hace las micciones más frecuentes y también nocturnas." },
-        { t: "Poliuria por pérdida de la acción de la ADH, que aumenta el volumen urinario diurno y también el nocturno", why: "El libro no atribuye estos síntomas a un trastorno de la ADH; el chorro débil y el vaciamiento incompleto indican obstrucción." },
-        { t: "Infiltración tumoral de la pared vesical que reduce su capacidad, con PSA elevado sobre el corte de su edad", why: "La causa descrita es la obstrucción uretral; además el PSA (3,8) está por debajo del corte para 60-69 años (4,5) y de 70-79 (6,5)." }
+        { t: "Coco grampositivo; fiebre por hipovolemia y retención urinaria", why: "En la forma aguda predominan los gramnegativos, y la fiebre es un efecto de las interleucinas, no de la volemia ni de la retención de orina." },
+        { t: "Enterococo; dolor por compresión de los nervios sacros", why: "El Enterococo se describe en la forma crónica por invasión retrógrada; además una compresión nerviosa explicaría el dolor, pero no una fiebre de 39 °C con urocultivo positivo." },
+        { t: "Virus de la parotiditis; fiebre por viremia con dolor referido", why: "La parotiditis complica con orquitis, no con una prostatitis bacteriana; un urocultivo positivo para E. coli no se explica por un virus." },
+        { t: "Bacilo gramnegativo; fiebre por liberación de interleucinas", why: "La prostatitis bacteriana aguda se debe sobre todo a gramnegativos como E. coli y Pseudomonas, que inducen la liberación de interleucinas y por eso elevan la temperatura." }
       ],
-      correct: 1
+      correct: 3,
+      rule: "Prostatitis aguda es gramnegativo tipo E. coli y la fiebre sale de las interleucinas; el Enterococo pertenece a la crónica."
     },
     {
-      stem: "Cuatro hombres sanos se realizan PSA de tamizaje. Según los cortes por edad que da el capítulo, ¿cuál tiene un valor dentro de lo normal para su grupo? Paciente 1: 45 años, PSA 3,0 ng/mL. Paciente 2: 55 años, PSA 3,8 ng/mL. Paciente 3: 65 años, PSA 4,4 ng/mL. Paciente 4: 75 años, PSA 7,0 ng/mL.",
+      id: "24-10",
+      stem: "Un hombre de 68 años, con un hermano operado de la próstata, refiere chorro débil, vaciamiento incompleto y nicturia de 4 veces. El tacto muestra próstata aumentada y regular, el residuo posmiccional es 100 cc y la creatinina 1,9 mg/dL. ¿Qué explica la polaquiuria nocturna y el deterioro renal?",
       options: [
-        { t: "Paciente 1, porque 3,0 ng/mL es menor que el corte general de 4 ng/mL para un adulto", why: "Aunque está bajo el corte general de 4, para 40-49 años el normal es &lt; 2,5." },
-        { t: "Paciente 2, porque 3,8 ng/mL es menor que 4 y aún no entra en la zona de control anual entre 4 y 10", why: "Para 50-59 años el normal es &lt; 3,5, por lo que 3,8 es anormal para su edad." },
-        { t: "Paciente 3, porque 4,4 ng/mL es menor que el corte de 4,5 ng/mL para los 60-69 años", why: "Correcta. Está por debajo de 4,5 ng/mL para su grupo etario." },
-        { t: "Paciente 4, porque 7,0 ng/mL es menor que 10, el límite de anormalidad en el adulto mayor", why: "Para 70-79 años el normal es &lt; 6,5, y 7,0 lo supera; el 10 es el corte de anormalidad general, no el del grupo." }
+        { t: "Obstrucción uretral por crecimiento prostático con residuo y presión retrógrada", why: "La próstata crecida comprime la uretra: la vejiga no vacía, el residuo la mantiene llena y pide orinar seguido, también de noche; la presión retrógrada termina dañando el riñón." },
+        { t: "Irritación vesical por interleucinas de una infección prostática aguda", why: "La prostatitis aguda da fiebre y disuria de días; aquí el cuadro es de meses, sin fiebre, con residuo y creatinina alta, lo que indica obstrucción mecánica." },
+        { t: "Déficit de ADH con poliuria osmótica y aumento de la creatinina", why: "Sin poliuria ni deshidratación; el residuo de 100 cc y el chorro débil hablan de obstrucción, no de una pérdida de la hormona antidiurética." },
+        { t: "Infiltración tumoral de la pared vesical que reduce su capacidad", why: "El cáncer infiltraría con próstata pétrea e irregular y hematuria; aquí la glándula es regular y el mecanismo descrito es obstructivo, no infiltrativo." }
       ],
-      correct: 2
+      correct: 0,
+      rule: "Chorro débil con residuo y creatinina alta es obstrucción prostática con falla posrenal; la nicturia sale del residuo."
     },
     {
-      stem: "Un hombre de 66 años consulta por retención urinaria. La ecografía muestra próstata de unos 90 g y residuo posmiccional de 120 mL. Creatinina 2,1 mg/dL. El uroanálisis no muestra proteinuria significativa, cilindros ni dismorfismo eritrocitario; no tiene edema ni antecedentes de infección reciente. Al integrar los capítulos de glomerulopatías y este capítulo, ¿cuál es la interpretación más coherente de la creatinina?",
+      id: "24-11",
+      stem: "Un hombre de 70 años con un padre con cáncer de próstata consulta por hematuria y sangre en el semen, pérdida de 6 kg y dolor óseo; el tacto muestra próstata pétrea y el PSA es 20 ng/mL con fosfatasa ácida elevada. ¿Qué mecanismo explica la hematuria y la hemospermia?",
       options: [
-        { t: "Síndrome nefrótico, con pérdida de la barrera glomerular que eleva la creatinina junto con proteinuria masiva", why: "No hay proteinuria significativa ni edema, que son los datos centrales del nefrótico." },
-        { t: "Síndrome nefrítico por inflamación glomerular inmunológica, con hematuria dismórfica y cilindros eritrocitarios", why: "No hay cilindros ni dismorfismo eritrocitario ni cuadro inflamatorio glomerular reciente." },
-        { t: "Efecto directo de la testosterona sobre el túbulo renal, que retiene creatinina y la acumula en sangre", why: "Ni el libro ni los datos del caso apoyan esa relación." },
-        { t: "Probable compromiso renal por obstrucción al flujo urinario que causa la próstata grande (patrón posrenal), no glomerular", why: "Correcta. Con próstata aumentada y residuo, la obstrucción infravesical es la explicación coherente; esta lectura es medicina estándar y no está en el libro: el libro solo reporta la próstata de 100 g y la creatinina de 1,9 en su caso clínico, sin vincularlas con falla posrenal." }
+        { t: "Rotura de venas dilatadas del plexo pampiniforme por hipertensión venosa", why: "Confundes lo escrotal con lo prostático: el varicocele sangra dentro del escroto y no produce sangre en la orina ni en el semen." },
+        { t: "Daño del epitelio prostático y de la uretra por crecimiento e invasión del tumor", why: "El tumor crece, invade el epitelio prostático y la uretra; esa superficie se ulcera y descama, y por eso aparece sangre en la orina y en el semen, con PSA y fosfatasa ácida elevados." },
+        { t: "Inflamación aguda del estroma prostático con exudado y liberación de interleucinas", why: "La prostatitis da fiebre, disuria y dolor agudo; aquí hay pérdida de peso, dolor óseo y fosfatasa ácida alta, que hablan de tumor avanzado." },
+        { t: "Aumento de la permeabilidad capilar por hiperestrogenismo relativo del anciano", why: "Ese mecanismo no se describe para la hematuria tumoral, y la pérdida de peso con dolor óseo y PSA de 20 apunta a un tumor que invade, no a un problema de permeabilidad." }
       ],
-      correct: 3
+      correct: 1,
+      rule: "Varón mayor con PSA alto, hematuria, hemospermia y pérdida de peso tiene cáncer invasor de próstata, no prostatitis."
     }
   ]
-});
+}
+);
