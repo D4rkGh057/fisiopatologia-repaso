@@ -3,7 +3,7 @@ window.CHAPTERS = window.CHAPTERS || [];
 window.CHAPTERS.push(
 {
   id: 20,
-  weight: 3,
+  weight: 4, // marcado por el doctor (favoritosdoc.jpeg)
   title: "20. Síndrome nefrótico",
   easy: `
   <h2>La idea en una frase</h2>

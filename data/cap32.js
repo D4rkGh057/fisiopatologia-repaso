@@ -3,7 +3,7 @@ window.CHAPTERS = window.CHAPTERS || [];
 window.CHAPTERS.push(
 {
   id: 32,
-  weight: 4,
+  weight: 4, // marcado por el doctor (favoritosdoc.jpeg)
   title: "32. Estado de alerta",
   easy: `
   <h2>La idea en una frase</h2>

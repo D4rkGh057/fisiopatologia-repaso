@@ -3,7 +3,7 @@ window.CHAPTERS = window.CHAPTERS || [];
 window.CHAPTERS.push(
 {
   id: 22,
-  weight: 5,
+  weight: 2, // no marcado en favoritosdoc.jpeg
   title: "22. Insuficiencia renal aguda",
   easy: `
   <h2>La idea en una frase</h2>

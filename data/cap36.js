@@ -3,7 +3,7 @@ window.CHAPTERS = window.CHAPTERS || [];
 window.CHAPTERS.push(
 {
   id: 36,
-  weight: 5,
+  weight: 4, // marcado por el doctor (favoritosdoc.jpeg)
   title: "36. Evento vascular cerebral",
   easy: `
   <h2>La idea en una frase</h2>

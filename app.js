@@ -109,14 +109,35 @@ function weightedSample(items, k, weightOf) {
     .map((x) => x.it);
 }
 
+// Per-chapter quotas for a `size`-question simulacro, proportional to chapter weight but always
+// adding up to exactly `size` (largest remainder). The old Math.round per chapter could leave the
+// total short and then top up at random from anywhere, or exceed `size` and be cut by chapter order,
+// silently dropping the last chapters. Remainder ties go to a shuffled chapter, so the odd extra
+// question rotates instead of always landing on the lowest id. Every chapter keeps at least one.
+function chapterQuotas(size) {
+  const total = CHAPTERS.reduce((s, c) => s + (c.weight || 1), 0);
+  const rows = shuffle(CHAPTERS).map((c) => {
+    const exact = ((c.weight || 1) / total) * size;
+    return { id: c.id, exact, quota: Math.max(1, Math.floor(exact)) };
+  });
+  rows.sort((a, b) => b.exact - Math.floor(b.exact) - (a.exact - Math.floor(a.exact)));
+  let left = size - rows.reduce((s, r) => s + r.quota, 0);
+  for (const r of rows) {
+    if (left <= 0) break;
+    r.quota += 1;
+    left -= 1;
+  }
+  return new Map(rows.map((r) => [r.id, r.quota]));
+}
+
 // Simulacro: spread across chapters by chapter weight (at least one per chapter when possible),
 // choosing within each chapter the weaker questions first. If the bank has fewer than `size`, returns all.
 function pickSimulacro(size) {
+  const quotas = chapterQuotas(size);
   const pools = new Map(CHAPTERS.map((c) => [c.id, c.questions.slice()]));
-  const totalWeight = CHAPTERS.reduce((s, c) => s + (c.weight || 1), 0);
   const picked = [];
   CHAPTERS.forEach((c) => {
-    const quota = Math.max(1, Math.round(((c.weight || 1) / totalWeight) * size));
+    const quota = quotas.get(c.id);
     const take = weightedSample(pools.get(c.id), quota, questionWeight);
     picked.push(...take);
     pools.set(c.id, pools.get(c.id).filter((q) => !take.includes(q)));

@@ -3,7 +3,7 @@ window.CHAPTERS = window.CHAPTERS || [];
 window.CHAPTERS.push(
 {
   id: 25,
-  weight: 2,
+  weight: 2, // no marcado en favoritosdoc.jpeg
   title: "25. Trastornos urogenitales femeninos",
   easy: `
   <h2>La idea en una frase</h2>

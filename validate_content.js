@@ -14,6 +14,18 @@ const DATA_DIR = path.join(__dirname, "data");
 const EXPECTED_IDS = [20, 21, 22, 23, 24, 25, 32, 33, 34, 35, 36, 37];
 const QUESTIONS_PER_CHAPTER = 12;
 
+// The simulacro is a 40-question sample built in proportion to chapter weight, so the weights
+// are the distribution. `favoritosdoc.jpeg` is the class schedule with the professor's three
+// purple boxes: 20-21, 32-33 and 34-36. Those seven chapters weigh 4 and the five unmarked ones
+// weigh 2 (a 2:1 ratio), which draws roughly 30 marked and 10 unmarked questions out of 40.
+// The earlier 5:1 gave 87.5%, too much of a bet on a hand-drawn annotation nobody can attribute.
+const FAVORITE_IDS = [20, 21, 32, 33, 34, 35, 36];
+const WEIGHT_MARKED = 4;
+const WEIGHT_UNMARKED = 2;
+// The decision, as a band: the marked chapters must lead the draw without owning it.
+const MARKED_SHARE_MIN = 0.6;
+const MARKED_SHARE_MAX = 0.8;
+
 // S1: the readable summary must carry these six sections, in this order.
 const REQUIRED_SECTIONS = [
   "la idea en una frase",
@@ -149,6 +161,23 @@ if (chapters.length !== EXPECTED_IDS.length) {
 const ids = chapters.map((c) => c.id).sort((a, b) => a - b);
 if (ids.join(",") !== EXPECTED_IDS.join(",")) {
   fail("bank", "chapter ids must be " + EXPECTED_IDS.join(",") + ", found " + ids.join(","));
+}
+
+const marked = new Set(FAVORITE_IDS);
+chapters.forEach((ch) => {
+  const where = "capítulo " + ch.id;
+  const want = marked.has(ch.id) ? WEIGHT_MARKED : WEIGHT_UNMARKED;
+  if (ch.weight !== want) {
+    const why = marked.has(ch.id) ? "marked in favoritosdoc.jpeg" : "not marked in favoritosdoc.jpeg";
+    fail(where, "weight must be " + want + " (" + why + "), found " + ch.weight);
+  }
+});
+const weightSum = chapters.reduce((s, c) => s + (c.weight || 0), 0);
+const markedWeight = chapters.reduce((s, c) => s + (marked.has(c.id) ? (c.weight || 0) : 0), 0);
+const markedShare = weightSum ? markedWeight / weightSum : 0;
+if (markedShare < MARKED_SHARE_MIN || markedShare > MARKED_SHARE_MAX) {
+  fail("bank", "marked chapters must take " + MARKED_SHARE_MIN * 100 + "-" + MARKED_SHARE_MAX * 100 +
+    "% of the simulacro, their weights take " + (markedShare * 100).toFixed(1) + "%");
 }
 
 const seen = new Map();

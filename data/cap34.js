@@ -3,7 +3,7 @@ window.CHAPTERS = window.CHAPTERS || [];
 window.CHAPTERS.push(
 {
   id: 34,
-  weight: 4,
+  weight: 4, // marcado por el doctor (favoritosdoc.jpeg)
   title: "34. Hiperexcitabilidad neuronal",
   easy: `
   <h2>La idea en una frase</h2>

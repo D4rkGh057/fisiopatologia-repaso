@@ -3,7 +3,7 @@ window.CHAPTERS = window.CHAPTERS || [];
 window.CHAPTERS.push(
 {
   id: 37,
-  weight: 4,
+  weight: 2, // no marcado en favoritosdoc.jpeg
   title: "37. Trastornos de la vía piramidal y extrapiramidal",
   easy: `
   <h2>La idea en una frase</h2>
